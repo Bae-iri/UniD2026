@@ -1,0 +1,32 @@
+{
+  "selected": "V0_nocount",
+  "checks": {
+    "per_experiment": true,
+    "shuffled": true,
+    "prefixes": 132,
+    "prefix_mismatch": 0
+  },
+  "file": "submission_V0_nocount.csv",
+  "sha256": "a2ebce9f0273c865af21977c965937da71e9423d35ace0846a50a99fa490c5e7",
+  "changed_vs_base": 101,
+  "changed_by_experiment": {
+    "E_a221e4": 46,
+    "E_753e27": 25,
+    "E_12e376": 6,
+    "E_c06a83": 5,
+    "E_bc7e00": 5,
+    "E_db71ed": 4,
+    "E_342d25": 3,
+    "E_b98441": 3,
+    "E_8c92cd": 2,
+    "E_09d5d7": 1,
+    "E_c8e730": 1
+  },
+  "changes": {
+    "4->5": 45,
+    "6->5": 32,
+    "5->6": 18,
+    "5->4": 5,
+    "6->4": 1
+  }
+}

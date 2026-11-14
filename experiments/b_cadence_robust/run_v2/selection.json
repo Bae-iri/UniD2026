@@ -1,0 +1,23 @@
+{
+  "choice": {
+    "V0_orig": {
+      "all_positive": true,
+      "worst_cadence": "10/15s",
+      "worst_gain": 0.015890550660052183,
+      "worst_better_gt_worse": true
+    },
+    "V0_nocount": {
+      "all_positive": true,
+      "worst_cadence": "10/15s",
+      "worst_gain": 0.01589300931014559,
+      "worst_better_gt_worse": true
+    },
+    "V0_nocount_56only": {
+      "all_positive": true,
+      "worst_cadence": "15s",
+      "worst_gain": 0.014267456559536651,
+      "worst_better_gt_worse": true
+    }
+  },
+  "selected": "V0_nocount"
+}

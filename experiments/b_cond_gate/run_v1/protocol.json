@@ -1,0 +1,34 @@
+{
+  "base": "original ABC B 3-seed mean + t1 45C rule; B frozen",
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3"
+  ],
+  "gate_alpha": {
+    "V2": 1.0,
+    "V3": 0.25
+  },
+  "gate_penalty": {
+    "V2": 0.0,
+    "V3": 0.01
+  },
+  "hidden": 64,
+  "base_epochs": 40,
+  "head_epochs": 20,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "hyperparameters_selected_on": "none (prefixed)",
+  "validation_read_after_training": true,
+  "source_sha256": {
+    "experiments/b_cond_gate/run.py": "2655c7468c6720d7331f553349afa9d41505488166cb3d20499ed4241e5cf555",
+    "experiments/b_cond_gate/model.py": "3caf47afceeca99b273f9e305334b26672bf11dac963f89f731556276de37706",
+    "targeted_rule1/model.py": "0b5998e4e43df54e31f308a8ba8d94e020fd08c06d755410151421b20c8bb4a4",
+    "targeted_rule1/run.py": "e0141d6cfdc07766a078216bcf5a15f4efca8e077c16933cce504af3aa7ae373",
+    "compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "selectable": [
+    "targeted_rule1",
+    "V0_nocount",
+    "V0_nocount_56only"
+  ],
+  "reference_only": [
+    "V0_aug_ref"
+  ],
+  "cadences": {
+    "5s": [
+      1,
+      0
+    ],
+    "10s": [
+      2,
+      0
+    ],
+    "15s": [
+      3,
+      0
+    ],
+    "10/15s": [
+      "alt",
+      0
+    ]
+  },
+  "selection": "dev OOF only: all cadences > base, worst-cadence better_exps>worse_exps, danger_under<=base at all cadences; max worst-cadence gain; else base",
+  "holdout_read_after_selection": true,
+  "test_read": false,
+  "holdout_sources": {
+    "train": 12,
+    "validation": 8
+  },
+  "E16_in_holdout": true,
+  "b_probs_sha256": "36c8952a3fa0327b080396cd969968cd3f47da88365dabe961619237a843dbe7",
+  "source_sha256": {
+    "experiments/holdout_12_8/run.py": "acc30ebe850acf066947c8591f0dcd097b064ab05ec76ea6856db5afce927910",
+    "experiments/b_cadence_robust/run.py": "3547a160d407c665bccd70bf37c353d41adbcc7dc1dbe85d23e64b35594f2540",
+    "experiments/b_cond_gate/model.py": "d093c0c1e73573531c723179a127237ee9660c9959400f442dcf051f4ff52752",
+    "targeted_rule1/model.py": "0b5998e4e43df54e31f308a8ba8d94e020fd08c06d755410151421b20c8bb4a4",
+    "targeted_rule1/run.py": "e0141d6cfdc07766a078216bcf5a15f4efca8e077c16933cce504af3aa7ae373",
+    "compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2",
+    "experiments/holdout_12_8/b_holdout.py": "290da4de1ba1da04c64b6ba2c51a0d677571dce5ba4ad1c676de1334f97337b4"
+  }
+}
