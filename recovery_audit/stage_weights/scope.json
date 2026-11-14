@@ -1,0 +1,6 @@
+{
+  "test_access": false,
+  "training": false,
+  "weight_search": false,
+  "note": "Fixed hypotheses on repeatedly inspected dev/validation; exploratory, not fresh validation."
+}

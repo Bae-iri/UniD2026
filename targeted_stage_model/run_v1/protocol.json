@@ -1,0 +1,54 @@
+{
+  "targets": [
+    "true5/pred4 -> 5",
+    "true6/pred5 -> 6"
+  ],
+  "heads": {
+    "45": [
+      4,
+      5
+    ],
+    "56": [
+      5,
+      6
+    ]
+  },
+  "params": {
+    "max_iter": 120,
+    "max_leaf_nodes": 5,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 64,
+    "l2_regularization": 5.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "thresholds": [
+    0.5,
+    0.7,
+    0.9
+  ],
+  "primary": "selected heads, separately assessed; combine only accepted heads",
+  "diagnostic": "fixed 0.5 default reports classifier ability even if selector abstains; not eligible for post-hoc deployment",
+  "features45": "current physical signals, past extremes/differences/ages, trailing60 range/slope, observed elapsed and gap; no B probabilities",
+  "features56": "same physical history plus current three-seed probabilities and trailing30/60 probability history",
+  "rule": "current/past only; only existing4->5 and existing5->6; no same-row cascade",
+  "threshold_selection": "outer training group-crossfit only; corrected>=2*harmed; >=3 improved experiments; more improved than worsened; positive leave-one-out pooled delta",
+  "acceptance": [
+    "positive nested outer OOF delta and bootstrap lower",
+    "more improved than worsened experiments",
+    "positive leave-one-experiment-out delta",
+    "validation all/noE16 nonnegative delta for both original and fold ensemble B"
+  ],
+  "limitations": "Previously inspected data and previously compared outer folds: exploratory replication, not new blind evidence. No capacity/threshold tuning after holdout results.",
+  "test_access": false,
+  "validation_read_after_selection": true,
+  "source_sha256": {
+    "/home/ubuntu/JEONGYUN/targeted_stage_model/run.py": "1c8602a319e6cc5eb496094d47cec880430b8cbae2911fb490eecc4adce7943e",
+    "/home/ubuntu/JEONGYUN/targeted_stage_model/model.py": "64f5baf751464412aa2c68155b72503f5302bf8b4ed4306e17792f79f9d27653",
+    "/home/ubuntu/JEONGYUN/final_rules3.py": "e1503f0cdc08e2c1f49ce8c658ca8fe265d836c25ae79ee2b76afceabbdc44a6",
+    "/home/ubuntu/JEONGYUN/temporal45_model/causal_rules.py": "425edb64158ad6cdc9a9b3186d35fc9e2892634d5fa4b23be2992e5a46c0866c",
+    "/home/ubuntu/JEONGYUN/compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2",
+    "/home/ubuntu/data/battery_data_light/train/train.csv": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491"
+  }
+}

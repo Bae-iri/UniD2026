@@ -1,0 +1,24 @@
+{
+  "data_root": "/home/ubuntu/data/battery_data_light",
+  "base_run": "/home/ubuntu/leewon/abc_runs/current_query_v1",
+  "output": "balanced_b_runs/pilot_v1",
+  "device": "cpu",
+  "seeds": [
+    42
+  ],
+  "arms": [
+    "control",
+    "stage_balanced",
+    "experiment_balanced"
+  ],
+  "epochs": 3,
+  "lr": 3e-05,
+  "batch_size": 64,
+  "threads": 4,
+  "predict_test": true,
+  "smoke": false,
+  "source_sha256": "b410c96edefd74b5d83e24b095902d07eda864a77e221e52fc6f83772d2c5e2a",
+  "split_seed": 20261114,
+  "selection": "dev macro F1, including epoch 0",
+  "validation_used_for_training": false
+}

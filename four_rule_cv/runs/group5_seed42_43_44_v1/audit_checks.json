@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "models_checked": 15,
+  "epochs_checked": 225,
+  "experiments_checked": 78,
+  "checks": [
+    "No overlap of fit/selection/holdout experiments",
+    "All official Train rows covered once in OOF",
+    "Scalers reconstructed from inner fit only",
+    "All rule thresholds reconstructed from outer train only",
+    "Best checkpoint reconstructed from inner selection history",
+    "All model weights finite",
+    "All OOF probabilities and four rule predictions reproduced",
+    "Pooled Macro F1 matches sklearn"
+  ],
+  "test_access": false
+}

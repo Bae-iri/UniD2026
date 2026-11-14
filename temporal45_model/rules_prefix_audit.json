@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "split": "train",
+      "experiments": 78,
+      "prefix_checks": 546
+    },
+    {
+      "split": "validation",
+      "experiments": 19,
+      "prefix_checks": 133
+    },
+    {
+      "split": "test",
+      "experiments": 11,
+      "prefix_checks": 77
+    }
+  ],
+  "total_prefix_checks": 756,
+  "production_source_sha256": "e1503f0cdc08e2c1f49ce8c658ca8fe265d836c25ae79ee2b76afceabbdc44a6",
+  "test_labels_used": false,
+  "model_training_or_selection": false
+}

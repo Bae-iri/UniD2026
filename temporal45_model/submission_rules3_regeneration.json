@@ -1,0 +1,8 @@
+{
+  "generator": "final_rules3.py (current/past only)",
+  "file": "final_submit/submission_rules3.csv",
+  "rows": 3451,
+  "regenerated": true,
+  "byte_identical_to_previous": true,
+  "sha256": "bbbd60fac168aee9cba3b7041b45d9ba7f35093ddf6741db747e62bda7f11125"
+}

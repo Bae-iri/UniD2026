@@ -1,0 +1,17 @@
+{
+  "primary_mode": "history",
+  "checks": {
+    "positive_oof": false,
+    "positive_ci_lower": false,
+    "more_improved_experiments": false,
+    "positive_leave_one_out": false,
+    "validation_all": true,
+    "validation_noE16": true,
+    "original_B_validation_all": true,
+    "original_B_validation_noE16": true
+  },
+  "accepted": false,
+  "deployment_enabled": false,
+  "submission_created": false,
+  "note": "Failed primary is rejected; ablation modes cannot replace it based on outer/validation results."
+}

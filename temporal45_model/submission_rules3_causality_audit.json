@@ -1,0 +1,11 @@
+{
+  "file": "final_submit/submission_rules3.csv",
+  "rows": 3451,
+  "experiments": 11,
+  "sha256": "bbbd60fac168aee9cba3b7041b45d9ba7f35093ddf6741db747e62bda7f11125",
+  "implementation": "current/past only; initial reference updated on arrival and then frozen",
+  "prediction_differences_after_removing_future_reference": 0,
+  "causal_predictions_match_submitted_file": true,
+  "test_labels_present": false,
+  "file_unchanged": true
+}

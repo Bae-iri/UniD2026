@@ -1,0 +1,72 @@
+{
+  "thresholds": {
+    "45": 0.9,
+    "56": 0.5
+  },
+  "choices": {
+    "45": [
+      {
+        "threshold": 0.5,
+        "delta": -0.004130651930902118,
+        "corrected": 104,
+        "harmed": 147,
+        "improved": 22,
+        "worsened": 10,
+        "loo_min": -0.005589536256052852,
+        "passed": false
+      },
+      {
+        "threshold": 0.7,
+        "delta": 0.0016769393410611677,
+        "corrected": 92,
+        "harmed": 75,
+        "improved": 23,
+        "worsened": 7,
+        "loo_min": 0.0006306421260453554,
+        "passed": false
+      },
+      {
+        "threshold": 0.9,
+        "delta": 0.004842505420308285,
+        "corrected": 50,
+        "harmed": 0,
+        "improved": 16,
+        "worsened": 0,
+        "loo_min": 0.004012229041173598,
+        "passed": true
+      }
+    ],
+    "56": [
+      {
+        "threshold": 0.5,
+        "delta": 0.008750637699057262,
+        "corrected": 93,
+        "harmed": 25,
+        "improved": 20,
+        "worsened": 6,
+        "loo_min": 0.006844997655531149,
+        "passed": true
+      },
+      {
+        "threshold": 0.7,
+        "delta": 0.008074530569961547,
+        "corrected": 81,
+        "harmed": 18,
+        "improved": 19,
+        "worsened": 5,
+        "loo_min": 0.006526806339593794,
+        "passed": true
+      },
+      {
+        "threshold": 0.9,
+        "delta": 0.005018477033679858,
+        "corrected": 48,
+        "harmed": 9,
+        "improved": 15,
+        "worsened": 3,
+        "loo_min": 0.004063487916335928,
+        "passed": true
+      }
+    ]
+  }
+}

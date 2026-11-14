@@ -1,0 +1,24 @@
+{
+  "output": "four_rule_cv/runs/group5_seed42_43_44_v1",
+  "data_root": "/home/ubuntu/data/battery_data_light",
+  "base_run": "/home/ubuntu/leewon/abc_runs/current_query_v1",
+  "device": "cuda",
+  "folds": 5,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 15,
+  "split_seed": 20261115,
+  "saved_only": false,
+  "recipes": {
+    "rules3": "45C, voltage .8, capacity T1 floor q.01",
+    "thermal_floor_q": 0.01,
+    "t1_upper_q": 0.995
+  },
+  "test_access": false,
+  "threshold_search": false,
+  "candidate_selection": "Compare fixed variants; do not replace submission automatically",
+  "limitations": "Previously inspected data; fixed-hypothesis outer evaluation, not new blind data"
+}

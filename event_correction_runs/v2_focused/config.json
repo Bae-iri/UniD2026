@@ -1,0 +1,16 @@
+{
+  "base_run": "/home/ubuntu/leewon/abc_runs/current_query_v1",
+  "data_dir": "/home/ubuntu/data/battery_data_light",
+  "output": "event_correction_runs/v2_focused",
+  "epochs": 24,
+  "device": "cuda",
+  "variants": [
+    "gas_focus",
+    "voltage_focus",
+    "union_focus"
+  ],
+  "voltage_drop_threshold": -0.04799999999999992,
+  "voltage_rise_threshold": 0.03399999999999999,
+  "selection": "dev ranking, nonnegative dev delta; Validation noninferiority .003 and class3/4/6 loss <= .03; else baseline",
+  "limitations": "Stage1 fit predictions are in-sample; dev used in original Stage1 checkpoint selection. Exploratory continuation, not nested OOF. No Test selection."
+}

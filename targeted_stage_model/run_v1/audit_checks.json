@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "outer_experiments": 78,
+  "heads_checked": 10,
+  "actual_experiment_prefix_checks": 312,
+  "test_access": false,
+  "checks": [
+    "Source hashes unchanged",
+    "Nested base OOF audit passed",
+    "All held-out experiments excluded from specialist training",
+    "Model capacities and inner threshold decisions reproduced",
+    "All selected and default outer predictions reproduced",
+    "Both heads inputs and decisions unchanged for every checked prefix",
+    "No same-row cascade or changes to other baseline stages",
+    "OOF and all validation Macro F1 independently reproduced",
+    "Deployment flags reconcile with acceptance decisions"
+  ]
+}

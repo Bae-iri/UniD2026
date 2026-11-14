@@ -1,0 +1,27 @@
+{
+  "primary_comparison": "train_oof",
+  "checks": [
+    {
+      "method": "plus_thermal_floor",
+      "passes_fixed_internal_checks": false,
+      "note": "Internal criterion only; does not establish private improvement. Baseline submission is not replaced."
+    },
+    {
+      "method": "plus_t1_upper",
+      "passes_fixed_internal_checks": false,
+      "note": "Internal criterion only; does not establish private improvement. Baseline submission is not replaced."
+    },
+    {
+      "method": "plus_both",
+      "passes_fixed_internal_checks": false,
+      "note": "Internal criterion only; does not establish private improvement. Baseline submission is not replaced."
+    }
+  ],
+  "submission_replaced": false,
+  "criteria": [
+    "positive pooled delta",
+    "positive paired bootstrap lower bound",
+    "more improved than worsened experiments",
+    "positive delta after removing any one experiment"
+  ]
+}

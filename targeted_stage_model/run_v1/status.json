@@ -1,0 +1,7 @@
+{
+  "complete": true,
+  "base_retrained": false,
+  "nested_models": 10,
+  "threshold_crossfit_models": 30,
+  "final_models": 2
+}

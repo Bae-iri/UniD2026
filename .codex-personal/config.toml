@@ -1,0 +1,8 @@
+[tui]
+screen_reader_detection_done = true
+
+[tui.model_availability_nux]
+"gpt-6.1-sol" = 2
+
+[projects."/home/ubuntu/JEONGYUN"]
+trust_level = "trusted"

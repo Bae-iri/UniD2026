@@ -1,0 +1,12 @@
+이미지 캐시: 0.91 run 캐시 재사용(행 순서 검증 완료)
+seed42: GRU sel F1 0.9856 (3.7 min)
+seed43: GRU sel F1 0.9803 (5.9 min)
+seed44: GRU sel F1 0.9883 (8.2 min)
+    model  dev_f1  val_f1  val_noE16_f1  평균_dev_noE16  E16_5_correct
+    기본 모델  0.8329  0.7243        0.8452        0.8390              7
+ 기본 모델+규칙  0.8318  0.7499        0.8452        0.8385             85
+   기본+GRU  0.8250  0.7064        0.8369        0.8310              6
+기본+GRU+규칙  0.8237  0.7632        0.8369        0.8303            214
+gru_runs/check_r50/submission_base_check_long4rule.csv: 0.91 파일 대비 변경 256행
+gru_runs/check_r50/submission_gru_check_long4rule.csv: 0.91 파일 대비 변경 247행
+총 8.2 분

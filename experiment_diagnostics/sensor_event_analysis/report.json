@@ -1,0 +1,1305 @@
+{
+  "thresholds": {
+    "fit_voltage_rate_p01": -0.04799999999999992,
+    "fit_voltage_rate_p99": 0.03399999999999999
+  },
+  "splits": {
+    "train_all": {
+      "rows": 33522,
+      "voltage": {
+        "count": 33522,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 3.735,
+        "p99": 5.9,
+        "max": 76.01
+      },
+      "voltage_rate": {
+        "count": 33444,
+        "min": -13.771,
+        "p01": -0.046000000000000006,
+        "median": 0.0,
+        "p99": 0.03700000000000006,
+        "max": 14.245000000000001
+      },
+      "sampling_interval": {
+        "count": 33444,
+        "min": 5.0,
+        "p01": 5.0,
+        "median": 5.0,
+        "p99": 5.0,
+        "max": 5.0
+      },
+      "gas_zero_observed_age": {
+        "count": 2227,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 395.0,
+        "p99": 1513.699999999999,
+        "max": 1625.0
+      },
+      "events": {
+        "gas_all_zero": {
+          "count": 2227,
+          "fraction": 0.0664339836525267
+        },
+        "gas_zero_onset": {
+          "count": 42,
+          "fraction": 0.0012529085376767495
+        },
+        "gas_zero_recovery": {
+          "count": 7,
+          "fraction": 0.0002088180896127916
+        },
+        "voltage_nonpositive": {
+          "count": 1930,
+          "fraction": 0.057574130421812544
+        },
+        "gas_any_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "gas_any_negative": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_drop_tail": {
+          "count": 328,
+          "fraction": 0.009784619056142235
+        },
+        "voltage_rise_tail": {
+          "count": 352,
+          "fraction": 0.01050056679195752
+        },
+        "voltage_rebound": {
+          "count": 36,
+          "fraction": 0.0010739216037229282
+        },
+        "voltage_drop_past60": {
+          "count": 2232,
+          "fraction": 0.06658313943082154
+        },
+        "voltage_drop_ever": {
+          "count": 8034,
+          "fraction": 0.23966350456416682
+        }
+      },
+      "by_class": {
+        "1": {
+          "rows": 14091,
+          "gas_all_zero": 0.0045419061812504435,
+          "gas_zero_onset": 0.00014193456816407636,
+          "gas_zero_recovery": 0.0003548364204101909,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0006387055567383436,
+          "voltage_rise_tail": 0.0018451493861329927,
+          "voltage_rebound": 0.00014193456816407636,
+          "voltage_drop_past60": 0.006458022851465474,
+          "voltage_drop_ever": 0.14342488112979918
+        },
+        "2": {
+          "rows": 5182,
+          "gas_all_zero": 0.0214203010420687,
+          "gas_zero_onset": 0.00019297568506368199,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0005789270551910459,
+          "voltage_rise_tail": 0.009455808568120417,
+          "voltage_rebound": 0.00019297568506368199,
+          "voltage_drop_past60": 0.007912003087610961,
+          "voltage_drop_ever": 0.09011964492473948
+        },
+        "3": {
+          "rows": 9469,
+          "gas_all_zero": 0.1102545147322843,
+          "gas_zero_onset": 0.0010560777273207309,
+          "gas_zero_recovery": 0.00021121554546414616,
+          "voltage_nonpositive": 0.00010560777273207308,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0031682331819621926,
+          "voltage_rise_tail": 0.01130003168233182,
+          "voltage_rebound": 0.001267293272784877,
+          "voltage_drop_past60": 0.02154398563734291,
+          "voltage_drop_ever": 0.08258527827648116
+        },
+        "4": {
+          "rows": 1851,
+          "gas_all_zero": 0.08481901674770394,
+          "gas_zero_onset": 0.0005402485143165856,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.46947595894111294,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0713128038897893,
+          "voltage_rise_tail": 0.022690437601296597,
+          "voltage_rebound": 0.005402485143165856,
+          "voltage_drop_past60": 0.4051863857374392,
+          "voltage_drop_ever": 0.9913560237709347
+        },
+        "5": {
+          "rows": 1925,
+          "gas_all_zero": 0.1890909090909091,
+          "gas_zero_onset": 0.0036363636363636364,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.25402597402597404,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.052987012987012985,
+          "voltage_rise_tail": 0.042077922077922075,
+          "voltage_rebound": 0.005194805194805195,
+          "voltage_drop_past60": 0.37506493506493505,
+          "voltage_drop_ever": 1.0
+        },
+        "6": {
+          "rows": 1004,
+          "gas_all_zero": 0.4850597609561753,
+          "gas_zero_onset": 0.02091633466135458,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.5687250996015937,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.05179282868525897,
+          "voltage_rise_tail": 0.046812749003984064,
+          "voltage_rebound": 0.00099601593625498,
+          "voltage_drop_past60": 0.42231075697211157,
+          "voltage_drop_ever": 1.0
+        }
+      }
+    },
+    "actual_fit": {
+      "rows": 26734,
+      "voltage": {
+        "count": 26734,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 3.73,
+        "p99": 5.91,
+        "max": 76.01
+      },
+      "voltage_rate": {
+        "count": 26672,
+        "min": -13.771,
+        "p01": -0.04799999999999992,
+        "median": 0.0,
+        "p99": 0.03399999999999999,
+        "max": 14.245000000000001
+      },
+      "sampling_interval": {
+        "count": 26672,
+        "min": 5.0,
+        "p01": 5.0,
+        "median": 5.0,
+        "p99": 5.0,
+        "max": 5.0
+      },
+      "gas_zero_observed_age": {
+        "count": 1915,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 430.0,
+        "p99": 1529.2999999999995,
+        "max": 1625.0
+      },
+      "events": {
+        "gas_all_zero": {
+          "count": 1915,
+          "fraction": 0.07163163013391187
+        },
+        "gas_zero_onset": {
+          "count": 34,
+          "fraction": 0.0012717887334480437
+        },
+        "gas_zero_recovery": {
+          "count": 4,
+          "fraction": 0.00014962220393506396
+        },
+        "voltage_nonpositive": {
+          "count": 1516,
+          "fraction": 0.05670681529138924
+        },
+        "gas_any_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "gas_any_negative": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_drop_tail": {
+          "count": 267,
+          "fraction": 0.00998728211266552
+        },
+        "voltage_rise_tail": {
+          "count": 266,
+          "fraction": 0.009949876561681753
+        },
+        "voltage_rebound": {
+          "count": 31,
+          "fraction": 0.0011595720804967458
+        },
+        "voltage_drop_past60": {
+          "count": 1849,
+          "fraction": 0.06916286376898331
+        },
+        "voltage_drop_ever": {
+          "count": 6674,
+          "fraction": 0.24964464726565422
+        }
+      },
+      "by_class": {
+        "1": {
+          "rows": 10625,
+          "gas_all_zero": 0.005741176470588236,
+          "gas_zero_onset": 9.411764705882353e-05,
+          "gas_zero_recovery": 0.00018823529411764707,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0007529411764705883,
+          "voltage_rise_tail": 0.002164705882352941,
+          "voltage_rebound": 0.00018823529411764707,
+          "voltage_drop_past60": 0.0073411764705882355,
+          "voltage_drop_ever": 0.17138823529411765
+        },
+        "2": {
+          "rows": 4247,
+          "gas_all_zero": 0.026136096067812573,
+          "gas_zero_onset": 0.0002354603249352484,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0007063809748057452,
+          "voltage_rise_tail": 0.00588650812338121,
+          "voltage_rebound": 0.0002354603249352484,
+          "voltage_drop_past60": 0.009653873322345186,
+          "voltage_drop_ever": 0.1036025429715093
+        },
+        "3": {
+          "rows": 7880,
+          "gas_all_zero": 0.11307106598984772,
+          "gas_zero_onset": 0.0010152284263959391,
+          "gas_zero_recovery": 0.0002538071065989848,
+          "voltage_nonpositive": 0.0001269035532994924,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.003553299492385787,
+          "voltage_rise_tail": 0.010279187817258882,
+          "voltage_rebound": 0.0015228426395939086,
+          "voltage_drop_past60": 0.023096446700507613,
+          "voltage_drop_ever": 0.056472081218274114
+        },
+        "4": {
+          "rows": 1493,
+          "gas_all_zero": 0.09176155391828533,
+          "gas_zero_onset": 0.0006697923643670462,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.4454119223040857,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.06898861352980576,
+          "voltage_rise_tail": 0.020763563295378432,
+          "voltage_rebound": 0.004688546550569324,
+          "voltage_drop_past60": 0.4105827193569993,
+          "voltage_drop_ever": 0.9906229068988613
+        },
+        "5": {
+          "rows": 1640,
+          "gas_all_zero": 0.19634146341463415,
+          "gas_zero_onset": 0.003658536585365854,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.2347560975609756,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.05,
+          "voltage_rise_tail": 0.04024390243902439,
+          "voltage_rebound": 0.00548780487804878,
+          "voltage_drop_past60": 0.36097560975609755,
+          "voltage_drop_ever": 1.0
+        },
+        "6": {
+          "rows": 849,
+          "gas_all_zero": 0.4628975265017668,
+          "gas_zero_onset": 0.020023557126030624,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.5477031802120141,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.050647820965842166,
+          "voltage_rise_tail": 0.04711425206124853,
+          "voltage_rebound": 0.0,
+          "voltage_drop_past60": 0.4040047114252061,
+          "voltage_drop_ever": 1.0
+        }
+      }
+    },
+    "validation": {
+      "rows": 10200,
+      "voltage": {
+        "count": 10200,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 3.72,
+        "p99": 5.9300500000000005,
+        "max": 50.94
+      },
+      "voltage_rate": {
+        "count": 10181,
+        "min": -9.613,
+        "p01": -0.21600000000000003,
+        "median": 0.0,
+        "p99": 0.2046000000000022,
+        "max": 4.247999999999999
+      },
+      "sampling_interval": {
+        "count": 10181,
+        "min": 5.0,
+        "p01": 5.0,
+        "median": 5.0,
+        "p99": 5.0,
+        "max": 5.0
+      },
+      "gas_zero_observed_age": {
+        "count": 666,
+        "min": 0.0,
+        "p01": 0.0,
+        "median": 557.5,
+        "p99": 2186.75,
+        "max": 2220.0
+      },
+      "events": {
+        "gas_all_zero": {
+          "count": 666,
+          "fraction": 0.06529411764705882
+        },
+        "gas_zero_onset": {
+          "count": 15,
+          "fraction": 0.0014705882352941176
+        },
+        "gas_zero_recovery": {
+          "count": 9,
+          "fraction": 0.0008823529411764706
+        },
+        "voltage_nonpositive": {
+          "count": 822,
+          "fraction": 0.08058823529411764
+        },
+        "gas_any_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "gas_any_negative": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_missing": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "voltage_drop_tail": {
+          "count": 292,
+          "fraction": 0.02862745098039216
+        },
+        "voltage_rise_tail": {
+          "count": 314,
+          "fraction": 0.030784313725490196
+        },
+        "voltage_rebound": {
+          "count": 101,
+          "fraction": 0.009901960784313725
+        },
+        "voltage_drop_past60": {
+          "count": 1201,
+          "fraction": 0.11774509803921569
+        },
+        "voltage_drop_ever": {
+          "count": 3766,
+          "fraction": 0.3692156862745098
+        }
+      },
+      "by_class": {
+        "1": {
+          "rows": 4469,
+          "gas_all_zero": 0.00044752741105392703,
+          "gas_zero_onset": 0.0,
+          "gas_zero_recovery": 0.00044752741105392703,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0013425822331617813,
+          "voltage_rise_tail": 0.0013425822331617813,
+          "voltage_rebound": 0.0,
+          "voltage_drop_past60": 0.017453569031103153,
+          "voltage_drop_ever": 0.29290669053479523
+        },
+        "2": {
+          "rows": 928,
+          "gas_all_zero": 0.0010775862068965517,
+          "gas_zero_onset": 0.0010775862068965517,
+          "gas_zero_recovery": 0.0010775862068965517,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0010775862068965517,
+          "voltage_rise_tail": 0.0010775862068965517,
+          "voltage_rebound": 0.0,
+          "voltage_drop_past60": 0.0010775862068965517,
+          "voltage_drop_ever": 0.0625
+        },
+        "3": {
+          "rows": 3066,
+          "gas_all_zero": 0.008480104370515329,
+          "gas_zero_onset": 0.002609262883235486,
+          "gas_zero_recovery": 0.0019569471624266144,
+          "voltage_nonpositive": 0.0,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.0009784735812133072,
+          "voltage_rise_tail": 0.017938682322243965,
+          "voltage_rebound": 0.0,
+          "voltage_drop_past60": 0.016634050880626222,
+          "voltage_drop_ever": 0.21754729288975863
+        },
+        "4": {
+          "rows": 352,
+          "gas_all_zero": 0.03409090909090909,
+          "gas_zero_onset": 0.002840909090909091,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.6420454545454546,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.09943181818181818,
+          "voltage_rise_tail": 0.008522727272727272,
+          "voltage_rebound": 0.005681818181818182,
+          "voltage_drop_past60": 0.4090909090909091,
+          "voltage_drop_ever": 0.9857954545454546
+        },
+        "5": {
+          "rows": 1134,
+          "gas_all_zero": 0.4462081128747795,
+          "gas_zero_onset": 0.004409171075837742,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.4038800705467372,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.20105820105820105,
+          "voltage_rise_tail": 0.2037037037037037,
+          "voltage_rebound": 0.0873015873015873,
+          "voltage_drop_past60": 0.6931216931216931,
+          "voltage_drop_ever": 1.0
+        },
+        "6": {
+          "rows": 251,
+          "gas_all_zero": 0.47410358565737054,
+          "gas_zero_onset": 0.0,
+          "gas_zero_recovery": 0.0,
+          "voltage_nonpositive": 0.549800796812749,
+          "gas_any_missing": 0.0,
+          "gas_any_negative": 0.0,
+          "voltage_missing": 0.0,
+          "voltage_drop_tail": 0.07569721115537849,
+          "voltage_rise_tail": 0.07171314741035857,
+          "voltage_rebound": 0.0,
+          "voltage_drop_past60": 0.5617529880478087,
+          "voltage_drop_ever": 1.0
+        }
+      }
+    }
+  },
+  "validation_buckets": {
+    "all": {
+      "rows": 10200,
+      "true5_rows": 1134,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.15911764705882353,
+          "macro_f1": 0.6963460906416085,
+          "five_correct": 424,
+          "five_to_four": 557,
+          "five_error_rate": 0.6261022927689595,
+          "four_to_five": 33
+        },
+        "current_probe": {
+          "error_rate": 0.17333333333333334,
+          "macro_f1": 0.6765226644256347,
+          "five_correct": 496,
+          "five_to_four": 491,
+          "five_error_rate": 0.562610229276896,
+          "four_to_five": 43
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.17294117647058824,
+          "macro_f1": 0.7162413468407105,
+          "five_correct": 798,
+          "five_to_four": 253,
+          "five_error_rate": 0.2962962962962963,
+          "four_to_five": 36
+        }
+      }
+    },
+    "gas_zero": {
+      "rows": 666,
+      "true5_rows": 506,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.7642642642642643,
+          "macro_f1": 0.5778318413380575,
+          "five_correct": 24,
+          "five_to_four": 401,
+          "five_error_rate": 0.9525691699604744,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.8348348348348348,
+          "macro_f1": 0.5455960200399158,
+          "five_correct": 0,
+          "five_to_four": 425,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.3843843843843844,
+          "macro_f1": 0.6655717782795486,
+          "five_correct": 305,
+          "five_to_four": 146,
+          "five_error_rate": 0.39723320158102765,
+          "four_to_five": 2
+        }
+      }
+    },
+    "gas_nonzero": {
+      "rows": 9534,
+      "true5_rows": 628,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.11684497587581288,
+          "macro_f1": 0.7509718252304443,
+          "five_correct": 400,
+          "five_to_four": 156,
+          "five_error_rate": 0.3630573248407643,
+          "four_to_five": 33
+        },
+        "current_probe": {
+          "error_rate": 0.12712397734424166,
+          "macro_f1": 0.76960652613466,
+          "five_correct": 496,
+          "five_to_four": 66,
+          "five_error_rate": 0.21019108280254778,
+          "four_to_five": 43
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.1581707572897,
+          "macro_f1": 0.745068839509888,
+          "five_correct": 493,
+          "five_to_four": 107,
+          "five_error_rate": 0.21496815286624205,
+          "four_to_five": 34
+        }
+      }
+    },
+    "voltage_drop_now": {
+      "rows": 292,
+      "true5_rows": 228,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.7773972602739726,
+          "macro_f1": 0.5402612655594525,
+          "five_correct": 24,
+          "five_to_four": 194,
+          "five_error_rate": 0.8947368421052632,
+          "four_to_five": 5
+        },
+        "current_probe": {
+          "error_rate": 0.6438356164383562,
+          "macro_f1": 0.5026600343386826,
+          "five_correct": 64,
+          "five_to_four": 159,
+          "five_error_rate": 0.7192982456140351,
+          "four_to_five": 3
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.3527397260273973,
+          "macro_f1": 0.590877272368275,
+          "five_correct": 148,
+          "five_to_four": 74,
+          "five_error_rate": 0.3508771929824561,
+          "four_to_five": 5
+        }
+      }
+    },
+    "no_voltage_drop_now": {
+      "rows": 9908,
+      "true5_rows": 906,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.14089624545821558,
+          "macro_f1": 0.7189171756603389,
+          "five_correct": 400,
+          "five_to_four": 363,
+          "five_error_rate": 0.5584988962472406,
+          "four_to_five": 28
+        },
+        "current_probe": {
+          "error_rate": 0.15946709729511505,
+          "macro_f1": 0.6939615463776643,
+          "five_correct": 432,
+          "five_to_four": 332,
+          "five_error_rate": 0.5231788079470199,
+          "four_to_five": 40
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.1676423092450545,
+          "macro_f1": 0.7234188697874382,
+          "five_correct": 650,
+          "five_to_four": 179,
+          "five_error_rate": 0.282560706401766,
+          "four_to_five": 31
+        }
+      }
+    },
+    "voltage_rebound": {
+      "rows": 101,
+      "true5_rows": 99,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.9900990099009901,
+          "macro_f1": 0.0033333333333333335,
+          "five_correct": 0,
+          "five_to_four": 97,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.9306930693069307,
+          "macro_f1": 0.0220125786163522,
+          "five_correct": 7,
+          "five_to_four": 90,
+          "five_error_rate": 0.9292929292929293,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.4158415841584158,
+          "macro_f1": 0.12368972746331236,
+          "five_correct": 59,
+          "five_to_four": 38,
+          "five_error_rate": 0.40404040404040403,
+          "four_to_five": 1
+        }
+      }
+    },
+    "drop_past60": {
+      "rows": 1201,
+      "true5_rows": 786,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.5920066611157369,
+          "macro_f1": 0.5113041057130961,
+          "five_correct": 158,
+          "five_to_four": 552,
+          "five_error_rate": 0.7989821882951654,
+          "four_to_five": 23
+        },
+        "current_probe": {
+          "error_rate": 0.5487094088259784,
+          "macro_f1": 0.506151303890252,
+          "five_correct": 241,
+          "five_to_four": 477,
+          "five_error_rate": 0.693384223918575,
+          "four_to_five": 27
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.3005828476269775,
+          "macro_f1": 0.6349231518293673,
+          "five_correct": 524,
+          "five_to_four": 226,
+          "five_error_rate": 0.3333333333333333,
+          "four_to_five": 25
+        }
+      }
+    },
+    "drop_ever": {
+      "rows": 3766,
+      "true5_rows": 1134,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.27562400424853956,
+          "macro_f1": 0.6754535357036612,
+          "five_correct": 424,
+          "five_to_four": 557,
+          "five_error_rate": 0.6261022927689595,
+          "four_to_five": 33
+        },
+        "current_probe": {
+          "error_rate": 0.26101964949548595,
+          "macro_f1": 0.6286255776174582,
+          "five_correct": 496,
+          "five_to_four": 491,
+          "five_error_rate": 0.562610229276896,
+          "four_to_five": 43
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.18268720127456187,
+          "macro_f1": 0.7273149028718972,
+          "five_correct": 798,
+          "five_to_four": 253,
+          "five_error_rate": 0.2962962962962963,
+          "four_to_five": 36
+        }
+      }
+    },
+    "no_drop_ever": {
+      "rows": 6434,
+      "true5_rows": 0,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.09092322039166925,
+          "macro_f1": 0.47002489781178136,
+          "five_correct": 0,
+          "five_to_four": 0,
+          "five_error_rate": null,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.12200808206403481,
+          "macro_f1": 0.40776444116706295,
+          "five_correct": 0,
+          "five_to_four": 0,
+          "five_error_rate": null,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.1672365557973267,
+          "macro_f1": 0.3925298137671826,
+          "five_correct": 0,
+          "five_to_four": 0,
+          "five_error_rate": null,
+          "four_to_five": 0
+        }
+      }
+    },
+    "gas_zero_onset": {
+      "rows": 15,
+      "true5_rows": 5,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.26666666666666666,
+          "macro_f1": 0.42857142857142855,
+          "five_correct": 2,
+          "five_to_four": 1,
+          "five_error_rate": 0.6,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.4,
+          "macro_f1": 0.3333333333333333,
+          "five_correct": 0,
+          "five_to_four": 2,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.4,
+          "macro_f1": 0.3333333333333333,
+          "five_correct": 0,
+          "five_to_four": 3,
+          "five_error_rate": 1.0,
+          "four_to_five": 1
+        }
+      }
+    },
+    "gas_zero_longer60": {
+      "rows": 560,
+      "true5_rows": 462,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.8428571428571429,
+          "macro_f1": 0.13270139530612265,
+          "five_correct": 13,
+          "five_to_four": 389,
+          "five_error_rate": 0.9718614718614719,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.8892857142857142,
+          "macro_f1": 0.11110686000688678,
+          "five_correct": 0,
+          "five_to_four": 410,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.36428571428571427,
+          "macro_f1": 0.23447200277165967,
+          "five_correct": 301,
+          "five_to_four": 129,
+          "five_error_rate": 0.3484848484848485,
+          "four_to_five": 0
+        }
+      }
+    },
+    "gas_zero_and_drop_ever": {
+      "rows": 635,
+      "true5_rows": 506,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.7984251968503937,
+          "macro_f1": 0.1388284932046788,
+          "five_correct": 24,
+          "five_to_four": 401,
+          "five_error_rate": 0.9525691699604744,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.8724409448818897,
+          "macro_f1": 0.10257366232827186,
+          "five_correct": 0,
+          "five_to_four": 425,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.4,
+          "macro_f1": 0.22745083247498707,
+          "five_correct": 305,
+          "five_to_four": 146,
+          "five_error_rate": 0.39723320158102765,
+          "four_to_five": 2
+        }
+      }
+    },
+    "E16": {
+      "rows": 1543,
+      "true5_rows": 590,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.5456902138690862,
+          "macro_f1": 0.3352309380617596,
+          "five_correct": 6,
+          "five_to_four": 542,
+          "five_error_rate": 0.9898305084745763,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.4199611147116008,
+          "macro_f1": 0.31663108355119496,
+          "five_correct": 106,
+          "five_to_four": 445,
+          "five_error_rate": 0.8203389830508474,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.4115359688917693,
+          "macro_f1": 0.33256988683979705,
+          "five_correct": 380,
+          "five_to_four": 199,
+          "five_error_rate": 0.3559322033898305,
+          "four_to_five": 0
+        }
+      }
+    },
+    "E16_gas_zero": {
+      "rows": 446,
+      "true5_rows": 424,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.984304932735426,
+          "macro_f1": 0.17128560431100848,
+          "five_correct": 6,
+          "five_to_four": 392,
+          "five_error_rate": 0.9858490566037735,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.9977578475336323,
+          "macro_f1": 0.16666666666666666,
+          "five_correct": 0,
+          "five_to_four": 401,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.32286995515695066,
+          "macro_f1": 0.3011617515638963,
+          "five_correct": 301,
+          "five_to_four": 112,
+          "five_error_rate": 0.29009433962264153,
+          "four_to_five": 0
+        }
+      }
+    },
+    "E16_gas_nonzero": {
+      "rows": 1097,
+      "true5_rows": 166,
+      "models": {
+        "ABC_B": {
+          "error_rate": 0.3673655423883318,
+          "macro_f1": 0.3344730552771567,
+          "five_correct": 0,
+          "five_to_four": 150,
+          "five_error_rate": 1.0,
+          "four_to_five": 0
+        },
+        "current_probe": {
+          "error_rate": 0.18505013673655424,
+          "macro_f1": 0.3979279973938005,
+          "five_correct": 106,
+          "five_to_four": 44,
+          "five_error_rate": 0.3614457831325301,
+          "four_to_five": 0
+        },
+        "past_extrema_probe": {
+          "error_rate": 0.44758432087511396,
+          "macro_f1": 0.3119308768174442,
+          "five_correct": 79,
+          "five_to_four": 87,
+          "five_error_rate": 0.5240963855421686,
+          "four_to_five": 0
+        }
+      }
+    }
+  },
+  "per_experiment": {
+    "E01": {
+      "rows": 232,
+      "ABC_errors": 8,
+      "gas_all_zero": 15,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 5,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 2,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 33,
+      "voltage_drop_ever": 36
+    },
+    "E02": {
+      "rows": 471,
+      "ABC_errors": 9,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 9,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 2,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 24,
+      "voltage_drop_ever": 108
+    },
+    "E03": {
+      "rows": 1185,
+      "ABC_errors": 14,
+      "gas_all_zero": 20,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 10,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 1,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 12,
+      "voltage_drop_ever": 12
+    },
+    "E04": {
+      "rows": 302,
+      "ABC_errors": 21,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 13,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 8,
+      "voltage_rise_tail": 5,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 61,
+      "voltage_drop_ever": 109
+    },
+    "E05": {
+      "rows": 785,
+      "ABC_errors": 137,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 3,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 5,
+      "voltage_rise_tail": 2,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 59,
+      "voltage_drop_ever": 782
+    },
+    "E06": {
+      "rows": 298,
+      "ABC_errors": 76,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 45,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 14,
+      "voltage_rise_tail": 14,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 83,
+      "voltage_drop_ever": 136
+    },
+    "E07": {
+      "rows": 434,
+      "ABC_errors": 14,
+      "gas_all_zero": 21,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 19,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 2,
+      "voltage_rise_tail": 0,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 14,
+      "voltage_drop_ever": 22
+    },
+    "E08": {
+      "rows": 237,
+      "ABC_errors": 49,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 60,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 2,
+      "voltage_rise_tail": 1,
+      "voltage_rebound": 1,
+      "voltage_drop_past60": 15,
+      "voltage_drop_ever": 109
+    },
+    "E09": {
+      "rows": 222,
+      "ABC_errors": 15,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 83,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 2,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 29,
+      "voltage_drop_ever": 88
+    },
+    "E10": {
+      "rows": 142,
+      "ABC_errors": 24,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 8,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 0,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 11,
+      "voltage_drop_ever": 11
+    },
+    "E11": {
+      "rows": 278,
+      "ABC_errors": 12,
+      "gas_all_zero": 18,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 117,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 4,
+      "voltage_rise_tail": 2,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 25,
+      "voltage_drop_ever": 131
+    },
+    "E12": {
+      "rows": 1082,
+      "ABC_errors": 131,
+      "gas_all_zero": 53,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 35,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 3,
+      "voltage_rise_tail": 19,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 15,
+      "voltage_drop_ever": 70
+    },
+    "E13": {
+      "rows": 258,
+      "ABC_errors": 22,
+      "gas_all_zero": 1,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 1,
+      "voltage_nonpositive": 6,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 5,
+      "voltage_rise_tail": 3,
+      "voltage_rebound": 1,
+      "voltage_drop_past60": 31,
+      "voltage_drop_ever": 110
+    },
+    "E14": {
+      "rows": 97,
+      "ABC_errors": 33,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 8,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 2,
+      "voltage_rise_tail": 0,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 12,
+      "voltage_drop_ever": 12
+    },
+    "E15": {
+      "rows": 900,
+      "ABC_errors": 48,
+      "gas_all_zero": 77,
+      "gas_zero_onset": 8,
+      "gas_zero_recovery": 7,
+      "voltage_nonpositive": 0,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 5,
+      "voltage_rise_tail": 0,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 17,
+      "voltage_drop_ever": 56
+    },
+    "E16": {
+      "rows": 1543,
+      "ABC_errors": 842,
+      "gas_all_zero": 446,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 1,
+      "voltage_nonpositive": 268,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 206,
+      "voltage_rise_tail": 215,
+      "voltage_rebound": 98,
+      "voltage_drop_past60": 609,
+      "voltage_drop_ever": 611
+    },
+    "E17": {
+      "rows": 1191,
+      "ABC_errors": 79,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 6,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 7,
+      "voltage_rise_tail": 17,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 79,
+      "voltage_drop_ever": 1176
+    },
+    "E18": {
+      "rows": 311,
+      "ABC_errors": 68,
+      "gas_all_zero": 0,
+      "gas_zero_onset": 0,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 42,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 8,
+      "voltage_rise_tail": 24,
+      "voltage_rebound": 1,
+      "voltage_drop_past60": 28,
+      "voltage_drop_ever": 81
+    },
+    "E19": {
+      "rows": 232,
+      "ABC_errors": 21,
+      "gas_all_zero": 15,
+      "gas_zero_onset": 1,
+      "gas_zero_recovery": 0,
+      "voltage_nonpositive": 85,
+      "gas_any_missing": 0,
+      "gas_any_negative": 0,
+      "voltage_missing": 0,
+      "voltage_drop_tail": 6,
+      "voltage_rise_tail": 5,
+      "voltage_rebound": 0,
+      "voltage_drop_past60": 44,
+      "voltage_drop_ever": 106
+    }
+  },
+  "notes": [
+    "Fit-derived percentile tails describe unusual changes, not proven measurement errors.",
+    "All-ten gas-zero requires finite exact zero concentrations; pressure is excluded.",
+    "Voltage rebound is past-only: previous downward-tail interval followed by an upward-tail interval.",
+    "Gas-zero age measures observed current/past run only; interval sampling does not establish continuous physical duration.",
+    "Error associations are conditional summaries, not causal attribution or a license to delete data.",
+    "No Test reads, row-level exports or raw-data modifications."
+  ]
+}

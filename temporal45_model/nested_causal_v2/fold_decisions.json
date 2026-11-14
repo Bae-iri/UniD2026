@@ -1,0 +1,335 @@
+[
+  {
+    "outer_fold": 0,
+    "mode": "probability",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 0,
+    "mode": "history",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 1.2789578033411964e-05,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 1.2789578033411964e-05,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 0,
+    "mode": "history_time",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 1.2789578033411964e-05,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 4.196365530062529e-06,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 1,
+    "mode": "probability",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 1,
+    "mode": "history",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 1,
+    "mode": "history_time",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 2,
+    "mode": "probability",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0,
+        "corrected": 0,
+        "harmed": 0,
+        "improved": 0,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 2,
+    "mode": "history",
+    "threshold": 1.01,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.00043017616470375497,
+        "corrected": 4,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.00043017616470375497,
+        "corrected": 4,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0003226485942275925,
+        "corrected": 3,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  },
+  {
+    "outer_fold": 2,
+    "mode": "history_time",
+    "threshold": 0.9,
+    "inner_selection": [
+      {
+        "threshold": 0.9,
+        "delta": 0.0007526938610977751,
+        "corrected": 7,
+        "harmed": 0,
+        "improved": 3,
+        "worsened": 0,
+        "loo_min": 0.00032830062907640567,
+        "passed": true
+      },
+      {
+        "threshold": 0.95,
+        "delta": 0.00043017616470375497,
+        "corrected": 4,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      },
+      {
+        "threshold": 0.99,
+        "delta": 0.0003226485942275925,
+        "corrected": 3,
+        "harmed": 0,
+        "improved": 1,
+        "worsened": 0,
+        "loo_min": 0.0,
+        "passed": false
+      }
+    ]
+  }
+]

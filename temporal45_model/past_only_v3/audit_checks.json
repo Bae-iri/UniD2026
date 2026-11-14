@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "fresh_models_checked": 45,
+  "epochs_checked": 675,
+  "outer_experiments": 78,
+  "real_prefix_checks": 546,
+  "test_access": false,
+  "checks": [
+    "Source hashes unchanged",
+    "Outer groups excluded from all inner fit/selection/OOF",
+    "Each inner OOF experiment predicted once",
+    "Scalers and rules reconstructed",
+    "Checkpoints selected only by inner selection history",
+    "All 45 saved inner OOF probability arrays reconciled",
+    "Gate training groups and threshold decisions reconciled",
+    "Outer gate predictions and Macro F1 independently reproduced",
+    "Real experiment prefixes reproduce full-sequence earlier rules and gate predictions",
+    "Only 4->5 changes allowed; failed deployment gate disabled"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "file": "/home/ubuntu/JEONGYUN/final_submit/submission_targeted45_56_past.csv",
+      "rows": 3451,
+      "changed": 24,
+      "pred4_to5": 0,
+      "pred5_to6": 24,
+      "sha256": "09a60b2bd39b2841ddd2eb24627cc3b7700af743b859cc0fdeaa12bf91050f15"
+    },
+    {
+      "file": "/home/ubuntu/JEONGYUN/final_submit/submission_targeted56_past.csv",
+      "rows": 3451,
+      "changed": 24,
+      "pred4_to5": 0,
+      "pred5_to6": 24,
+      "sha256": "09a60b2bd39b2841ddd2eb24627cc3b7700af743b859cc0fdeaa12bf91050f15"
+    }
+  ],
+  "test_prefix_checks": 44,
+  "original_submission_unchanged": true,
+  "model_selection_used_test": false,
+  "model_thresholds": {
+    "45": 0.9,
+    "56": 0.5
+  },
+  "public_score": null,
+  "source_sha256": "f60edf76fe9d7499a50da86c119d0b91725c2fa5d1f3571bb8080de40ef4fba1"
+}

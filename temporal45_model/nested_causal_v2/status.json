@@ -1,0 +1,10 @@
+{
+  "phase": "superseded",
+  "outer_fold": 3,
+  "inner_fold": 0,
+  "completed_seed": 44,
+  "elapsed_seconds": 263.72104896299425,
+  "running": false,
+  "superseded_by": "past_only_v3",
+  "reason": "Production rules changed to current/past-only; reuse current-frame B checkpoints only, rebuild all gates."
+}

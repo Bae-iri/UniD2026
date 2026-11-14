@@ -1,0 +1,64 @@
+{
+  "recipes": {
+    "B": {
+      "B": 1.0
+    },
+    "cnx": {
+      "cnx": 1.0
+    },
+    "r50": {
+      "r50": 1.0
+    },
+    "equal_pretrained": {
+      "cnx": 0.5,
+      "r50": 0.5
+    },
+    "B80_equal20": {
+      "B": 0.8,
+      "cnx": 0.1,
+      "r50": 0.1
+    },
+    "B80_cnx20": {
+      "B": 0.8,
+      "cnx": 0.2
+    }
+  },
+  "input_sha256": {
+    "/home/ubuntu/JEONGYUN/pre_runs/check_cnx/probs.npz": "1986a7f9e55167ff2cc85fa4e528b81c4cdee33b6a5c41380b1dfc159802b335",
+    "/home/ubuntu/JEONGYUN/pre_runs/check_r50_v2/probs.npz": "8201ab3d60bfc448d4cee0d8adfb8240e5d36a21100447616edbbd525518efbd",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/ensemble_B_dev_predictions.csv": "67705ba15d28c2ad5067d624895a5d206994eeb30d80086f053aa67473dc100f",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/ensemble_B_validation_predictions.csv": "213932c2119d6df963a1464b861f326a989590cc094bb3ba428689a75afac692",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/ensemble_B_test_predictions.csv": "22344c5113893304f703a456c91a4fdd8e5453f5eb9dcca8397c3611fe75a1e6",
+    "/home/ubuntu/JEONGYUN/pre_runs/final_cnx/probs.npz": "efd26a80a3635efaca785323da3a92b115366f3231c8629b4710d290b84f072f",
+    "/home/ubuntu/JEONGYUN/pre_runs/final_r50/probs.npz": "a6f2661b0c9c914f1b40414d881aae8e0a68ed26c59a8fe689549795871276ec"
+  },
+  "exports": [
+    {
+      "path": "/home/ubuntu/JEONGYUN/recovery_audit/results/submission_B_original_recovered.csv",
+      "sha256": "4a027e45538cf117f342ad8166d31043338fed035ef16a0b062170d002728a60",
+      "changes_vs_B": 0
+    },
+    {
+      "path": "/home/ubuntu/JEONGYUN/recovery_audit/results/submission_B80_equal20_fitonly_raw_candidate.csv",
+      "sha256": "3c378d74cfdeba08992852ed01b0765baa8bc1b2699f5c3d7d92de4dcd8d3e82",
+      "changes_vs_B": 42
+    }
+  ],
+  "failed_submission": {
+    "path": "/home/ubuntu/JEONGYUN/final_submit/submission_convnext_long4rule.csv",
+    "sha256": "11f6b614478725e7574a9a8cd674baccf346dd76818241cc9b782cd353963eda",
+    "user_reported_score": 0.77
+  },
+  "external_score_of_candidates": null,
+  "target": 0.93,
+  "target_achieved": false,
+  "rule_threshold": 575,
+  "rule_threshold_tuned": false,
+  "limitations": [
+    "Repeatedly inspected dev/validation; exploratory comparisons, not fresh outer CV.",
+    "NPZ row identity reconstructed from source code and reproduced metrics; no embedded IDs.",
+    "Bootstrap conditions on frozen models and excludes adaptive selection uncertainty.",
+    "Test labels unavailable. Changed rows do not imply corrected rows.",
+    "No GPU device available. No new neural training performed."
+  ]
+}

@@ -1,0 +1,22 @@
+|--- meas_t1_delta_start <= 41.05
+|   |--- meas_t1_max <= 54.65
+|   |   |--- meas_t1_max <= 50.95
+|   |   |   |--- class: 2
+|   |   |--- meas_t1_max >  50.95
+|   |   |   |--- class: 2
+|   |--- meas_t1_max >  54.65
+|   |   |--- meas_p_rate60 <= 3.77
+|   |   |   |--- class: 2
+|   |   |--- meas_p_rate60 >  3.77
+|   |   |   |--- class: 3
+|--- meas_t1_delta_start >  41.05
+|   |--- meas_t1_max <= 81.05
+|   |   |--- since45 <= 862.50
+|   |   |   |--- class: 3
+|   |   |--- since45 >  862.50
+|   |   |   |--- class: 2
+|   |--- meas_t1_max >  81.05
+|   |   |--- meas_t1_delta_start <= 58.05
+|   |   |   |--- class: 3
+|   |   |--- meas_t1_delta_start >  58.05
+|   |   |   |--- class: 3

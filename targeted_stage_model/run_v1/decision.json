@@ -1,0 +1,24 @@
+{
+  "accepted": {
+    "45": true,
+    "56": true
+  },
+  "checks": {
+    "45": {
+      "positive_oof": true,
+      "positive_ci_lower": true,
+      "more_improved": true,
+      "positive_loo": true,
+      "validation_nonnegative": true
+    },
+    "56": {
+      "positive_oof": true,
+      "positive_ci_lower": true,
+      "more_improved": true,
+      "positive_loo": true,
+      "validation_nonnegative": true
+    }
+  },
+  "no_posthoc_switch_to_fixed05": true,
+  "submission_created": false
+}

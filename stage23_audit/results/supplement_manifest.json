@@ -1,0 +1,50 @@
+{
+  "test_access": false,
+  "new_submission_created": false,
+  "user_reported_baseline_score": 0.92,
+  "reported_baseline_filename": "submission_originalB_rule1_T1_45.csv",
+  "sensor_probe": {
+    "class": "HistGradientBoostingClassifier",
+    "max_iter": 150,
+    "max_leaf_nodes": 7,
+    "min_samples_leaf": 40,
+    "l2_regularization": 10,
+    "learning_rate": 0.05,
+    "early_stopping": false,
+    "random_state": 42,
+    "sample_weight": "equal experiment-stage mass normalized to mean one"
+  },
+  "checked_latch_seconds": [
+    0,
+    10,
+    30
+  ],
+  "checked_debounce_seconds": [
+    5,
+    10
+  ],
+  "test_count_passed": 6,
+  "sha256": {
+    "stage23_audit/debounce.py": "2ed1085a39298fa357bd4dcf70cfa8245b682cf7c8578f5330f2ea59fa7c631f",
+    "stage23_audit/sensor_groups.py": "938ad10b8695fa79e293119f9e1b0215587fce39b75c6c94d407eccdd9b18897",
+    "stage23_audit/analyze.py": "c816b04760a13865e36cfaaf921880c57e7b533c92e6c7236af7f0fb5e0e43b8",
+    "stage23_audit/REPORT.md": "e57b827e4412243cee97fbef4cc071a95bac641ce6a02f75da4c666f56e8d1d3",
+    "stage23_audit/stress.py": "56be38322c9976cda3e3fc162456353e05ef11f28b06789ceebbc1fe2a93e154",
+    "stage23_audit/test_analysis.py": "49b00861284936c719652fb967317eeecc52fda0428088a451a5290020de04c9",
+    "stage23_audit/results/sensor_groups_permutation.csv": "93803b6d7c53f2d44b0947da8fe33e8612c02d5cd11087b3874f44d8782a1acf",
+    "stage23_audit/results/sensor_groups_train_groupcv.csv": "f582850f3be02f42d7bb8aded580904bd353855eaefe91f88ae9c4c856ec8d20",
+    "stage23_audit/results/seed_stress.csv": "8b717e39d3600c36f6d764df152c77a03c3b729f9e1042182112145bfcb8c0da",
+    "stage23_audit/results/errors23.csv": "cb6ffb4be5ae7943f8a43b498d3f229ba916c2613505836243a776200f592867",
+    "stage23_audit/results/boundary_offsets.csv": "e2dc6e0dd1a86b899ad4ca64b2312b6d4636f56cc3226e80e6bb310e1e39c00c",
+    "stage23_audit/results/per_experiment.csv": "74bd8f24fd4f27330cc85c17a73f81644aedbe273279a04031b8f5ebd7a614c2",
+    "stage23_audit/results/cadence_stress.csv": "f88ecac3ae8f470174a75ddc0eed8c550f6268935a2ca9c74206879714618f73",
+    "stage23_audit/results/condition_threshold_feasibility.csv": "b2e21b082333bc9a06f35d9e1adbd4abfda39fc40705582192a432f8c8abd606",
+    "stage23_audit/results/sensor_groups_holdout.csv": "c5ba9ed4b6a0bfaf20db39377436a7ef1f6e9e8b5b85fd8ab1ed12208243ca82",
+    "stage23_audit/results/error_summary.csv": "f57164e3cd5ea3d0c597bf822a99d2a4c66e28edd902ec48c3f85e14ac8270f9",
+    "stage23_audit/results/sensor_tree_train_groupcv.csv": "615cdc30416f171f3a9ea704b8c8648d228a7f4b5bfada41ea3b33add004635b",
+    "stage23_audit/results/scores.csv": "d83d0250e2c4e1436a2705acdb1fca4ccfb7eb22185f91cd2fdb9f8a44b40910",
+    "stage23_audit/results/debounce.csv": "9abd7d3b80902f9f2ab5d52c3effef50c607131c0acd1257601ae23d7dc3fcca",
+    "stage23_audit/results/boundary_values.csv": "1dda4a03c8766b271e206cb52b528060935e7ce3c3b926600c2221ab8ab10446",
+    "stage23_audit/results/bootstrap.csv": "1a10e3ddb52bc01aa5f37583a162fcf8ae9f4490838e6f03dc18b056452883fd"
+  }
+}

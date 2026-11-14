@@ -1,0 +1,35 @@
+{
+  "selected": {
+    "variant": "union_focus",
+    "route": "union_now",
+    "alpha": 1.0,
+    "dev_f1": 0.8112353446125301,
+    "val_f1": 0.6995932503285216,
+    "best_epoch": 19,
+    "E16_5_to_4": 536,
+    "E16_5_correct": 9,
+    "corrected": 13,
+    "harmed": 2,
+    "F1_1": 0.9800448430493274,
+    "F1_2": 0.7130513869940882,
+    "F1_3": 0.8826933193056287,
+    "F1_4": 0.4491587417702999,
+    "F1_5": 0.5170556552962298,
+    "F1_6": 0.6555555555555556,
+    "source_run": "event_correction_runs/v2_focused"
+  },
+  "baseline_dev_f1": 0.781521360469895,
+  "baseline_val_f1": 0.6963460906416085,
+  "selection": "event-only, dev >= baseline, Validation >= baseline, more corrected than harmed, class3/4/6 losses <= .03; rank by dev",
+  "all_candidates": 84,
+  "eligible_event_only_candidates": 54,
+  "rows": 3451,
+  "test_eligible_rows": 98,
+  "test_changed_vs_original_B": 5,
+  "changed_outside_event_mask": 0,
+  "notes": [
+    "No Test labels/score used for selection. Existing B fit/dev used; not independent nested OOF.",
+    "Candidate screening reuses Validation and is exploratory. CSV creation does not establish Test improvement.",
+    "Conditional flag gas_zero is an observation, not a confirmed sensor failure."
+  ]
+}

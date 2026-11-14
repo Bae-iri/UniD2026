@@ -1,0 +1,23 @@
+{
+  "baseline_submission_reproduced_byte_identical": true,
+  "test_use": "Existing baseline reproduction only; no new candidate generated",
+  "threshold_fit_for_both_splits": "Original fit62 only",
+  "validation_selected_hypotheses": true,
+  "explanation": "These are exploratory checks on previously inspected data, not fresh outer CV.",
+  "variants": [
+    "rules3",
+    "latch10",
+    "soft_T1_capacity_a05",
+    "T1_capacity_upper_q995",
+    "latch10_plus_upper_q995",
+    "soft_T1_a05_latch10"
+  ],
+  "submission_replaced": false,
+  "source_sha256": {
+    "/home/ubuntu/JEONGYUN/rules3_stage23/evaluate.py": "d4639d1aea885320fe3d09730f3da0d3103994e3179aedc0aeb4c0c082ecadd2",
+    "/home/ubuntu/JEONGYUN/final_rules3.py": "b973f186cbe64a29d3565a5996e5f82f41043ee139dbdd7dfb3148fdf77a990c",
+    "/home/ubuntu/JEONGYUN/final_submit/submission_rules3.csv": "bbbd60fac168aee9cba3b7041b45d9ba7f35093ddf6741db747e62bda7f11125",
+    "/home/ubuntu/data/battery_data_light/train/train.csv": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491",
+    "/home/ubuntu/data/battery_data_light/validation/validation.csv": "1c9592a76417e4da617c796a8b21f053ee2e8f4c3ac144fb17b301a8970544b6"
+  }
+}

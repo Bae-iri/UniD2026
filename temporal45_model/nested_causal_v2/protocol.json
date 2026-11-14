@@ -1,0 +1,51 @@
+{
+  "task": "conservative 4->5 gate",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "base_epochs": 15,
+  "modes": [
+    "probability",
+    "history",
+    "history_time"
+  ],
+  "primary_mode": "history",
+  "ablations": [
+    "probability",
+    "history_time"
+  ],
+  "thresholds": [
+    0.9,
+    0.95,
+    0.99
+  ],
+  "no_pass_threshold": 1.01,
+  "threshold_selection": "outer training only, 3-group meta CV; positive delta; corrections >= 2*harm; at least 3 improved experiments; improved>worsened; positive leave-one-experiment-out delta",
+  "regularization": "linear logistic C=1, sum weights per experiment=1, no class balancing",
+  "base_checkpoint_selection": "inner fit/selection split; no outer/inner heldout use",
+  "acceptance": [
+    "primary outer OOF delta>0",
+    "paired experiment bootstrap lower>0",
+    "more improved than worsened experiments",
+    "positive leave-one-experiment-out delta",
+    "official validation all and noE16 nonnegative delta"
+  ],
+  "deployment": "disabled unless all acceptance checks pass; no submission produced",
+  "limitation": "Previously inspected data; outer CV is strict computational separation, not a new blind dataset. Inner meta-CV is selection only.",
+  "validation_read_after_training": true,
+  "test_access": false,
+  "causal_baseline": "first five voltage observations use prefix maximum; later frozen; never backfill",
+  "reuse_inner_base": "temporal45_model/nested_v1",
+  "source_sha256": {
+    "/home/ubuntu/JEONGYUN/temporal45_model/nested_train.py": "8a80d7832f312adde2af73a7558d226d449ce07329e00572b3eaf67bd7a75858",
+    "/home/ubuntu/JEONGYUN/temporal45_model/conservative.py": "42d7c388dac5fedbf8ec1dc7ff7e41a8c4222b6e4ca85b8755a0512b82f0142e",
+    "/home/ubuntu/JEONGYUN/compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2",
+    "/home/ubuntu/JEONGYUN/four_rule_cv/run.py": "82f1e872e9807591b72118bb74bfb27fbe047113692cdc8740f02d3f38bb47f8",
+    "/home/ubuntu/JEONGYUN/temporal45_model/causal_rules.py": "81344d36ed3e1891a4cfc3a5fbb06c0926884bcc41397eebb9b1f2d40a0fa420",
+    "/home/ubuntu/data/battery_data_light/train/train.csv": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491"
+  }
+}

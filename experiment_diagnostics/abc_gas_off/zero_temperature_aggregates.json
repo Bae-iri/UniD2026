@@ -1,0 +1,160 @@
+{
+  "train_class4": {
+    "rows": 1851,
+    "all_10_concentrations_zero_rows": 157,
+    "temperatures": {
+      "meas_t1": {
+        "count": 1851,
+        "p10_p50_p90": [
+          99.1,
+          118.3,
+          150.2
+        ]
+      },
+      "meas_t2": {
+        "count": 1851,
+        "p10_p50_p90": [
+          85.7,
+          133.4,
+          172.7
+        ]
+      },
+      "thermal_t": {
+        "count": 1851,
+        "p10_p50_p90": [
+          34.12,
+          78.89,
+          159.27
+        ]
+      }
+    }
+  },
+  "train_class5": {
+    "rows": 1925,
+    "all_10_concentrations_zero_rows": 364,
+    "temperatures": {
+      "meas_t1": {
+        "count": 1925,
+        "p10_p50_p90": [
+          114.5,
+          147.4,
+          375.56
+        ]
+      },
+      "meas_t2": {
+        "count": 1925,
+        "p10_p50_p90": [
+          68.48,
+          108.3,
+          291.8
+        ]
+      },
+      "thermal_t": {
+        "count": 1925,
+        "p10_p50_p90": [
+          34.734,
+          41.38,
+          297.58000000000004
+        ]
+      }
+    }
+  },
+  "validation_class4": {
+    "rows": 352,
+    "all_10_concentrations_zero_rows": 12,
+    "temperatures": {
+      "meas_t1": {
+        "count": 352,
+        "p10_p50_p90": [
+          107.1,
+          120.2,
+          140.3
+        ]
+      },
+      "meas_t2": {
+        "count": 352,
+        "p10_p50_p90": [
+          92.78,
+          131.35000000000002,
+          155.0
+        ]
+      },
+      "thermal_t": {
+        "count": 352,
+        "p10_p50_p90": [
+          35.855000000000004,
+          79.55,
+          120.05100000000003
+        ]
+      }
+    }
+  },
+  "validation_class5": {
+    "rows": 1134,
+    "all_10_concentrations_zero_rows": 506,
+    "temperatures": {
+      "meas_t1": {
+        "count": 1134,
+        "p10_p50_p90": [
+          92.9,
+          117.85,
+          324.77000000000015
+        ]
+      },
+      "meas_t2": {
+        "count": 1134,
+        "p10_p50_p90": [
+          70.86,
+          120.0,
+          199.87
+        ]
+      },
+      "thermal_t": {
+        "count": 1134,
+        "p10_p50_p90": [
+          35.095,
+          103.72999999999999,
+          232.70100000000002
+        ]
+      }
+    }
+  },
+  "E16_class5": {
+    "rows": 590,
+    "all_10_concentrations_zero_rows": 424,
+    "temperatures": {
+      "meas_t1": {
+        "count": 590,
+        "p10_p50_p90": [
+          91.8,
+          96.15,
+          127.82000000000001
+        ]
+      },
+      "meas_t2": {
+        "count": 590,
+        "p10_p50_p90": [
+          114.6,
+          123.05,
+          175.2
+        ]
+      },
+      "thermal_t": {
+        "count": 590,
+        "p10_p50_p90": [
+          100.899,
+          104.84,
+          136.08800000000002
+        ]
+      }
+    }
+  },
+  "actual_fit_class4": {
+    "rows": 1493,
+    "all_10_concentrations_zero_rows": 137
+  },
+  "actual_fit_class5": {
+    "rows": 1640,
+    "all_10_concentrations_zero_rows": 322
+  }
+}

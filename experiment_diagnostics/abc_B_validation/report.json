@@ -1,0 +1,2245 @@
+{
+  "source_run": "/home/ubuntu/leewon/abc_runs/current_query_v1",
+  "model": "B",
+  "prediction": "three-seed probability ensemble",
+  "rows": 10200,
+  "experiments": 19,
+  "overall": {
+    "macro_f1_6": 0.6963460906416085,
+    "macro_f1_true_present": 0.6963460906416085,
+    "accuracy": 0.8408823529411765,
+    "class_f1": [
+      0.9800448430493274,
+      0.7130513869940882,
+      0.8834678834678835,
+      0.4370956146657081,
+      0.5148755312689739,
+      0.6495412844036698
+    ],
+    "true_counts": [
+      4469,
+      928,
+      3066,
+      352,
+      1134,
+      251
+    ],
+    "predicted_counts": [
+      4451,
+      1271,
+      2632,
+      1039,
+      513,
+      294
+    ],
+    "confusion": [
+      [
+        4371,
+        98,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        80,
+        784,
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        389,
+        2517,
+        160,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        304,
+        33,
+        6
+      ],
+      [
+        0,
+        0,
+        42,
+        557,
+        424,
+        111
+      ],
+      [
+        0,
+        0,
+        0,
+        18,
+        56,
+        177
+      ]
+    ]
+  },
+  "fixed_model_experiment_bootstrap_macro_f1_95ci": [
+    0.5560740428581671,
+    0.8542498049591395
+  ],
+  "equal_experiment_mean_macro_f1_true_present": 0.6995152498833191,
+  "worst_five_error_fraction": 0.7005545286506469,
+  "groups": [
+    {
+      "experiment": "E14",
+      "rows": 97,
+      "errors": 33,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.29942052422343507,
+      "macro_f1_true_present": 0.29942052422343507,
+      "accuracy": 0.6597938144329897,
+      "class_f1": [
+        0.9690721649484536,
+        0.6274509803921569,
+        0.0,
+        0.0,
+        0.2,
+        0.0
+      ],
+      "true_counts": [
+        47,
+        19,
+        19,
+        3,
+        1,
+        8
+      ],
+      "predicted_counts": [
+        50,
+        32,
+        0,
+        3,
+        9,
+        3
+      ],
+      "confusion": [
+        [
+          47,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          16,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.7000637470347278,
+      "dominant_confusions": [
+        {
+          "count": 16,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 8,
+          "true_class": 6,
+          "predicted_class": 5
+        },
+        {
+          "count": 3,
+          "true_class": 4,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.3475656288156288,
+        "43": 0.2747222222222222,
+        "44": 0.4070101941069683
+      }
+    },
+    {
+      "experiment": "E16",
+      "rows": 1543,
+      "errors": 842,
+      "true_classes": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.3352309380617596,
+      "macro_f1_true_present": 0.4022771256741115,
+      "accuracy": 0.45430978613091383,
+      "class_f1": [
+        0.9416342412451362,
+        0.24761904761904763,
+        0.8020989505247377,
+        0.0,
+        0.02003338898163606,
+        0.0
+      ],
+      "true_counts": [
+        136,
+        39,
+        757,
+        0,
+        590,
+        21
+      ],
+      "predicted_counts": [
+        121,
+        276,
+        577,
+        560,
+        9,
+        0
+      ],
+      "confusion": [
+        [
+          121,
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          222,
+          535,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          42,
+          542,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          3,
+          0
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.8142211443342476,
+      "dominant_confusions": [
+        {
+          "count": 542,
+          "true_class": 5,
+          "predicted_class": 4
+        },
+        {
+          "count": 222,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 42,
+          "true_class": 5,
+          "predicted_class": 3
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.33012430489452427,
+        "43": 0.4511726705157577,
+        "44": 0.3642441146513329
+      }
+    },
+    {
+      "experiment": "E05",
+      "rows": 785,
+      "errors": 137,
+      "true_classes": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.4552191197010463,
+      "macro_f1_true_present": 0.5462629436412556,
+      "accuracy": 0.8254777070063695,
+      "class_f1": [
+        0.9925293489861259,
+        0.4126984126984127,
+        0.7260869565217392,
+        0.0,
+        0.0,
+        0.6
+      ],
+      "true_counts": [
+        467,
+        18,
+        293,
+        0,
+        3,
+        4
+      ],
+      "predicted_counts": [
+        470,
+        45,
+        167,
+        96,
+        1,
+        6
+      ],
+      "confusion": [
+        [
+          465,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          167,
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.70564550447537,
+      "dominant_confusions": [
+        {
+          "count": 96,
+          "true_class": 3,
+          "predicted_class": 4
+        },
+        {
+          "count": 30,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 5,
+          "true_class": 2,
+          "predicted_class": 1
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.6498694283957102,
+        "43": 0.41596670184426887,
+        "44": 0.5269529908523228
+      }
+    },
+    {
+      "experiment": "E08",
+      "rows": 237,
+      "errors": 49,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.6104465457913734,
+      "macro_f1_true_present": 0.6104465457913734,
+      "accuracy": 0.7932489451476793,
+      "class_f1": [
+        0.8653846153846154,
+        0.6060606060606061,
+        0.8505747126436781,
+        0.0,
+        0.8791208791208791,
+        0.46153846153846156
+      ],
+      "true_counts": [
+        59,
+        32,
+        37,
+        9,
+        80,
+        20
+      ],
+      "predicted_counts": [
+        45,
+        34,
+        50,
+        0,
+        102,
+        6
+      ],
+      "confusion": [
+        [
+          45,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          37,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          14,
+          6
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6917105858500706,
+      "dominant_confusions": [
+        {
+          "count": 14,
+          "true_class": 6,
+          "predicted_class": 5
+        },
+        {
+          "count": 14,
+          "true_class": 1,
+          "predicted_class": 2
+        },
+        {
+          "count": 12,
+          "true_class": 2,
+          "predicted_class": 3
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.7657901184334542,
+        "43": 0.5893414014217143,
+        "44": 0.6451366414053713
+      }
+    },
+    {
+      "experiment": "E06",
+      "rows": 298,
+      "errors": 76,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.6125718257050302,
+      "macro_f1_true_present": 0.6125718257050302,
+      "accuracy": 0.7449664429530202,
+      "class_f1": [
+        0.8411214953271028,
+        0.208955223880597,
+        0.76,
+        0.0,
+        0.8909952606635071,
+        0.9743589743589743
+      ],
+      "true_counts": [
+        62,
+        43,
+        57,
+        22,
+        94,
+        20
+      ],
+      "predicted_counts": [
+        45,
+        24,
+        93,
+        0,
+        117,
+        19
+      ],
+      "confusion": [
+        [
+          45,
+          17,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          57,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          22,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          94,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          19
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6876110665900926,
+      "dominant_confusions": [
+        {
+          "count": 36,
+          "true_class": 2,
+          "predicted_class": 3
+        },
+        {
+          "count": 22,
+          "true_class": 4,
+          "predicted_class": 5
+        },
+        {
+          "count": 17,
+          "true_class": 1,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.490550690077842,
+        "43": 0.6804531617604349,
+        "44": 0.5684194172919382
+      }
+    },
+    {
+      "experiment": "E12",
+      "rows": 1082,
+      "errors": 131,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.6178450727393867,
+      "macro_f1_true_present": 0.6178450727393867,
+      "accuracy": 0.8789279112754159,
+      "class_f1": [
+        0.9641657334826428,
+        0.3522012578616352,
+        0.5,
+        0.9032258064516129,
+        0.37209302325581395,
+        0.6153846153846154
+      ],
+      "true_counts": [
+        861,
+        92,
+        59,
+        15,
+        35,
+        20
+      ],
+      "predicted_counts": [
+        925,
+        67,
+        21,
+        16,
+        8,
+        45
+      ],
+      "confusion": [
+        [
+          861,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          64,
+          28,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          8,
+          25
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.7022442661168529,
+      "dominant_confusions": [
+        {
+          "count": 64,
+          "true_class": 2,
+          "predicted_class": 1
+        },
+        {
+          "count": 39,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 25,
+          "true_class": 5,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.6644966593828109,
+        "43": 0.5387880134849555,
+        "44": 0.5406152453057351
+      }
+    },
+    {
+      "experiment": "E18",
+      "rows": 311,
+      "errors": 68,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.6755187739715817,
+      "macro_f1_true_present": 0.6755187739715817,
+      "accuracy": 0.7813504823151125,
+      "class_f1": [
+        0.9605734767025089,
+        0.6575342465753424,
+        0.8679245283018868,
+        0.9473684210526315,
+        0.5742574257425742,
+        0.045454545454545456
+      ],
+      "true_counts": [
+        145,
+        24,
+        60,
+        10,
+        52,
+        20
+      ],
+      "predicted_counts": [
+        134,
+        49,
+        46,
+        9,
+        49,
+        24
+      ],
+      "confusion": [
+        [
+          134,
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          46,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          29,
+          23
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19,
+          1
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.7038356336556381,
+      "dominant_confusions": [
+        {
+          "count": 23,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 19,
+          "true_class": 6,
+          "predicted_class": 5
+        },
+        {
+          "count": 14,
+          "true_class": 3,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.6810748328353963,
+        "43": 0.5806446745093171,
+        "44": 0.5551382368283777
+      }
+    },
+    {
+      "experiment": "E07",
+      "rows": 434,
+      "errors": 14,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.6809262901308996,
+      "macro_f1_true_present": 0.6809262901308996,
+      "accuracy": 0.967741935483871,
+      "class_f1": [
+        0.9772727272727273,
+        0.8518518518518519,
+        0.9915682967959528,
+        0.4,
+        0.0,
+        0.8648648648648649
+      ],
+      "true_counts": [
+        90,
+        27,
+        294,
+        4,
+        3,
+        16
+      ],
+      "predicted_counts": [
+        86,
+        27,
+        299,
+        1,
+        0,
+        21
+      ],
+      "confusion": [
+        [
+          86,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          23,
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          294,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6912452352991347,
+      "dominant_confusions": [
+        {
+          "count": 4,
+          "true_class": 2,
+          "predicted_class": 3
+        },
+        {
+          "count": 4,
+          "true_class": 1,
+          "predicted_class": 2
+        },
+        {
+          "count": 3,
+          "true_class": 5,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.7778201045923518,
+        "43": 0.6954305410382758,
+        "44": 0.4191370594858772
+      }
+    },
+    {
+      "experiment": "E02",
+      "rows": 471,
+      "errors": 9,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.7016262608027238,
+      "macro_f1_true_present": 0.7016262608027238,
+      "accuracy": 0.9808917197452229,
+      "class_f1": [
+        0.9981308411214953,
+        0.9832402234636871,
+        0.9902912621359223,
+        0.6666666666666666,
+        0.0,
+        0.5714285714285714
+      ],
+      "true_counts": [
+        268,
+        88,
+        104,
+        2,
+        5,
+        4
+      ],
+      "predicted_counts": [
+        267,
+        91,
+        102,
+        1,
+        0,
+        10
+      ],
+      "confusion": [
+        [
+          267,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          88,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          102,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6920173933947907,
+      "dominant_confusions": [
+        {
+          "count": 5,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 2,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 1,
+          "true_class": 4,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.5172151686245646,
+        "43": 0.7570512297696051,
+        "44": 0.5810726883124072
+      }
+    },
+    {
+      "experiment": "E17",
+      "rows": 1191,
+      "errors": 79,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "macro_f1_6": 0.6057521715902187,
+      "macro_f1_true_present": 0.7269026059082624,
+      "accuracy": 0.9336691855583543,
+      "class_f1": [
+        0.9982527664531159,
+        0.8297872340425532,
+        0.8464730290456431,
+        0.0,
+        0.0,
+        0.96
+      ],
+      "true_counts": [
+        860,
+        40,
+        277,
+        1,
+        0,
+        13
+      ],
+      "predicted_counts": [
+        857,
+        54,
+        205,
+        61,
+        2,
+        12
+      ],
+      "confusion": [
+        [
+          857,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          204,
+          61,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          12
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6963388811659419,
+      "dominant_confusions": [
+        {
+          "count": 61,
+          "true_class": 3,
+          "predicted_class": 4
+        },
+        {
+          "count": 12,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 3,
+          "true_class": 1,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.7192685938983545,
+        "43": 0.7279401413316452,
+        "44": 0.7320706792096299
+      }
+    },
+    {
+      "experiment": "E03",
+      "rows": 1185,
+      "errors": 14,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.7480457366853686,
+      "macro_f1_true_present": 0.7480457366853686,
+      "accuracy": 0.9881856540084388,
+      "class_f1": [
+        0.9974937343358395,
+        0.9508196721311475,
+        0.9259259259259259,
+        0.6666666666666666,
+        0.0,
+        0.9473684210526315
+      ],
+      "true_counts": [
+        1000,
+        123,
+        50,
+        2,
+        1,
+        9
+      ],
+      "predicted_counts": [
+        995,
+        121,
+        58,
+        1,
+        0,
+        10
+      ],
+      "confusion": [
+        [
+          995,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          116,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6886021039242519,
+      "dominant_confusions": [
+        {
+          "count": 7,
+          "true_class": 2,
+          "predicted_class": 3
+        },
+        {
+          "count": 5,
+          "true_class": 1,
+          "predicted_class": 2
+        },
+        {
+          "count": 1,
+          "true_class": 5,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.7100645796527263,
+        "43": 0.755315284480161,
+        "44": 0.7979905898602829
+      }
+    },
+    {
+      "experiment": "E15",
+      "rows": 900,
+      "errors": 48,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.7504231354955747,
+      "macro_f1_true_present": 0.7504231354955747,
+      "accuracy": 0.9466666666666667,
+      "class_f1": [
+        0.9486404833836858,
+        0.9579524680073126,
+        0.9888751545117429,
+        0.45454545454545453,
+        0.3888888888888889,
+        0.7636363636363637
+      ],
+      "true_counts": [
+        174,
+        262,
+        406,
+        8,
+        29,
+        21
+      ],
+      "predicted_counts": [
+        157,
+        285,
+        403,
+        14,
+        7,
+        34
+      ],
+      "confusion": [
+        [
+          157,
+          17,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          262,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          400,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          7,
+          13
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          21
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6784138146047088,
+      "dominant_confusions": [
+        {
+          "count": 17,
+          "true_class": 1,
+          "predicted_class": 2
+        },
+        {
+          "count": 13,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 9,
+          "true_class": 5,
+          "predicted_class": 4
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.8094484228706875,
+        "43": 0.7537409971241714,
+        "44": 0.668124232279419
+      }
+    },
+    {
+      "experiment": "E10",
+      "rows": 142,
+      "errors": 24,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "macro_f1_6": 0.6346140077832968,
+      "macro_f1_true_present": 0.7615368093399562,
+      "accuracy": 0.8309859154929577,
+      "class_f1": [
+        0.9873417721518988,
+        0.7792207792207793,
+        0.8411214953271028,
+        0.8,
+        0.4,
+        0.0
+      ],
+      "true_counts": [
+        40,
+        30,
+        61,
+        3,
+        8,
+        0
+      ],
+      "predicted_counts": [
+        39,
+        47,
+        46,
+        2,
+        2,
+        6
+      ],
+      "confusion": [
+        [
+          39,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          45,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6971739642544699,
+      "dominant_confusions": [
+        {
+          "count": 16,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 6,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 1,
+          "true_class": 4,
+          "predicted_class": 3
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.8686813186813186,
+        "43": 0.7079858138681667,
+        "44": 0.6494323644521274
+      }
+    },
+    {
+      "experiment": "E09",
+      "rows": 222,
+      "errors": 15,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.8007541400398543,
+      "macro_f1_true_present": 0.8007541400398543,
+      "accuracy": 0.9324324324324325,
+      "class_f1": [
+        0.8979591836734694,
+        0.6666666666666666,
+        0.98989898989899,
+        1.0,
+        0.5,
+        0.75
+      ],
+      "true_counts": [
+        22,
+        12,
+        100,
+        64,
+        4,
+        20
+      ],
+      "predicted_counts": [
+        27,
+        9,
+        98,
+        64,
+        12,
+        12
+      ],
+      "confusion": [
+        [
+          22,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          98,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          64,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          12
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6853295096544002,
+      "dominant_confusions": [
+        {
+          "count": 8,
+          "true_class": 6,
+          "predicted_class": 5
+        },
+        {
+          "count": 5,
+          "true_class": 2,
+          "predicted_class": 1
+        },
+        {
+          "count": 2,
+          "true_class": 3,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.5627524667863825,
+        "43": 0.8185767905061341,
+        "44": 0.8215911846911728
+      }
+    },
+    {
+      "experiment": "E13",
+      "rows": 258,
+      "errors": 22,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.8094594020552542,
+      "macro_f1_true_present": 0.8094594020552542,
+      "accuracy": 0.9147286821705426,
+      "class_f1": [
+        0.9724770642201835,
+        0.6153846153846154,
+        0.9115646258503401,
+        0.9473684210526315,
+        0.9655172413793104,
+        0.4444444444444444
+      ],
+      "true_counts": [
+        56,
+        12,
+        79,
+        19,
+        89,
+        3
+      ],
+      "predicted_counts": [
+        53,
+        27,
+        68,
+        19,
+        85,
+        6
+      ],
+      "confusion": [
+        [
+          53,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          67,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          84,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6858448865911253,
+      "dominant_confusions": [
+        {
+          "count": 12,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 4,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 3,
+          "true_class": 1,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.7549975990193382,
+        "43": 0.8380590621969931,
+        "44": 0.7794523933116712
+      }
+    },
+    {
+      "experiment": "E19",
+      "rows": 232,
+      "errors": 21,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.8245517479952653,
+      "macro_f1_true_present": 0.8245517479952653,
+      "accuracy": 0.9094827586206896,
+      "class_f1": [
+        0.9642857142857143,
+        0.8,
+        0.9886363636363636,
+        0.9774436090225563,
+        0.5853658536585366,
+        0.631578947368421
+      ],
+      "true_counts": [
+        29,
+        8,
+        89,
+        65,
+        29,
+        12
+      ],
+      "predicted_counts": [
+        27,
+        12,
+        87,
+        68,
+        12,
+        26
+      ],
+      "confusion": [
+        [
+          27,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          87,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          12,
+          14
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6860742290292566,
+      "dominant_confusions": [
+        {
+          "count": 14,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 3,
+          "true_class": 5,
+          "predicted_class": 4
+        },
+        {
+          "count": 2,
+          "true_class": 3,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.8152154761705289,
+        "43": 0.7292306758602994,
+        "44": 0.8049017249997643
+      }
+    },
+    {
+      "experiment": "E04",
+      "rows": 302,
+      "errors": 21,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.8748848094921026,
+      "macro_f1_true_present": 0.8748848094921026,
+      "accuracy": 0.9304635761589404,
+      "class_f1": [
+        0.9855072463768116,
+        0.45161290322580644,
+        0.9308755760368663,
+        1.0,
+        0.9722222222222222,
+        0.9090909090909091
+      ],
+      "true_counts": [
+        68,
+        9,
+        116,
+        15,
+        74,
+        20
+      ],
+      "predicted_counts": [
+        70,
+        22,
+        101,
+        15,
+        70,
+        24
+      ],
+      "confusion": [
+        [
+          68,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          101,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          70,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6834719577235312,
+      "dominant_confusions": [
+        {
+          "count": 15,
+          "true_class": 3,
+          "predicted_class": 2
+        },
+        {
+          "count": 4,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 2,
+          "true_class": 2,
+          "predicted_class": 1
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.6367178298336881,
+        "43": 0.8771381650661189,
+        "44": 0.8636019519330578
+      }
+    },
+    {
+      "experiment": "E11",
+      "rows": 278,
+      "errors": 12,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.8866274264907582,
+      "macro_f1_true_present": 0.8866274264907582,
+      "accuracy": 0.9568345323741008,
+      "class_f1": [
+        0.9824561403508771,
+        0.8888888888888888,
+        0.9954337899543378,
+        0.9946524064171123,
+        0.7916666666666666,
+        0.6666666666666666
+      ],
+      "true_counts": [
+        28,
+        9,
+        110,
+        94,
+        28,
+        9
+      ],
+      "predicted_counts": [
+        29,
+        9,
+        109,
+        93,
+        20,
+        18
+      ],
+      "confusion": [
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          109,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          93,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.67938927122848,
+      "dominant_confusions": [
+        {
+          "count": 9,
+          "true_class": 5,
+          "predicted_class": 6
+        },
+        {
+          "count": 1,
+          "true_class": 4,
+          "predicted_class": 5
+        },
+        {
+          "count": 1,
+          "true_class": 3,
+          "predicted_class": 2
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.8562646172188749,
+        "43": 0.7898839244213781,
+        "44": 0.8872533022533022
+      }
+    },
+    {
+      "experiment": "E01",
+      "rows": 232,
+      "errors": 8,
+      "true_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "macro_f1_6": 0.9607085716008705,
+      "macro_f1_true_present": 0.9607085716008705,
+      "accuracy": 0.9655172413793104,
+      "class_f1": [
+        0.972972972972973,
+        0.9135802469135802,
+        0.98,
+        1.0,
+        0.9411764705882353,
+        0.9565217391304348
+      ],
+      "true_counts": [
+        57,
+        41,
+        98,
+        16,
+        9,
+        11
+      ],
+      "predicted_counts": [
+        54,
+        40,
+        102,
+        16,
+        8,
+        12
+      ],
+      "confusion": [
+        [
+          54,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          37,
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          98,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "pooled_macro_f1_without_this_experiment": 0.6892930951766879,
+      "dominant_confusions": [
+        {
+          "count": 4,
+          "true_class": 2,
+          "predicted_class": 3
+        },
+        {
+          "count": 3,
+          "true_class": 1,
+          "predicted_class": 2
+        },
+        {
+          "count": 1,
+          "true_class": 5,
+          "predicted_class": 6
+        }
+      ],
+      "seed_macro_f1_true_present": {
+        "42": 0.9338151066622186,
+        "43": 0.9458648316337394,
+        "44": 0.78262240935052
+      }
+    }
+  ],
+  "notes": [
+    "Aliases E01.. are assigned by sorted experiment_id; no actual IDs or row data exported.",
+    "macro_f1_6 includes zero for absent classes; true_present averages only ground-truth-present classes.",
+    "Present-class F1 is also affected by class composition and false positives; inspect confusion counts.",
+    "Pooled whole-Validation macro F1 differs from an equal-weight mean of experiment F1.",
+    "Leave-one-experiment-out scores are descriptive sensitivity, not a reason to drop difficult data.",
+    "Bootstrap resamples fixed-model experiments; not training uncertainty or a Test score interval."
+  ]
+}
