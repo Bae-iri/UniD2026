@@ -1,0 +1,218 @@
+{
+  "oof": [
+    {
+      "method": "selected_45",
+      "macro_f1": 0.846055220426436,
+      "delta_f1": 0.004722984491276061,
+      "corrected": 60,
+      "harmed": 9,
+      "ci_lower": 0.0012444871686419557,
+      "ci_upper": 0.00955129315123193,
+      "better_experiments": 17,
+      "worse_experiments": 3,
+      "loo_min": 0.0034213434180728752
+    },
+    {
+      "method": "selected_56",
+      "macro_f1": 0.8507010444361179,
+      "delta_f1": 0.009368808500958004,
+      "corrected": 91,
+      "harmed": 22,
+      "ci_lower": 0.004564392690732738,
+      "ci_upper": 0.015407944652553308,
+      "better_experiments": 22,
+      "worse_experiments": 4,
+      "loo_min": 0.008024204983273164
+    },
+    {
+      "method": "selected_both",
+      "macro_f1": 0.8554325165424531,
+      "delta_f1": 0.01410028060729318,
+      "corrected": 151,
+      "harmed": 31,
+      "ci_lower": 0.007190830087515396,
+      "ci_upper": 0.022278980751225568,
+      "better_experiments": 33,
+      "worse_experiments": 7,
+      "loo_min": 0.012491128943399765
+    }
+  ],
+  "validation": {
+    "val_original_B": [
+      {
+        "method": "selected_45",
+        "macro_f1": 0.7169324898470247,
+        "delta_f1": 0.004052918976522157,
+        "corrected": 20,
+        "harmed": 0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.007436337490655916,
+        "better_experiments": 3,
+        "worse_experiments": 0,
+        "loo_min": 0.0006758686197614328
+      },
+      {
+        "method": "selected_56",
+        "macro_f1": 0.7290975979302766,
+        "delta_f1": 0.016218027059774043,
+        "corrected": 43,
+        "harmed": 7,
+        "ci_lower": 0.0019905225912552477,
+        "ci_upper": 0.037469873437880906,
+        "better_experiments": 6,
+        "worse_experiments": 0,
+        "loo_min": 0.01063251870314863
+      },
+      {
+        "method": "selected_both",
+        "macro_f1": 0.7331957239074639,
+        "delta_f1": 0.020316153036961326,
+        "corrected": 63,
+        "harmed": 7,
+        "ci_lower": 0.005707428225513656,
+        "ci_upper": 0.039589236908778885,
+        "better_experiments": 8,
+        "worse_experiments": 0,
+        "loo_min": 0.015047009416499946
+      }
+    ],
+    "val_original_B_noE16": [
+      {
+        "method": "selected_45",
+        "macro_f1": 0.832420037438942,
+        "delta_f1": 0.0006758686197614328,
+        "corrected": 2,
+        "harmed": 0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0020793679362952912,
+        "better_experiments": 2,
+        "worse_experiments": 0,
+        "loo_min": 0.0003478893968050789
+      },
+      {
+        "method": "selected_56",
+        "macro_f1": 0.8507338831248296,
+        "delta_f1": 0.018989714305648997,
+        "corrected": 42,
+        "harmed": 7,
+        "ci_lower": 0.0016956744517049233,
+        "ci_upper": 0.04209453433749644,
+        "better_experiments": 5,
+        "worse_experiments": 0,
+        "loo_min": 0.012590703957436555
+      },
+      {
+        "method": "selected_both",
+        "macro_f1": 0.8514200727472784,
+        "delta_f1": 0.019675903928097815,
+        "corrected": 44,
+        "harmed": 7,
+        "ci_lower": 0.0025456769965749,
+        "ci_upper": 0.042567408827071204,
+        "better_experiments": 7,
+        "worse_experiments": 0,
+        "loo_min": 0.013307469238985181
+      }
+    ],
+    "val_fold_ensemble": [
+      {
+        "method": "selected_45",
+        "macro_f1": 0.7164927384259746,
+        "delta_f1": 0.004027325888860012,
+        "corrected": 18,
+        "harmed": 0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.006984678264072817,
+        "better_experiments": 2,
+        "worse_experiments": 0,
+        "loo_min": 0.000407737738636893
+      },
+      {
+        "method": "selected_56",
+        "macro_f1": 0.7236343326385418,
+        "delta_f1": 0.011168920101427227,
+        "corrected": 28,
+        "harmed": 2,
+        "ci_lower": -0.0008683882536725751,
+        "ci_upper": 0.02936328593433792,
+        "better_experiments": 3,
+        "worse_experiments": 1,
+        "loo_min": 0.005479363013833116
+      },
+      {
+        "method": "selected_both",
+        "macro_f1": 0.7276772706455752,
+        "delta_f1": 0.015211858108460596,
+        "corrected": 46,
+        "harmed": 2,
+        "ci_lower": -0.00040133732287818966,
+        "ci_upper": 0.032355584796725324,
+        "better_experiments": 4,
+        "worse_experiments": 1,
+        "loo_min": 0.009941076865892517
+      }
+    ],
+    "val_fold_ensemble_noE16": [
+      {
+        "method": "selected_45",
+        "macro_f1": 0.863744829004245,
+        "delta_f1": 0.000407737738636893,
+        "corrected": 1,
+        "harmed": 0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0015811561986746716,
+        "better_experiments": 1,
+        "worse_experiments": 0,
+        "loo_min": 0.0
+      },
+      {
+        "method": "selected_56",
+        "macro_f1": 0.8748885082192001,
+        "delta_f1": 0.011551416953591964,
+        "corrected": 24,
+        "harmed": 2,
+        "ci_lower": -0.0017187781062323105,
+        "ci_upper": 0.030432288145927484,
+        "better_experiments": 2,
+        "worse_experiments": 1,
+        "loo_min": 0.004695145078254415
+      },
+      {
+        "method": "selected_both",
+        "macro_f1": 0.8752981809706468,
+        "delta_f1": 0.01196108970503873,
+        "corrected": 25,
+        "harmed": 2,
+        "ci_lower": -0.0013005877481025662,
+        "ci_upper": 0.03084842370255575,
+        "better_experiments": 3,
+        "worse_experiments": 1,
+        "loo_min": 0.0051517950893580355
+      }
+    ]
+  },
+  "accepted": {
+    "45": true,
+    "56": true
+  },
+  "checks": {
+    "45": {
+      "positive_oof": true,
+      "positive_ci_lower": true,
+      "more_improved": true,
+      "positive_loo": true,
+      "validation_nonnegative": true
+    },
+    "56": {
+      "positive_oof": true,
+      "positive_ci_lower": true,
+      "more_improved": true,
+      "positive_loo": true,
+      "validation_nonnegative": true
+    }
+  },
+  "final_thresholds": {
+    "45": 0.9,
+    "56": 0.7
+  }
+}

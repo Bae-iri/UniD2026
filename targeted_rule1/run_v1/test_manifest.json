@@ -1,0 +1,21 @@
+{
+  "head": "both",
+  "checks": {
+    "per_experiment": true,
+    "shuffled": true,
+    "prefixes": 132,
+    "prefix_mismatch": 0
+  },
+  "files": [
+    {
+      "file": "targeted_rule1/run_v1/submission_base_rule1.csv",
+      "changed_vs_base": 0,
+      "sha256": "1ae30a3b7b4047229a345bbbce3b8aa1541cb70d21810835c6b458165b2d86f9"
+    },
+    {
+      "file": "targeted_rule1/run_v1/submission_targeted_both.csv",
+      "changed_vs_base": 22,
+      "sha256": "0407b0c001fabe9d4b90ece3242b6d38b958743fb9b9e53df658fbfb38f09cb6"
+    }
+  ]
+}

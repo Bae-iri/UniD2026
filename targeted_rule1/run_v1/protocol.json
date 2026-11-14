@@ -1,0 +1,36 @@
+{
+  "base": "original ABC B 3-seed mean + t1 45C rule (current/past only)",
+  "heads": {
+    "45": [
+      4,
+      5
+    ],
+    "56": [
+      5,
+      6
+    ]
+  },
+  "params": {
+    "max_iter": 120,
+    "max_leaf_nodes": 5,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 64,
+    "l2_regularization": 5.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "thresholds": [
+    0.5,
+    0.7,
+    0.9
+  ],
+  "test_access_during_training": false,
+  "validation_read_after_selection": true,
+  "source_sha256": {
+    "/home/ubuntu/JEONGYUN/targeted_rule1/run.py": "e0141d6cfdc07766a078216bcf5a15f4efca8e077c16933cce504af3aa7ae373",
+    "/home/ubuntu/JEONGYUN/targeted_rule1/model.py": "0b5998e4e43df54e31f308a8ba8d94e020fd08c06d755410151421b20c8bb4a4",
+    "/home/ubuntu/JEONGYUN/compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2",
+    "/home/ubuntu/data/battery_data_light/train/train.csv": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491"
+  }
+}
