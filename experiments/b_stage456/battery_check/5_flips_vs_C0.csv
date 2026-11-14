@@ -1,0 +1,9 @@
+split,config,scope,changed,right_to_wrong,wrong_to_right,wrong_to_wrong,detail
+dev,C1,incl E_e5bc,1,1,0,0,true5:5>6=1
+dev,C1,excl E_e5bc,1,1,0,0,true5:5>6=1
+dev,C2,incl E_e5bc,4,4,0,0,true5:5>6=3 true5:5>4=1
+dev,C2,excl E_e5bc,4,4,0,0,true5:5>6=3 true5:5>4=1
+validation,C1,incl E_e5bc,5,3,2,0,true5:5>6=2 true5:6>5=2 true5:5>4=1
+validation,C1,excl E_e5bc,4,2,2,0,true5:5>6=2 true5:6>5=2
+validation,C2,incl E_e5bc,12,8,4,0,true6:6>4=4 true5:5>6=3 true5:6>5=2 true5:4>5=1 true6:6>5=1 true6:5>6=1
+validation,C2,excl E_e5bc,7,3,4,0,true5:5>6=3 true5:6>5=2 true5:4>5=1 true6:5>6=1
