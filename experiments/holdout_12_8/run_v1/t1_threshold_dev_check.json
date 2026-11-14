@@ -1,0 +1,5 @@
+{
+  "dev_stage1_max_t1": 44.9,
+  "dev_stage2_entry_min_cummax_t1": 45.0,
+  "threshold_45_separates_dev": true
+}

@@ -1,0 +1,156 @@
+t1 check {'dev_stage1_max_t1': 44.9, 'dev_stage2_entry_min_cummax_t1': 45.0, 'threshold_45_separates_dev': True}
+fold 0 done
+fold 1 done
+fold 2 done
+fold 3 done
+fold 4 done
+leave-combo-out (1.0, 4.8)
+leave-combo-out (1.0, 6.0)
+leave-combo-out (2.0, 39.0)
+leave-combo-out (2.0, 73.0)
+leave-combo-out (3.0, 28.0)
+leave-combo-out (3.0, 280.0)
+SELECTED targeted_rule1 {
+ "targeted_rule1": {
+  "all_positive": true,
+  "worst_cadence": "10/15s",
+  "worst_gain": 0.02824126258427251,
+  "worst_better_gt_worse": true,
+  "danger_not_worse": true,
+  "condition_worst_drop": -0.052233888005426055,
+  "condition_worst": "2.0/73.0@5s",
+  "condition_ok": false,
+  "mean_gain": 0.031076713759471297,
+  "ci_lo_5s": 0.018329169860439472,
+  "passed": true
+ },
+ "V0_nocount": {
+  "all_positive": true,
+  "worst_cadence": "10/15s",
+  "worst_gain": 0.02279380531738251,
+  "worst_better_gt_worse": true,
+  "danger_not_worse": true,
+  "condition_worst_drop": -0.09539980781987634,
+  "condition_worst": "2.0/73.0@10/15s",
+  "condition_ok": false,
+  "mean_gain": 0.025583572467835658,
+  "ci_lo_5s": 0.012849836649319813,
+  "passed": true
+ },
+ "V0_nocount_56only": {
+  "all_positive": true,
+  "worst_cadence": "10/15s",
+  "worst_gain": 0.025647622868849362,
+  "worst_better_gt_worse": true,
+  "danger_not_worse": true,
+  "condition_worst_drop": -0.08776424034155994,
+  "condition_worst": "2.0/73.0@10/15s",
+  "condition_ok": false,
+  "mean_gain": 0.02845643523267702,
+  "ci_lo_5s": 0.02079392777931647,
+  "passed": true
+ }
+}
+                   split cadence            method  macro_f1  d_vs_base   ci_lo  fixed  broken  better_exps  worse_exps  danger_under  onset6_late_exps  loo_min
+             holdout_all      5s           B_rule1    0.7245     0.0000  0.0000      0       0            0           0           676                 3   0.0000
+    holdout_from_train12      5s           B_rule1    0.8978     0.0000  0.0000      0       0            0           0            73                 3   0.0000
+holdout_from_validation8      5s           B_rule1    0.5812     0.0000  0.0000      0       0            0           0           603                 0   0.0000
+       holdout_all_noE16      5s           B_rule1    0.8672     0.0000  0.0000      0       0            0           0            74                 3   0.0000
+             holdout_all      5s    targeted_rule1    0.7485     0.0240  0.0052     77      12            7           1           599                 5   0.0175
+    holdout_from_train12      5s    targeted_rule1    0.9255     0.0277  0.0083     41       9            6           0            32                 4   0.0198
+holdout_from_validation8      5s    targeted_rule1    0.6021     0.0208 -0.0138     36       3            1           1           567                 1  -0.0059
+       holdout_all_noE16      5s    targeted_rule1    0.8847     0.0175  0.0017     41      12            6           1            33                 4   0.0111
+             holdout_all      5s        V0_nocount    0.7819     0.0574  0.0242    183      31           15           3           553                 7   0.0441
+    holdout_from_train12      5s        V0_nocount    0.9434     0.0456  0.0156     69      14            8           2            21                 4   0.0334
+holdout_from_validation8      5s        V0_nocount    0.6541     0.0729 -0.0041    114      17            7           1           532                 3   0.0451
+       holdout_all_noE16      5s        V0_nocount    0.9113     0.0441  0.0169    108      31           14           3            26                 6   0.0356
+             holdout_all      5s V0_nocount_56only    0.7669     0.0424  0.0202    113      17           13           3           615                 6   0.0355
+    holdout_from_train12      5s V0_nocount_56only    0.9432     0.0455  0.0164     64       9            7           1            22                 4   0.0326
+holdout_from_validation8      5s V0_nocount_56only    0.6255     0.0442 -0.0009     49       8            6           2           593                 2   0.0280
+       holdout_all_noE16      5s V0_nocount_56only    0.9130     0.0458  0.0183     99      17           12           3            27                 5   0.0370
+             holdout_all      5s        V0_aug_ref    0.7858     0.0613  0.0232    207      36           14           3           529                 5   0.0444
+    holdout_from_train12      5s        V0_aug_ref    0.9440     0.0463  0.0155     71      15            7           2            19                 4   0.0342
+holdout_from_validation8      5s        V0_aug_ref    0.6594     0.0781 -0.0077    136      21            7           1           510                 1   0.0454
+       holdout_all_noE16      5s        V0_aug_ref    0.9116     0.0444  0.0151    111      34           13           3            23                 5   0.0358
+             holdout_all     10s           B_rule1    0.7225     0.0000  0.0000      0       0            0           0           340                 3   0.0000
+    holdout_from_train12     10s           B_rule1    0.8968     0.0000  0.0000      0       0            0           0            36                 3   0.0000
+holdout_from_validation8     10s           B_rule1    0.5787     0.0000  0.0000      0       0            0           0           304                 0   0.0000
+       holdout_all_noE16     10s           B_rule1    0.8660     0.0000  0.0000      0       0            0           0            37                 3   0.0000
+             holdout_all     10s    targeted_rule1    0.7466     0.0242  0.0034     38       5            4           1           302                 4   0.0160
+    holdout_from_train12     10s    targeted_rule1    0.9215     0.0247  0.0000     18       4            3           0            18                 3   0.0162
+holdout_from_validation8     10s    targeted_rule1    0.6029     0.0242 -0.0094     20       1            1           1           284                 1  -0.0040
+       holdout_all_noE16     10s    targeted_rule1    0.8820     0.0160 -0.0010     18       5            3           1            19                 3   0.0094
+             holdout_all     10s        V0_nocount    0.7789     0.0565  0.0243     90      14           14           5           281                 8   0.0420
+    holdout_from_train12     10s        V0_nocount    0.9398     0.0430  0.0122     32       6            8           3            14                 5   0.0301
+holdout_from_validation8     10s        V0_nocount    0.6508     0.0721  0.0028     58       8            6           2           267                 3   0.0454
+       holdout_all_noE16     10s        V0_nocount    0.9080     0.0420  0.0161     51      14           13           5            17                 7   0.0329
+             holdout_all     10s V0_nocount_56only    0.7618     0.0393  0.0177     52       8           14           4           315                 8   0.0326
+    holdout_from_train12     10s V0_nocount_56only    0.9368     0.0401  0.0115     28       4            8           2            14                 5   0.0268
+holdout_from_validation8     10s V0_nocount_56only    0.6218     0.0431  0.0064     24       4            6           2           301                 3   0.0276
+       holdout_all_noE16     10s V0_nocount_56only    0.9084     0.0424  0.0158     46       8           13           4            18                 7   0.0333
+             holdout_all     10s        V0_aug_ref    0.7921     0.0697  0.0300    111      12           13           5           261                 7   0.0497
+    holdout_from_train12     10s        V0_aug_ref    0.9457     0.0489  0.0168     36       6            8           3            10                 5   0.0366
+holdout_from_validation8     10s        V0_aug_ref    0.6710     0.0923  0.0134     75       6            5           2           251                 2   0.0591
+       holdout_all_noE16     10s        V0_aug_ref    0.9157     0.0497  0.0215     56      12           12           5            13                 6   0.0411
+             holdout_all     15s           B_rule1    0.7214     0.0000  0.0000      0       0            0           0           226                 3   0.0000
+    holdout_from_train12     15s           B_rule1    0.8964     0.0000  0.0000      0       0            0           0            25                 3   0.0000
+holdout_from_validation8     15s           B_rule1    0.5752     0.0000  0.0000      0       0            0           0           201                 0   0.0000
+       holdout_all_noE16     15s           B_rule1    0.8623     0.0000  0.0000      0       0            0           0            26                 3   0.0000
+             holdout_all     15s    targeted_rule1    0.7472     0.0258  0.0057     26       3            5           0           200                 4   0.0178
+    holdout_from_train12     15s    targeted_rule1    0.9225     0.0261  0.0043     13       3            4           0            12                 3   0.0178
+holdout_from_validation8     15s    targeted_rule1    0.6029     0.0277  0.0000     13       0            1           0           188                 1   0.0000
+       holdout_all_noE16     15s    targeted_rule1    0.8801     0.0178  0.0027     13       3            4           0            13                 3   0.0116
+             holdout_all     15s        V0_nocount    0.7828     0.0614  0.0287     67      13           14           4           186                 7   0.0468
+    holdout_from_train12     15s        V0_nocount    0.9438     0.0474  0.0183     25       6            8           2            10                 5   0.0362
+holdout_from_validation8     15s        V0_nocount    0.6512     0.0760  0.0068     42       7            6           2           176                 2   0.0515
+       holdout_all_noE16     15s        V0_nocount    0.9091     0.0468  0.0206     40      13           13           4            13                 7   0.0388
+             holdout_all     15s V0_nocount_56only    0.7681     0.0467  0.0244     42       7           13           4           209                 7   0.0402
+    holdout_from_train12     15s V0_nocount_56only    0.9455     0.0491  0.0181     23       3            8           2            10                 5   0.0362
+holdout_from_validation8     15s V0_nocount_56only    0.6224     0.0472  0.0066     19       4            5           2           199                 2   0.0364
+       holdout_all_noE16     15s V0_nocount_56only    0.9121     0.0499  0.0224     37       7           12           4            14                 7   0.0409
+             holdout_all     15s        V0_aug_ref    0.7927     0.0713  0.0340     78      13           15           4           176                 6   0.0519
+    holdout_from_train12     15s        V0_aug_ref    0.9485     0.0521  0.0243     27       6            9           2             8                 4   0.0414
+holdout_from_validation8     15s        V0_aug_ref    0.6660     0.0908  0.0149     51       7            6           2           168                 2   0.0574
+       holdout_all_noE16     15s        V0_aug_ref    0.9142     0.0519  0.0272     43      13           14           4            11                 6   0.0442
+             holdout_all  10/15s           B_rule1    0.7191     0.0000  0.0000      0       0            0           0           275                 3   0.0000
+    holdout_from_train12  10/15s           B_rule1    0.8931     0.0000  0.0000      0       0            0           0            32                 3   0.0000
+holdout_from_validation8  10/15s           B_rule1    0.5771     0.0000  0.0000      0       0            0           0           243                 0   0.0000
+       holdout_all_noE16  10/15s           B_rule1    0.8624     0.0000  0.0000      0       0            0           0            33                 3   0.0000
+             holdout_all  10/15s    targeted_rule1    0.7443     0.0252  0.0079     30       3            6           0           245                 5   0.0194
+    holdout_from_train12  10/15s    targeted_rule1    0.9216     0.0285  0.0080     16       3            5           0            16                 4   0.0220
+holdout_from_validation8  10/15s    targeted_rule1    0.5996     0.0225  0.0000     14       0            1           0           229                 1   0.0000
+       holdout_all_noE16  10/15s    targeted_rule1    0.8818     0.0194  0.0046     16       3            5           0            17                 4   0.0144
+             holdout_all  10/15s        V0_nocount    0.7824     0.0633  0.0301     79      13           15           3           224                 6   0.0469
+    holdout_from_train12  10/15s        V0_nocount    0.9417     0.0486  0.0219     29       6            9           1            13                 5   0.0378
+holdout_from_validation8  10/15s        V0_nocount    0.6578     0.0807  0.0072     50       7            6           2           211                 1   0.0484
+       holdout_all_noE16  10/15s        V0_nocount    0.9093     0.0469  0.0223     45      13           14           3            16                 6   0.0392
+             holdout_all  10/15s V0_nocount_56only    0.7635     0.0444  0.0235     45       5           12           2           252                 6   0.0380
+    holdout_from_train12  10/15s V0_nocount_56only    0.9409     0.0479  0.0195     25       2            7           1            13                 5   0.0352
+holdout_from_validation8  10/15s V0_nocount_56only    0.6225     0.0453  0.0060     20       3            5           1           239                 1   0.0306
+       holdout_all_noE16  10/15s V0_nocount_56only    0.9099     0.0476  0.0212     39       5           11           2            16                 6   0.0389
+             holdout_all  10/15s        V0_aug_ref    0.7864     0.0673  0.0284     87      13           15           5           214                 6   0.0456
+    holdout_from_train12  10/15s        V0_aug_ref    0.9399     0.0469  0.0186     29       7            9           3            12                 5   0.0359
+holdout_from_validation8  10/15s        V0_aug_ref    0.6661     0.0890  0.0063     58       6            6           2           202                 1   0.0484
+       holdout_all_noE16  10/15s        V0_aug_ref    0.9080     0.0456  0.0213     44      13           14           5            15                 6   0.0379
+                           exp_weighted_f1  exp_weighted_d  better  worse  test_composition_weighted_d
+cadence method                                                                                        
+10/15s  B_rule1                     0.7315          0.0000       0      0                       0.0000
+        V0_aug_ref                  0.7946          0.0631      15      5                       0.0322
+        V0_nocount                  0.8124          0.0808      15      3                       0.0385
+        V0_nocount_56only           0.7951          0.0636      12      2                       0.0275
+        targeted_rule1              0.7629          0.0314       6      0                       0.0266
+10s     B_rule1                     0.7333          0.0000       0      0                       0.0000
+        V0_aug_ref                  0.8111          0.0778      13      5                       0.0437
+        V0_nocount                  0.8034          0.0702      14      5                       0.0378
+        V0_nocount_56only           0.8014          0.0681      14      4                       0.0324
+        targeted_rule1              0.7542          0.0209       4      1                       0.0212
+15s     B_rule1                     0.7207          0.0000       0      0                       0.0000
+        V0_aug_ref                  0.8138          0.0930      15      4                       0.0441
+        V0_nocount                  0.8019          0.0812      14      4                       0.0372
+        V0_nocount_56only           0.7984          0.0777      13      4                       0.0331
+        targeted_rule1              0.7507          0.0299       5      0                       0.0254
+5s      B_rule1                     0.7360          0.0000       0      0                       0.0000
+        V0_aug_ref                  0.8048          0.0688      14      3                       0.0472
+        V0_nocount                  0.8049          0.0689      15      3                       0.0475
+        V0_nocount_56only           0.7995          0.0635      13      3                       0.0410
+        targeted_rule1              0.7708          0.0348       7      1                       0.0278

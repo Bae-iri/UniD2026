@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "per_experiment": true,
+    "shuffled": true,
+    "prefixes": 132,
+    "prefix_mismatch": 0
+  },
+  "files": [
+    {
+      "file": "submission_condgate_V0.csv",
+      "changed_vs_base": 97,
+      "changed_vs_V0": 0,
+      "sha256": "562e65eafb2b7952decf170d404dcb0edb43303d55d417c94246364ea4a00638"
+    },
+    {
+      "file": "submission_condgate_V1.csv",
+      "changed_vs_base": 97,
+      "changed_vs_V0": 2,
+      "sha256": "226379175b05b9442c9b931d921fab4c93bf8cc8e0335849b973b35072bd7a2d"
+    },
+    {
+      "file": "submission_condgate_V2.csv",
+      "changed_vs_base": 98,
+      "changed_vs_V0": 9,
+      "sha256": "24330a3ad0a32c15b50284eb3bb6c31b7899e6385de7c947f3f4ae3fb56fe6e1"
+    },
+    {
+      "file": "submission_condgate_V3.csv",
+      "changed_vs_base": 97,
+      "changed_vs_V0": 5,
+      "sha256": "0d8701339733558ecec1342c7584a7bdfe51d8ca8b9df73460a6feb489afffe0"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "candidates": {
+    "V0_orig": [
+      false,
+      false,
+      "all"
+    ],
+    "V0_nocount": [
+      false,
+      true,
+      "all"
+    ],
+    "V0_nocount_56only": [
+      false,
+      true,
+      "56only"
+    ],
+    "V0_aug_ref": [
+      true,
+      true,
+      "all"
+    ]
+  },
+  "train_views": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      "alt",
+      0
+    ],
+    [
+      "alt",
+      1
+    ]
+  ],
+  "eval_cadences": {
+    "5s": [
+      1,
+      0
+    ],
+    "10s": [
+      2,
+      0
+    ],
+    "15s": [
+      3,
+      0
+    ],
+    "10/15s": [
+      "alt",
+      0
+    ]
+  },
+  "count_features": [
+    "observation_gap_log1p",
+    "observed_count_log1p"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 40,
+  "hidden": 64,
+  "adoption": "OOF d_vs_base>0 at all cadences and better_exps>worse_exps at worst cadence; choose max worst-cadence OOF gain; validation read after choice",
+  "source_sha256": {
+    "experiments/b_cadence_robust/run.py": "3547a160d407c665bccd70bf37c353d41adbcc7dc1dbe85d23e64b35594f2540",
+    "experiments/b_cond_gate/model.py": "d093c0c1e73573531c723179a127237ee9660c9959400f442dcf051f4ff52752",
+    "targeted_rule1/model.py": "0b5998e4e43df54e31f308a8ba8d94e020fd08c06d755410151421b20c8bb4a4",
+    "targeted_rule1/run.py": "e0141d6cfdc07766a078216bcf5a15f4efca8e077c16933cce504af3aa7ae373",
+    "compare_abc_phase_history.py": "8e975a2a97820de364f71d58840dbae5b9b17d855661bc91e0aa8d7b4277a9f2"
+  }
+}
