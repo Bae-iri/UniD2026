@@ -1,0 +1,10 @@
+{
+  "submission_model": "gated",
+  "dev_best_model": "gated",
+  "rows": 3451,
+  "columns": [
+    "sample_id",
+    "label"
+  ],
+  "external_upload": false
+}
