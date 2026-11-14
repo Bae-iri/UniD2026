@@ -1,0 +1,11 @@
+{
+  "source": "/home/ubuntu/gahyun/experiments/b_independent_studies/runs/independent_seed42_43_44_v1/experiment2_gas_temperature/submission.csv",
+  "experiment": "experiment2_gas_temperature",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "rows": 3451,
+  "initialization": "original B only"
+}

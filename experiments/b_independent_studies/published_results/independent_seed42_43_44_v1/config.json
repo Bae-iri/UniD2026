@@ -1,0 +1,45 @@
+{
+  "data_root": "/home/ubuntu/data/battery_data_light",
+  "base_run": "/home/ubuntu/leewon/abc_runs/current_query_v1",
+  "output": "/home/ubuntu/gahyun/experiments/b_independent_studies/runs/independent_seed42_43_44_v1",
+  "modes": [
+    "B_control",
+    "experiment1_voltage",
+    "experiment2_gas_temperature"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 15,
+  "cache_dir": "/home/ubuntu/gahyun/experiments/battery_query_rates/.hierarchy_cache",
+  "device": "cuda",
+  "smoke": false,
+  "split_seed": 20261114,
+  "source_sha256": {
+    "test_independence.py": "b25bbd8f8e44dab5c07d7c322a375a11529e18224795dbb16b31a684411822e6",
+    "run.py": "d9eec24853648a610707f2654dd18f89db39f559ec7aecef4a640de7494e777d",
+    "experiment1_voltage/train.py": "5b1a4a314512d2b66906f47212904406c286cdc9c74d1a1cdbd3423841ec6c03",
+    "experiment1_voltage/model.py": "03f3c80f7812d2adaa569df5a3d85517fb199d12345f96e4c888ca8332c4fa0c",
+    "experiment1_voltage/event_memory.py": "1c527ab8cae11255a2a968cea9dbfdaa73a3a5129cbbc77bb3902d348dc847e1",
+    "common/hierarchy_experiment.py": "a95c53193b351519b731df6e02d3629d667a86a720b6af9b486d8672b6dd28d4",
+    "common/abc_fusion_experiment.py": "2c0eec5d358ede9babfefaf1731e39349ed90f11d9ed4c0b93cd7e003fc52d90",
+    "experiment2_gas_temperature/train.py": "038163a31d16484e34d36e9602cc29dd4da5662f4de4b6ec9ea758c90fe96d05",
+    "experiment2_gas_temperature/model.py": "b8fb0f5389dea4859d2351164fe6f28de22a4cb1a230ad3a4299ced8c3a5698f"
+  },
+  "original_csv_sha256": {
+    "train": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491",
+    "validation": "1c9592a76417e4da617c796a8b21f053ee2e8f4c3ac144fb17b301a8970544b6",
+    "test": "19fef14e5cc517413ed3a806301b94a09c6b609938a5ec2b0b9e7fb9565b7740"
+  },
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_size": 64,
+  "initialization": "Independent warm-start from ORIGINAL B per seed",
+  "dropout_seed": "seed+999 reset after model construction",
+  "experiment1_event_gain": 2.0,
+  "experiment2_chemical_gain": 0.5,
+  "experiment2_temperature_gain": 2.0
+}
