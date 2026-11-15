@@ -1,0 +1,41 @@
+{
+  "rows": 3451,
+  "experiments": 11,
+  "reference_mismatches": 0,
+  "checks": {
+    "prefixes": 132,
+    "prefix_mismatches": 0,
+    "per_experiment": true,
+    "shuffled": true,
+    "labels_and_ids_ignored": true,
+    "feature_prefix_checks": 132
+  },
+  "changed_vs_J096": 21,
+  "changes": {
+    "6->5": 19,
+    "5->6": 2
+  },
+  "class_counts_J096": [
+    1367,
+    382,
+    997,
+    316,
+    228,
+    161
+  ],
+  "class_counts_S3": [
+    1367,
+    382,
+    997,
+    316,
+    245,
+    144
+  ],
+  "sha256": {
+    "/home/ubuntu/data/battery_data_light/test/test.csv": "19fef14e5cc517413ed3a806301b94a09c6b609938a5ec2b0b9e7fb9565b7740",
+    "/home/ubuntu/gahyun/experiments/rule1_precision65/artifacts/pipeline.joblib": "a77ac9410130cca43c4f7bd486e813e96aca8fcd9b4d5245fbee7043c7b09959",
+    "/home/ubuntu/JEONGYUN/experiments/lower_heads/submission_v1/lower_heads.joblib": "cbf50a36084d25c4e4c8dbdbb94a9b7453f4c127c6f6e43b6c15a246da379620",
+    "/home/ubuntu/gahyun/UniD2026/experiments/b15_lower/submission_J096_S3_final.csv": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b"
+  },
+  "limits": "Prefix tests here cover downstream features and labels with fixed aligned B probabilities; raw backbone inference is a separate audit."
+}

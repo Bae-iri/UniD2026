@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "backbone_models_checked": 180,
+  "unique_backbone_models": 180,
+  "outer_splits": 15,
+  "frozen_thresholds": {
+    "head56": 0.7,
+    "gate65": 0.7,
+    "lower43": 0.5,
+    "lower34": 1.01,
+    "S3_H": 300,
+    "S3_d": 5
+  },
+  "outer_experiments_excluded_from_all_fit_preprocessing_checkpoint_and_head_fitting": true,
+  "training_head_probabilities_cross_fitted_inside_each_outer_scope": true,
+  "preprocessing_independently_recomputed": true,
+  "checkpoint_selection_and_file_hashes_checked": true,
+  "public_score_used_for_selection": false,
+  "test_labels_used": false,
+  "train_sha256": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491",
+  "validation_sha256": "1c9592a76417e4da617c796a8b21f053ee2e8f4c3ac144fb17b301a8970544b6",
+  "sources": {
+    "reproduce.py": "3133b7902bf962d9dcc2b57285a14b84314694e527676f245873732fec518473",
+    "validate.py": "90be216e238bc9252e0b4018924263bc175f8694cf1454c5aebc15025e3e92f6",
+    "infer.py": "6297e4b1ec6c027047014805e4408495f62695d01e99859580e472c99528fe45",
+    "raw_audit.py": "800e9661d0e60a28bda0edf82295f62e85b1ffb566f8d94cc0455c6b229f7d7c",
+    "pipeline.py": "44df69e9dfadcfa911748ee9b383378438cbdec6a2af44a5820e47719ee5944c",
+    "test_pipeline.py": "018efe89898562b4ad77e9d357402856e4f638832313d14317bba6f7e21ae1e9",
+    "core/upper.py": "eec53ae5bb26ad9a95757725a49d5daf7b58fe31f782bbf19368805362a29d5e",
+    "core/causal.py": "b187a48690bdc911cc725abadf00a0f9d744cca092fc037101d68ba258f11de3",
+    "core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core/lower.py": "38005a59e35413e21ac145656a3c6fd543859436aba3c6ee25735703470722ab",
+    "core/precision.py": "4b520b5bee52f8f029ddf944828e4a8e0b73de2362cb4d095863ba7a60fc5e5d"
+  },
+  "limits": [
+    "Archived submitted weights only reproduce on Test and evaluate on already explored Validation.",
+    "Outer CV independently refits the fixed submitted structure; it does not certify archived checkpoint accuracy.",
+    "The gate is refit directly with its eligible baseline; archived training used OOF baseline in threshold selection. Thresholds stay frozen here.",
+    "Repeated splits and train78/repeat77 suites overlap; do not treat them as independent datasets.",
+    "Frozen hypotheses and thresholds originated from previously inspected data; no fresh blind benchmark.",
+    "Capacity summaries are stratified evaluation, not leave-capacity-out training.",
+    "Previously used final confirmation is deliberately not reused."
+  ]
+}

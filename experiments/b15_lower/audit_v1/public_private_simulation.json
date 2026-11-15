@@ -1,0 +1,38 @@
+{
+  "repeat77": {
+    "unit": "experiment_id; 30/70 experiments, not necessarily 30/70 rows",
+    "simulations": 5000,
+    "public_95": [
+      0.8210721191879032,
+      0.9173598307308017
+    ],
+    "private_95": [
+      0.8564220037721213,
+      0.8984097590265172
+    ],
+    "private_minus_public_95": [
+      -0.06069744071072163,
+      0.07630007931110168
+    ],
+    "private_below_public_fraction": 0.539,
+    "limitation": "Descriptive partition sensitivity; not the hidden score confidence interval and not conditioned on public 0.9719."
+  },
+  "train78": {
+    "unit": "experiment_id; 30/70 experiments, not necessarily 30/70 rows",
+    "simulations": 5000,
+    "public_95": [
+      0.8380499692904865,
+      0.932929184817879
+    ],
+    "private_95": [
+      0.8764617971675329,
+      0.9167467012186135
+    ],
+    "private_minus_public_95": [
+      -0.05581136585779778,
+      0.07746934305756863
+    ],
+    "private_below_public_fraction": 0.5354,
+    "limitation": "Descriptive partition sensitivity; not the hidden score confidence interval and not conditioned on public 0.9719."
+  }
+}
