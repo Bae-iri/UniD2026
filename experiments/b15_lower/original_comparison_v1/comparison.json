@@ -1,0 +1,503 @@
+{
+  "recommendation": "current_S3",
+  "leaderboard_score_used": false,
+  "parameter_selection": false,
+  "original_submission_reproduced_exactly": true,
+  "current_submission_reproduced_exactly": true,
+  "original_source_snapshots_match": true,
+  "primary": {
+    "method": "S3",
+    "reference": "J096",
+    "rows": 43722,
+    "experiments": 97,
+    "base_f1": 0.8371786955858926,
+    "macro_f1": 0.8525216107180514,
+    "delta": 0.015342915132158796,
+    "bootstrap_f1_95": [
+      0.778270445264979,
+      0.9085625251810828
+    ],
+    "bootstrap_delta_95": [
+      0.009810000536220383,
+      0.022067187629768423
+    ],
+    "better_experiments": 58,
+    "worse_experiments": 16,
+    "corrected": 219,
+    "harmed": 54,
+    "changed": 310,
+    "per_class_f1": [
+      1.0,
+      0.8111888111888111,
+      0.8863673336586952,
+      0.7511101712835695,
+      0.7795002735728616,
+      0.8869630746043707
+    ],
+    "confusion_matrix": [
+      [
+        18560,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5220,
+        877,
+        0,
+        13,
+        0
+      ],
+      [
+        0,
+        1540,
+        10897,
+        43,
+        44,
+        11
+      ],
+      [
+        0,
+        0,
+        231,
+        1776,
+        157,
+        39
+      ],
+      [
+        0,
+        0,
+        47,
+        703,
+        2137,
+        172
+      ],
+      [
+        0,
+        0,
+        1,
+        4,
+        73,
+        1177
+      ]
+    ],
+    "stage6": {
+      "true_positive": 1177,
+      "false_positive": 222,
+      "false_negative": 78,
+      "precision": 0.8413152251608291,
+      "recall": 0.9378486055776892,
+      "f1": 0.8869630746043707
+    }
+  },
+  "primary_original": {
+    "macro_f1": 0.8371786955858926,
+    "stage6_FP": 347,
+    "stage6_FN": 123,
+    "stage6_precision": 0.7653820148749155,
+    "stage6_recall": 0.90199203187251,
+    "stage6_f1": 0.8280907095830286
+  },
+  "primary_current": {
+    "macro_f1": 0.8525216107180514,
+    "stage6_FP": 222,
+    "stage6_FN": 78,
+    "stage6_precision": 0.8413152251608291,
+    "stage6_recall": 0.9378486055776892,
+    "stage6_f1": 0.8869630746043707
+  },
+  "official_validation": {
+    "method": "S3",
+    "reference": "J096",
+    "rows": 10200,
+    "experiments": 19,
+    "base_f1": 0.755754167734629,
+    "macro_f1": 0.7745268549503338,
+    "delta": 0.018772687215704797,
+    "bootstrap_f1_95": [
+      0.6436028105004338,
+      0.9318201656516184
+    ],
+    "bootstrap_delta_95": [
+      0.006623811651731132,
+      0.032276309390006384
+    ],
+    "better_experiments": 9,
+    "worse_experiments": 2,
+    "corrected": 58,
+    "harmed": 12,
+    "changed": 76,
+    "per_class_f1": [
+      1.0,
+      0.7922971114167813,
+      0.9012089810017271,
+      0.4729835552075176,
+      0.5892857142857143,
+      0.8913857677902621
+    ],
+    "confusion_matrix": [
+      [
+        4469,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        864,
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        389,
+        2609,
+        68,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        302,
+        39,
+        2
+      ],
+      [
+        0,
+        0,
+        42,
+        554,
+        495,
+        43
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        12,
+        238
+      ]
+    ],
+    "stage6": {
+      "true_positive": 238,
+      "false_positive": 45,
+      "false_negative": 13,
+      "precision": 0.8409893992932862,
+      "recall": 0.9482071713147411,
+      "f1": 0.8913857677902621
+    }
+  },
+  "official_original": {
+    "macro_f1": 0.755754167734629,
+    "stage6_FP": 72,
+    "stage6_FN": 32,
+    "stage6_precision": 0.7525773195876289,
+    "stage6_recall": 0.8725099601593626,
+    "stage6_f1": 0.8081180811808119
+  },
+  "official_current": {
+    "macro_f1": 0.7745268549503338,
+    "stage6_FP": 45,
+    "stage6_FN": 13,
+    "stage6_precision": 0.8409893992932862,
+    "stage6_recall": 0.9482071713147411,
+    "stage6_f1": 0.8913857677902621
+  },
+  "folds": [
+    {
+      "suite": "all97",
+      "folds": 5,
+      "positive_folds": 5,
+      "original_min": 0.6999910674252364,
+      "current_min": 0.7213207626453432,
+      "original_sd": 0.08326189760439258,
+      "current_sd": 0.08073194398846505
+    },
+    {
+      "suite": "repeat77",
+      "folds": 10,
+      "positive_folds": 10,
+      "original_min": 0.7722413292468014,
+      "current_min": 0.7909120119627713,
+      "original_sd": 0.04323229152219915,
+      "current_sd": 0.04436498332860694
+    },
+    {
+      "suite": "train78",
+      "folds": 5,
+      "positive_folds": 5,
+      "original_min": 0.8351063622593312,
+      "current_min": 0.8437198766748489,
+      "original_sd": 0.024556499385643842,
+      "current_sd": 0.033349064751668614
+    }
+  ],
+  "condition_matched": {
+    "available": true,
+    "fields": [
+      "bat_class",
+      "bat_cc",
+      "soc_status",
+      "tr_method"
+    ],
+    "original_f1": 0.8883970797297148,
+    "current_f1": 0.8999505928093754,
+    "delta": 0.011553513079660571,
+    "delta95": [
+      0.00539076186928591,
+      0.02017153216338475
+    ],
+    "limitation": "Descriptive condition-row reweighting only; not a calibrated private-Test score or a new independent benchmark."
+  },
+  "correction_directions": [
+    {
+      "before": 4,
+      "after": 6,
+      "changed": 45,
+      "corrected": 26,
+      "harmed": 11,
+      "experiments": 12
+    },
+    {
+      "before": 5,
+      "after": 6,
+      "changed": 70,
+      "corrected": 57,
+      "harmed": 5,
+      "experiments": 16
+    },
+    {
+      "before": 6,
+      "after": 5,
+      "changed": 195,
+      "corrected": 136,
+      "harmed": 38,
+      "experiments": 56
+    }
+  ],
+  "direction_decomposition": {
+    "down_only": {
+      "method": "partial",
+      "reference": "J096",
+      "rows": 43722,
+      "experiments": 97,
+      "base_f1": 0.8371786955858926,
+      "macro_f1": 0.8465710131154892,
+      "delta": 0.009392317529596572,
+      "bootstrap_f1_95": [
+        0.7702791098825208,
+        0.9029808338961851
+      ],
+      "bootstrap_delta_95": [
+        0.00570308473568423,
+        0.013575295454280857
+      ],
+      "better_experiments": 43,
+      "worse_experiments": 13,
+      "corrected": 136,
+      "harmed": 38,
+      "changed": 195,
+      "per_class_f1": [
+        1.0,
+        0.8111888111888111,
+        0.8863673336586952,
+        0.7486384583158777,
+        0.7714748784440842,
+        0.8617565970854667
+      ],
+      "confusion_matrix": [
+        [
+          18560,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5220,
+          877,
+          0,
+          13,
+          0
+        ],
+        [
+          0,
+          1540,
+          10897,
+          43,
+          44,
+          11
+        ],
+        [
+          0,
+          0,
+          231,
+          1787,
+          165,
+          20
+        ],
+        [
+          0,
+          0,
+          47,
+          711,
+          2142,
+          159
+        ],
+        [
+          0,
+          0,
+          1,
+          30,
+          130,
+          1094
+        ]
+      ],
+      "stage6": {
+        "true_positive": 1094,
+        "false_positive": 190,
+        "false_negative": 161,
+        "precision": 0.8520249221183801,
+        "recall": 0.8717131474103585,
+        "f1": 0.8617565970854667
+      },
+      "limitation": "Diagnostic decomposition only; no new rule selected or deployed."
+    },
+    "up_only": {
+      "method": "partial",
+      "reference": "J096",
+      "rows": 43722,
+      "experiments": 97,
+      "base_f1": 0.8371786955858926,
+      "macro_f1": 0.843067505988385,
+      "delta": 0.005888810402492339,
+      "bootstrap_f1_95": [
+        0.7688393544311021,
+        0.8990094714229384
+      ],
+      "bootstrap_delta_95": [
+        0.001612731101615797,
+        0.011474972442026745
+      ],
+      "better_experiments": 18,
+      "worse_experiments": 9,
+      "corrected": 83,
+      "harmed": 16,
+      "changed": 115,
+      "per_class_f1": [
+        1.0,
+        0.8111888111888111,
+        0.8863673336586952,
+        0.7511101712835695,
+        0.7568078668683812,
+        0.8529308529308529
+      ],
+      "confusion_matrix": [
+        [
+          18560,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5220,
+          877,
+          0,
+          13,
+          0
+        ],
+        [
+          0,
+          1540,
+          10897,
+          43,
+          44,
+          11
+        ],
+        [
+          0,
+          0,
+          231,
+          1776,
+          136,
+          60
+        ],
+        [
+          0,
+          0,
+          47,
+          703,
+          2001,
+          308
+        ],
+        [
+          0,
+          0,
+          1,
+          4,
+          35,
+          1215
+        ]
+      ],
+      "stage6": {
+        "true_positive": 1215,
+        "false_positive": 379,
+        "false_negative": 40,
+        "precision": 0.7622333751568381,
+        "recall": 0.9681274900398407,
+        "f1": 0.8529308529308529
+      },
+      "limitation": "Diagnostic decomposition only; no new rule selected or deployed."
+    }
+  },
+  "test": {
+    "rows": 3451,
+    "experiments": 11,
+    "changed": 21,
+    "changed_experiments": 6,
+    "transitions": [
+      {
+        "before": 6,
+        "after": 5,
+        "rows": 19
+      },
+      {
+        "before": 5,
+        "after": 6,
+        "rows": 2
+      }
+    ],
+    "unknown_changed_row_accuracy": true
+  },
+  "critical_limitations": [
+    "Private Test labels are unavailable; this is an evidence-based recommendation, not a measured private-score comparison.",
+    "Official Train/Validation have been explored before, and repeated suites overlap.",
+    "OOF independently refits the fixed algorithm; exact archived weights are separately evaluated on complete official Validation.",
+    "Both pipelines retain the E16 low-temperature stage5 and stage2/3 weaknesses.",
+    "The6->5 branch can lose true6 rows; the complete S3 rule also restores missed6 rows."
+  ],
+  "inputs_sha256": {
+    "/home/ubuntu/JEONGYUN/experiments/lower_heads/submission_v1/submission_rule1_56_65_lower_past.csv": "76c804aff8e7f65c715a8159ed9e513fbe99159efea5a4d89dc9df616405825c",
+    "/home/ubuntu/gahyun/experiments/b15_lower/submission_stage6.csv": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+    "experiments/b15_lower/combined_v2/combined.joblib": "be015315616ce801f0273255257a2a7655f12062fa7dd835f9e261c9d49b6aca",
+    "experiments/b15_lower/audit_v2/outer_predictions.csv": "731cfa8b35d7cd47435e4bc760f633cc8eb7b1c403b5fea39178aa9609cb2907",
+    "experiments/b15_lower/audit_v2/validation_predictions.csv": "af1b006d7199043d958a59bbf57eadfface9f407f35235c368b7e2618237bf7e",
+    "/home/ubuntu/gahyun/UniD2026/experiments/b15_lower/compare_original.py": "c595a23d99df8a5a344f6fe33dd9cff46f7a344f36106496690494420f607cc9"
+  },
+  "original_causal_function_AST_matches": true
+}
