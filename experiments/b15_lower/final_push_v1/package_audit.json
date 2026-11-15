@@ -1,0 +1,10 @@
+{
+  "packaged_reproduction_matches": true,
+  "submission_sha256": "c9e7df4824b077ec781f2ed4a2894a23ffc19072bd698f5edf6799f8ef22f9ad",
+  "archive_file": "/home/ubuntu/gahyun/experiments/final_push_20261115/submission_bundle.zip",
+  "archive_sha256": "ee05df1e8d749246426f64d2d5393adcfce44adcdf7f8ad59e3acb99e802d333",
+  "archive_bytes": 47230949,
+  "source_and_weight_files_verified": 38,
+  "cpu_gpu_exact_match": true,
+  "original_submission_unchanged": true
+}

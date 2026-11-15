@@ -1,0 +1,27 @@
+{
+  "policy": "agreement50",
+  "model_sha256": "1682abd35c91d01ceb734260ebe142a430647e9a29f5334bd4e0bcbe45d0d184",
+  "model_file": "/home/ubuntu/gahyun/experiments/final_push_20261115/delivery/model.joblib",
+  "inference_sources": {
+    "boost_multimodal.py": "631406dca345d42a039616ffea88c73ce5534df611485af4a5356ff3f5d127b0",
+    "boost_family.py": "e0f320af2f8aaddbe2a70f0894d322d7eb7a25b4e4bb6bc577209cf927fe6f6d",
+    "boost_deploy.py": "88811ec816b002f41157438bb5b7ecddf9aa01bd9d80ab73645c461d9ea24608",
+    "boost_confirm.py": "af662ce8a6fb971cef83e8d7495d6712c146360ebf51b1cc621a0fccfee5ccc3",
+    "boost_predict.py": "9136ea6de792fcf380d0873e8860c626dee284e296dbe7518529b9090fceb215",
+    "boost_bagging.py": "aef07aeb86df368e418b018356caf889e2f2b69a6724907d95fa12e721e8d050",
+    "boost_assess.py": "c49358ba13129bfe632d4fde69ea9ec4e4fa7b5665a48ebbb363d2fe17c0ea59",
+    "boost_screen.py": "c3e87a89c0dd04dbae9f36d58e9da80b3ea6be4f155880574a91cfa939a49bed",
+    "boost_model.py": "974b26b597179599014d011c26eb175018eba0143e6d6508b30835cb94afb010",
+    "boost_visual_screen.py": "cec7eebf86d8415cad447cc96e8dd75d08c7edb65ce15accfc3e7dd5b1565a99",
+    "boost_single_teachers.py": "1fc4bbc79dadda6c90812bbe4238a8de91bf298a9e7b0a204a090f3f9b58267f",
+    "boost_package.py": "ac9ca7559b2a9922973b2998ca7b32e09f47015626bb46b103c5471c8ec91214",
+    "boost_visual.py": "7e02bc31effa82c9dc2d77a5987384bc96a1d47256b8ee6ab8a38d1ce77a7d82",
+    "boost_statistics.py": "c30fd0caf8c2a3bd07c7d7f25401dbd3cc101418215038fdbbfc1eabe2108e25",
+    "boost_prepare.py": "a22c8cdca86c908a506a1e985af83f3f646f33131c090201b983a5334abb630b"
+  },
+  "current_submission_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "new_submission_sha256": "c9e7df4824b077ec781f2ed4a2894a23ffc19072bd698f5edf6799f8ef22f9ad",
+  "all20fold_reproduction_match": true,
+  "tests_passed": 14,
+  "CPU_GPU_submission_byte_identical": true
+}

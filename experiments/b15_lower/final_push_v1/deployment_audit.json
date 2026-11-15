@@ -1,0 +1,809 @@
+{
+  "validation": {
+    "raw50": {
+      "method": "raw50",
+      "reference": "current",
+      "rows": 10200,
+      "experiments": 19,
+      "base_f1": 0.7745268549503338,
+      "macro_f1": 0.7812178440327996,
+      "delta": 0.0066909890824657925,
+      "bootstrap_f1_95": [
+        0.6521736116456291,
+        0.9382400560132486
+      ],
+      "bootstrap_delta_95": [
+        -0.0034048241865022562,
+        0.024718195695390556
+      ],
+      "better_experiments": 8,
+      "worse_experiments": 6,
+      "corrected": 181,
+      "harmed": 134,
+      "changed": 321,
+      "per_class_f1": [
+        1.0,
+        0.7961608775137111,
+        0.9086521889003791,
+        0.5003909304143862,
+        0.5907172995780591,
+        0.8913857677902621
+      ],
+      "confusion_matrix": [
+        [
+          4469,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          871,
+          57,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          389,
+          2636,
+          41,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          320,
+          23,
+          2
+        ],
+        [
+          0,
+          0,
+          36,
+          565,
+          490,
+          43
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          12,
+          238
+        ]
+      ],
+      "stage6": {
+        "true_positive": 238,
+        "false_positive": 45,
+        "false_negative": 13,
+        "precision": 0.8409893992932862,
+        "recall": 0.9482071713147411,
+        "f1": 0.8913857677902621
+      }
+    },
+    "visual50": {
+      "method": "visual50",
+      "reference": "current",
+      "rows": 10200,
+      "experiments": 19,
+      "base_f1": 0.7745268549503338,
+      "macro_f1": 0.7787354420389704,
+      "delta": 0.004208587088636584,
+      "bootstrap_f1_95": [
+        0.6439632231923137,
+        0.9420391099899952
+      ],
+      "bootstrap_delta_95": [
+        -0.0063800178524180936,
+        0.028161909337524455
+      ],
+      "better_experiments": 10,
+      "worse_experiments": 7,
+      "corrected": 121,
+      "harmed": 116,
+      "changed": 240,
+      "per_class_f1": [
+        1.0,
+        0.7745716862037872,
+        0.898008658008658,
+        0.5071315372424723,
+        0.6013150029886432,
+        0.8913857677902621
+      ],
+      "confusion_matrix": [
+        [
+          4469,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          859,
+          69,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          431,
+          2593,
+          42,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          320,
+          23,
+          2
+        ],
+        [
+          0,
+          0,
+          40,
+          548,
+          503,
+          43
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13,
+          238
+        ]
+      ],
+      "stage6": {
+        "true_positive": 238,
+        "false_positive": 45,
+        "false_negative": 13,
+        "precision": 0.8409893992932862,
+        "recall": 0.9482071713147411,
+        "f1": 0.8913857677902621
+      }
+    },
+    "average50": {
+      "method": "average50",
+      "reference": "current",
+      "rows": 10200,
+      "experiments": 19,
+      "base_f1": 0.7745268549503338,
+      "macro_f1": 0.7808573390560788,
+      "delta": 0.006330484105744993,
+      "bootstrap_f1_95": [
+        0.6484447142795153,
+        0.9419387805850342
+      ],
+      "bootstrap_delta_95": [
+        -0.0032470519055434076,
+        0.02868279206135443
+      ],
+      "better_experiments": 10,
+      "worse_experiments": 7,
+      "corrected": 133,
+      "harmed": 105,
+      "changed": 244,
+      "per_class_f1": [
+        1.0,
+        0.7846501128668172,
+        0.9027008310249307,
+        0.5059288537549407,
+        0.6004784688995215,
+        0.8913857677902621
+      ],
+      "confusion_matrix": [
+        [
+          4469,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          869,
+          59,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          418,
+          2607,
+          41,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          320,
+          23,
+          2
+        ],
+        [
+          0,
+          0,
+          37,
+          552,
+          502,
+          43
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13,
+          238
+        ]
+      ],
+      "stage6": {
+        "true_positive": 238,
+        "false_positive": 45,
+        "false_negative": 13,
+        "precision": 0.8409893992932862,
+        "recall": 0.9482071713147411,
+        "f1": 0.8913857677902621
+      }
+    },
+    "agreement50": {
+      "method": "agreement50",
+      "reference": "current",
+      "rows": 10200,
+      "experiments": 19,
+      "base_f1": 0.7745268549503338,
+      "macro_f1": 0.7808241656959058,
+      "delta": 0.006297310745572049,
+      "bootstrap_f1_95": [
+        0.6467929972085183,
+        0.9420584042448038
+      ],
+      "bootstrap_delta_95": [
+        -0.0017653952308441356,
+        0.027446665467713918
+      ],
+      "better_experiments": 9,
+      "worse_experiments": 6,
+      "corrected": 93,
+      "harmed": 62,
+      "changed": 157,
+      "per_class_f1": [
+        1.0,
+        0.7886178861788617,
+        0.9034267912772586,
+        0.5035516969218626,
+        0.5979628520071899,
+        0.8913857677902621
+      ],
+      "confusion_matrix": [
+        [
+          4469,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          873,
+          55,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          413,
+          2610,
+          43,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          319,
+          24,
+          2
+        ],
+        [
+          0,
+          0,
+          40,
+          552,
+          499,
+          43
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          12,
+          238
+        ]
+      ],
+      "stage6": {
+        "true_positive": 238,
+        "false_positive": 45,
+        "false_negative": 13,
+        "precision": 0.8409893992932862,
+        "recall": 0.9482071713147411,
+        "f1": 0.8913857677902621
+      }
+    }
+  },
+  "validation_reused_not_blind": true,
+  "validation_prefix": {
+    "experiments": 19,
+    "prefixes": 133,
+    "all_four_policies_mismatches": 0,
+    "raw_feature_mismatches": 0,
+    "shuffled_and_label_and_sample_id_invariant": true
+  },
+  "E16": {
+    "raw50": {
+      "method": "raw50",
+      "reference": "current",
+      "rows": 1543,
+      "experiments": 1,
+      "base_f1": 0.4898847828832837,
+      "macro_f1": 0.4996105551660684,
+      "delta": 0.009725772282784706,
+      "bootstrap_f1_95": [
+        0.4996105551660684,
+        0.4996105551660684
+      ],
+      "bootstrap_delta_95": [
+        0.009725772282784706,
+        0.009725772282784706
+      ],
+      "better_experiments": 1,
+      "worse_experiments": 0,
+      "corrected": 94,
+      "harmed": 65,
+      "changed": 165,
+      "per_class_f1": [
+        1.0,
+        0.2867647058823529,
+        0.8303834808259587,
+        0.0,
+        0.02337228714524207,
+        0.8571428571428571
+      ],
+      "confusion_matrix": [
+        [
+          136,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          194,
+          563,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          544,
+          7,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          18
+        ]
+      ],
+      "stage6": {
+        "true_positive": 18,
+        "false_positive": 3,
+        "false_negative": 3,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "old_true5_pred4": 539,
+      "new_true5_pred4": 544
+    },
+    "visual50": {
+      "method": "visual50",
+      "reference": "current",
+      "rows": 1543,
+      "experiments": 1,
+      "base_f1": 0.4898847828832837,
+      "macro_f1": 0.4871054052998071,
+      "delta": -0.002779377583476572,
+      "bootstrap_f1_95": [
+        0.4871054052998071,
+        0.4871054052998071
+      ],
+      "bootstrap_delta_95": [
+        -0.002779377583476572,
+        -0.002779377583476572
+      ],
+      "better_experiments": 0,
+      "worse_experiments": 1,
+      "corrected": 16,
+      "harmed": 29,
+      "changed": 48,
+      "per_class_f1": [
+        1.0,
+        0.2468354430379747,
+        0.7887537993920972,
+        0.0,
+        0.029900332225913623,
+        0.8571428571428571
+      ],
+      "confusion_matrix": [
+        [
+          136,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          238,
+          519,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          538,
+          9,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          18
+        ]
+      ],
+      "stage6": {
+        "true_positive": 18,
+        "false_positive": 3,
+        "false_negative": 3,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "old_true5_pred4": 539,
+      "new_true5_pred4": 538
+    },
+    "average50": {
+      "method": "average50",
+      "reference": "current",
+      "rows": 1543,
+      "experiments": 1,
+      "base_f1": 0.4898847828832837,
+      "macro_f1": 0.49325969452510826,
+      "delta": 0.003374911641824574,
+      "bootstrap_f1_95": [
+        0.49325969452510826,
+        0.49325969452510826
+      ],
+      "bootstrap_delta_95": [
+        0.003374911641824574,
+        0.003374911641824574
+      ],
+      "better_experiments": 1,
+      "worse_experiments": 0,
+      "corrected": 39,
+      "harmed": 31,
+      "changed": 76,
+      "per_class_f1": [
+        1.0,
+        0.2653061224489796,
+        0.8104868913857678,
+        0.0,
+        0.026622296173044926,
+        0.8571428571428571
+      ],
+      "confusion_matrix": [
+        [
+          136,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          216,
+          541,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          37,
+          542,
+          8,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          18
+        ]
+      ],
+      "stage6": {
+        "true_positive": 18,
+        "false_positive": 3,
+        "false_negative": 3,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "old_true5_pred4": 539,
+      "new_true5_pred4": 542
+    },
+    "agreement50": {
+      "method": "agreement50",
+      "reference": "current",
+      "rows": 1543,
+      "experiments": 1,
+      "base_f1": 0.4898847828832837,
+      "macro_f1": 0.4897571405367534,
+      "delta": -0.00012764234653028783,
+      "bootstrap_f1_95": [
+        0.4897571405367534,
+        0.4897571405367534
+      ],
+      "bootstrap_delta_95": [
+        -0.00012764234653028783,
+        -0.00012764234653028783
+      ],
+      "better_experiments": 0,
+      "worse_experiments": 1,
+      "corrected": 11,
+      "harmed": 13,
+      "changed": 26,
+      "per_class_f1": [
+        1.0,
+        0.25742574257425743,
+        0.800601956358164,
+        0.0,
+        0.02337228714524207,
+        0.8571428571428571
+      ],
+      "confusion_matrix": [
+        [
+          136,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          225,
+          532,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          540,
+          7,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          18
+        ]
+      ],
+      "stage6": {
+        "true_positive": 18,
+        "false_positive": 3,
+        "false_negative": 3,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "old_true5_pred4": 539,
+      "new_true5_pred4": 540
+    }
+  },
+  "submissions": {
+    "train78": {
+      "raw50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_raw50_train78.csv",
+        "rows": 3451,
+        "sha256": "8b778d5d9f0c6823058ae7482fcec05c737ea8c50bcd5d880abeb57482c8f316",
+        "changes": 81,
+        "stage6_preserved": true
+      },
+      "visual50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_visual50_train78.csv",
+        "rows": 3451,
+        "sha256": "76efcf364a9a7c73a04b746ed6bfd7dff7ee7e4e18d182cde859132a0e2a83cb",
+        "changes": 81,
+        "stage6_preserved": true
+      },
+      "average50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_average50_train78.csv",
+        "rows": 3451,
+        "sha256": "0069864ce094505de8e24502a7db170c4a7039b94d903175aa7b382f735d6127",
+        "changes": 78,
+        "stage6_preserved": true
+      },
+      "agreement50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_agreement50_train78.csv",
+        "rows": 3451,
+        "sha256": "f38eb33afe8fc49d1cf93d550f2ecd62809e0e42f44edab76d7a392d65a9d755",
+        "changes": 67,
+        "stage6_preserved": true
+      },
+      "prefix": {
+        "experiments": 11,
+        "prefixes": 77,
+        "all_four_policies_mismatches": 0,
+        "raw_feature_mismatches": 0,
+        "shuffled_and_label_and_sample_id_invariant": true
+      }
+    },
+    "all97": {
+      "raw50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_raw50_all97.csv",
+        "rows": 3451,
+        "sha256": "b4e935324e7c7a96da628a23e6d098ff384088f48523e1e130340cad914f6d1f",
+        "changes": 78,
+        "stage6_preserved": true
+      },
+      "visual50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_visual50_all97.csv",
+        "rows": 3451,
+        "sha256": "a16f7e4defcfc9c9e764689ea41e102ef3c87bf990587dc4e9fa153613f86d32",
+        "changes": 73,
+        "stage6_preserved": true
+      },
+      "average50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_average50_all97.csv",
+        "rows": 3451,
+        "sha256": "4dc1bb33739ec8245f09eef87831a62c33325c51ade14325409c1a888f408508",
+        "changes": 71,
+        "stage6_preserved": true
+      },
+      "agreement50": {
+        "file": "/home/ubuntu/gahyun/experiments/final_push_20261115/deploy_multimodal/submission_agreement50_all97.csv",
+        "rows": 3451,
+        "sha256": "c9e7df4824b077ec781f2ed4a2894a23ffc19072bd698f5edf6799f8ef22f9ad",
+        "changes": 64,
+        "stage6_preserved": true
+      },
+      "prefix": {
+        "experiments": 11,
+        "prefixes": 77,
+        "all_four_policies_mismatches": 0,
+        "raw_feature_mismatches": 0,
+        "shuffled_and_label_and_sample_id_invariant": true
+      }
+    }
+  },
+  "hashes": {
+    "boost_multimodal.py": "631406dca345d42a039616ffea88c73ce5534df611485af4a5356ff3f5d127b0",
+    "boost_model.py": "0b3c59ce726ca5fec7fba8b759aa31398bb630dcc86995374c0b3ad054cc4914",
+    "boost_family.py": "e0f320af2f8aaddbe2a70f0894d322d7eb7a25b4e4bb6bc577209cf927fe6f6d",
+    "boost_visual.py": "7e02bc31effa82c9dc2d77a5987384bc96a1d47256b8ee6ab8a38d1ce77a7d82",
+    "weights": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  }
+}

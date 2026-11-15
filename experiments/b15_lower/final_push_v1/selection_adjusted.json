@@ -1,0 +1,52 @@
+{
+  "results": {
+    "raw50": {
+      "delta": 0.011052482227429938,
+      "ordinary_paired_95": [
+        0.004978861082058095,
+        0.018246930405678093
+      ],
+      "selection_adjusted_paired_95": [
+        0.0015579437622038402,
+        0.02368660533799271
+      ]
+    },
+    "visual50": {
+      "delta": 0.012355235255773866,
+      "ordinary_paired_95": [
+        0.0057755690997169954,
+        0.019374532130005947
+      ],
+      "selection_adjusted_paired_95": [
+        0.001586740714468861,
+        0.02417645170480494
+      ]
+    },
+    "average50": {
+      "delta": 0.011689227857080153,
+      "ordinary_paired_95": [
+        0.005802111577831459,
+        0.0186672851197104
+      ],
+      "selection_adjusted_paired_95": [
+        0.0023236029057651856,
+        0.023844425957966518
+      ]
+    },
+    "agreement50": {
+      "delta": 0.010822919067034698,
+      "ordinary_paired_95": [
+        0.005443140356477841,
+        0.017439151657611243
+      ],
+      "selection_adjusted_paired_95": [
+        0.002462660155006615,
+        0.022398352162885795
+      ]
+    }
+  },
+  "draws": 100000,
+  "family_size": 32,
+  "resampling_unit": "experiment",
+  "limitation": "Approximate CV bootstrap; folds share training data; no blind/private guarantee."
+}

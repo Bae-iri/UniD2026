@@ -14,8 +14,8 @@ from reproduce import load_artifact
 
 
 class Runtime:
-    def __init__(self, base, upper=None, lower=None, device='cpu', combined=None):
-        self.artifact = load_artifact(upper, lower, combined)
+    def __init__(self, base, upper=None, lower=None, device='cpu', combined=None, artifact=None):
+        self.artifact = artifact if artifact is not None else load_artifact(upper, lower, combined)
         self.device = torch.device(device)
         self.models = []
         meta = json.loads((Path(base)/'preprocessing.json').read_text())

@@ -1,0 +1,13 @@
+{
+  "rows": 3451,
+  "sha256": "c9e7df4824b077ec781f2ed4a2894a23ffc19072bd698f5edf6799f8ef22f9ad",
+  "policy": "agreement50",
+  "bundle_sha256": "ad83acedb8b65e4af3758e5187163b911580da8bb4dfc005cd1fed10f5004db3",
+  "direct_image_and_sensor_inference": true,
+  "raw_image_prefix_audit": {
+    "prefixes": 33,
+    "experiments": 11,
+    "mismatches": 0,
+    "shuffled_and_label_and_sample_id_invariant": true
+  }
+}

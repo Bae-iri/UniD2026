@@ -1,0 +1,7 @@
+{
+  "rows": 3451,
+  "sha256": "c9e7df4824b077ec781f2ed4a2894a23ffc19072bd698f5edf6799f8ef22f9ad",
+  "policy": "agreement50",
+  "bundle_sha256": "1682abd35c91d01ceb734260ebe142a430647e9a29f5334bd4e0bcbe45d0d184",
+  "direct_image_and_sensor_inference": true
+}
