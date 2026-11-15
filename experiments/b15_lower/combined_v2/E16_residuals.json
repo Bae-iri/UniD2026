@@ -1,0 +1,64 @@
+{
+  "experiment_id": "E_e5bcddc7d77f459ea541cf658ab4346e",
+  "rows": 1543,
+  "errors_before": 826,
+  "errors_after": 809,
+  "remaining_confusions": [
+    {
+      "true_label": 1,
+      "predicted_label": 1,
+      "rows": 136
+    },
+    {
+      "true_label": 2,
+      "predicted_label": 2,
+      "rows": 39
+    },
+    {
+      "true_label": 3,
+      "predicted_label": 2,
+      "rows": 222
+    },
+    {
+      "true_label": 3,
+      "predicted_label": 3,
+      "rows": 535
+    },
+    {
+      "true_label": 5,
+      "predicted_label": 3,
+      "rows": 42
+    },
+    {
+      "true_label": 5,
+      "predicted_label": 4,
+      "rows": 539
+    },
+    {
+      "true_label": 5,
+      "predicted_label": 5,
+      "rows": 6
+    },
+    {
+      "true_label": 5,
+      "predicted_label": 6,
+      "rows": 3
+    },
+    {
+      "true_label": 6,
+      "predicted_label": 4,
+      "rows": 1
+    },
+    {
+      "true_label": 6,
+      "predicted_label": 5,
+      "rows": 2
+    },
+    {
+      "true_label": 6,
+      "predicted_label": 6,
+      "rows": 18
+    }
+  ],
+  "inference_rule": "Same pipeline as every other experiment; ID used only to report evaluation"
+}

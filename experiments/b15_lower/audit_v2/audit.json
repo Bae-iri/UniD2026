@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "backbone_models_checked": 240,
+  "unique_backbone_models": 240,
+  "outer_splits": 20,
+  "frozen_thresholds": {
+    "head56": 0.7,
+    "gate65": 0.7,
+    "lower43": 0.5,
+    "lower34": 1.01,
+    "S3_H": 300,
+    "S3_d": 5
+  },
+  "outer_experiments_excluded_from_all_fit_preprocessing_checkpoint_and_head_fitting": true,
+  "training_head_probabilities_cross_fitted_inside_each_outer_scope": true,
+  "preprocessing_independently_recomputed": true,
+  "checkpoint_selection_and_file_hashes_checked": true,
+  "public_score_used_for_selection": false,
+  "test_labels_used": false,
+  "primary_all97_E16_included": true,
+  "official_validation_E16_included": true,
+  "evaluation_exclusions": [],
+  "no_leaderboard_input_parameter": true,
+  "train_sha256": "3ea39e537aea198e5f508302a7f0e4abb2d8becf79257e8aa6c22cda05160491",
+  "validation_sha256": "1c9592a76417e4da617c796a8b21f053ee2e8f4c3ac144fb17b301a8970544b6",
+  "sources": {
+    "reproduce.py": "c22071fb7665c36c5ac41fd1a5a600f6d5508aa744a4ba3a774c15e24483a44c",
+    "train_backbones.py": "95874cea3ccd0e046d437c6dbc7e1a0cf962e0895a76dc5e04505379dfca3810",
+    "validate.py": "001cb7fac2190e09fd06918e42091b5f51a64f0f975a1fa14a2ab943bd96b65e",
+    "infer.py": "c390780403e3be8eea388a8f41bd61abcc61ab48c9a4e8620b20225e3e46396d",
+    "raw_audit.py": "800e9661d0e60a28bda0edf82295f62e85b1ffb566f8d94cc0455c6b229f7d7c",
+    "build_combined.py": "ca4d66a19f80cc3f64a92bcc03cffb73132ab0468c86c5ad2deb2d842e146844",
+    "pipeline.py": "1ba718308edbe3b1c40d19afe48fd15d29a5468a636c880c1e70bcf0d883c225",
+    "test_pipeline.py": "8dd9f31dbbf4c4bcd3b372aeb0ee5b7be4ec9e8bb40e5987e7a441da0952fbcd",
+    "core/upper.py": "eec53ae5bb26ad9a95757725a49d5daf7b58fe31f782bbf19368805362a29d5e",
+    "core/causal.py": "1b72733742bf109d1dd36e740a83c6385ac5acbf7dfbc205dfa5a0469357770a",
+    "core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core/lower.py": "38005a59e35413e21ac145656a3c6fd543859436aba3c6ee25735703470722ab",
+    "core/precision.py": "4b520b5bee52f8f029ddf944828e4a8e0b73de2362cb4d095863ba7a60fc5e5d"
+  },
+  "limits": [
+    "Archived submitted weights only reproduce on Test and evaluate on already explored Validation.",
+    "Outer CV independently refits the fixed submitted structure; it does not certify archived checkpoint accuracy.",
+    "The gate is refit directly with its eligible baseline; archived training used OOF baseline in threshold selection. Thresholds stay frozen here.",
+    "Repeated splits and train78/repeat77 suites overlap; do not treat them as independent datasets.",
+    "Frozen hypotheses and thresholds originated from previously inspected data; no fresh blind benchmark.",
+    "Capacity summaries are stratified evaluation, not leave-capacity-out training.",
+    "The all97 audit includes every official experiment, including previously inspected validation and confirmation groups; it is not a new blind benchmark."
+  ]
+}

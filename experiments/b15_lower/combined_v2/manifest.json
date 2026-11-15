@@ -1,0 +1,1030 @@
+{
+  "recipe": [
+    "B seed42/43/44 mean",
+    "T1 causal45",
+    "5->6 head0.7",
+    "6->5 gate0.7",
+    "Jeongyun4->3 head0.5",
+    "S3 H300 d5 with observed voltage drop"
+  ],
+  "leaderboard_score_input": false,
+  "parameter_search": false,
+  "evaluation_exclusions": [],
+  "inference_experiment_specific_rules": false,
+  "source_artifacts": {
+    "/home/ubuntu/gahyun/experiments/rule1_precision65/artifacts/pipeline.joblib": "a77ac9410130cca43c4f7bd486e813e96aca8fcd9b4d5245fbee7043c7b09959",
+    "/home/ubuntu/JEONGYUN/experiments/lower_heads/submission_v1/lower_heads.joblib": "cbf50a36084d25c4e4c8dbdbb94a9b7453f4c127c6f6e43b6c15a246da379620"
+  },
+  "combined_artifact_sha256": "be015315616ce801f0273255257a2a7655f12062fa7dd835f9e261c9d49b6aca",
+  "validation": {
+    "rows": 10200,
+    "experiments": 19,
+    "prefix_checks": {
+      "prefixes": 228,
+      "prefix_mismatches": 0,
+      "per_experiment": true,
+      "shuffled": true,
+      "labels_and_ids_ignored": true,
+      "feature_prefix_checks": 228
+    },
+    "lower43_changes": 92,
+    "lower43_preserved": 92,
+    "E16_included": true,
+    "E16_rows": 1543,
+    "overall": {
+      "method": "S3",
+      "reference": "J096",
+      "rows": 10200,
+      "experiments": 19,
+      "base_f1": 0.755754167734629,
+      "macro_f1": 0.7745268549503338,
+      "delta": 0.018772687215704797,
+      "bootstrap_f1_95": [
+        0.6436028105004338,
+        0.9318201656516184
+      ],
+      "bootstrap_delta_95": [
+        0.006623811651731132,
+        0.032276309390006384
+      ],
+      "better_experiments": 9,
+      "worse_experiments": 2,
+      "corrected": 58,
+      "harmed": 12,
+      "changed": 76,
+      "per_class_f1": [
+        1.0,
+        0.7922971114167813,
+        0.9012089810017271,
+        0.4729835552075176,
+        0.5892857142857143,
+        0.8913857677902621
+      ],
+      "confusion_matrix": [
+        [
+          4469,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          864,
+          64,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          389,
+          2609,
+          68,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          302,
+          39,
+          2
+        ],
+        [
+          0,
+          0,
+          42,
+          554,
+          495,
+          43
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          12,
+          238
+        ]
+      ],
+      "stage6": {
+        "true_positive": 238,
+        "false_positive": 45,
+        "false_negative": 13,
+        "precision": 0.8409893992932862,
+        "recall": 0.9482071713147411,
+        "f1": 0.8913857677902621
+      }
+    },
+    "components": [
+      {
+        "method": "upper56",
+        "reference": "rule1",
+        "rows": 10200,
+        "experiments": 19,
+        "base_f1": 0.7128795708705026,
+        "macro_f1": 0.7290975979302766,
+        "delta": 0.016218027059774043,
+        "bootstrap_f1_95": [
+          0.597237674145132,
+          0.888694201131619
+        ],
+        "bootstrap_delta_95": [
+          0.0019372064505070118,
+          0.037166515915223845
+        ],
+        "better_experiments": 6,
+        "worse_experiments": 0,
+        "corrected": 43,
+        "harmed": 7,
+        "changed": 50,
+        "per_class_f1": [
+          1.0,
+          0.7922971114167813,
+          0.8834678834678835,
+          0.4370956146657081,
+          0.5222291797119599,
+          0.7394957983193278
+        ],
+        "confusion_matrix": [
+          [
+            4469,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            864,
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            389,
+            2517,
+            160,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            304,
+            33,
+            6
+          ],
+          [
+            0,
+            0,
+            42,
+            557,
+            417,
+            118
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            13,
+            220
+          ]
+        ],
+        "stage6": {
+          "true_positive": 220,
+          "false_positive": 124,
+          "false_negative": 31,
+          "precision": 0.6395348837209303,
+          "recall": 0.8764940239043825,
+          "f1": 0.7394957983193278
+        }
+      },
+      {
+        "method": "precision65",
+        "reference": "upper56",
+        "rows": 10200,
+        "experiments": 19,
+        "base_f1": 0.7290975979302766,
+        "macro_f1": 0.7476378625966116,
+        "delta": 0.01854026466633496,
+        "bootstrap_f1_95": [
+          0.6129594241700732,
+          0.9079304253041474
+        ],
+        "bootstrap_delta_95": [
+          0.007292488755367738,
+          0.03758585260878197
+        ],
+        "better_experiments": 12,
+        "worse_experiments": 0,
+        "corrected": 49,
+        "harmed": 1,
+        "changed": 53,
+        "per_class_f1": [
+          1.0,
+          0.7922971114167813,
+          0.8834678834678835,
+          0.4370956146657081,
+          0.5648484848484848,
+          0.8081180811808119
+        ],
+        "confusion_matrix": [
+          [
+            4469,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            864,
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            389,
+            2517,
+            160,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            304,
+            36,
+            3
+          ],
+          [
+            0,
+            0,
+            42,
+            557,
+            466,
+            69
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            14,
+            219
+          ]
+        ],
+        "stage6": {
+          "true_positive": 219,
+          "false_positive": 72,
+          "false_negative": 32,
+          "precision": 0.7525773195876289,
+          "recall": 0.8725099601593626,
+          "f1": 0.8081180811808119
+        }
+      },
+      {
+        "method": "J096",
+        "reference": "precision65",
+        "rows": 10200,
+        "experiments": 19,
+        "base_f1": 0.7476378625966116,
+        "macro_f1": 0.755754167734629,
+        "delta": 0.008116305138017421,
+        "bootstrap_f1_95": [
+          0.6172466606402168,
+          0.9131028329434699
+        ],
+        "bootstrap_delta_95": [
+          0.0,
+          0.03560075905183471
+        ],
+        "better_experiments": 3,
+        "worse_experiments": 0,
+        "corrected": 92,
+        "harmed": 0,
+        "changed": 92,
+        "per_class_f1": [
+          1.0,
+          0.7922971114167813,
+          0.9012089810017271,
+          0.4680523479599692,
+          0.5648484848484848,
+          0.8081180811808119
+        ],
+        "confusion_matrix": [
+          [
+            4469,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            864,
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            389,
+            2609,
+            68,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            304,
+            36,
+            3
+          ],
+          [
+            0,
+            0,
+            42,
+            557,
+            466,
+            69
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            14,
+            219
+          ]
+        ],
+        "stage6": {
+          "true_positive": 219,
+          "false_positive": 72,
+          "false_negative": 32,
+          "precision": 0.7525773195876289,
+          "recall": 0.8725099601593626,
+          "f1": 0.8081180811808119
+        }
+      },
+      {
+        "method": "S3",
+        "reference": "J096",
+        "rows": 10200,
+        "experiments": 19,
+        "base_f1": 0.755754167734629,
+        "macro_f1": 0.7745268549503338,
+        "delta": 0.018772687215704797,
+        "bootstrap_f1_95": [
+          0.6436028105004338,
+          0.9318201656516184
+        ],
+        "bootstrap_delta_95": [
+          0.006623811651731132,
+          0.032276309390006384
+        ],
+        "better_experiments": 9,
+        "worse_experiments": 2,
+        "corrected": 58,
+        "harmed": 12,
+        "changed": 76,
+        "per_class_f1": [
+          1.0,
+          0.7922971114167813,
+          0.9012089810017271,
+          0.4729835552075176,
+          0.5892857142857143,
+          0.8913857677902621
+        ],
+        "confusion_matrix": [
+          [
+            4469,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            864,
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            389,
+            2609,
+            68,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            302,
+            39,
+            2
+          ],
+          [
+            0,
+            0,
+            42,
+            554,
+            495,
+            43
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            12,
+            238
+          ]
+        ],
+        "stage6": {
+          "true_positive": 238,
+          "false_positive": 45,
+          "false_negative": 13,
+          "precision": 0.8409893992932862,
+          "recall": 0.9482071713147411,
+          "f1": 0.8913857677902621
+        }
+      },
+      {
+        "method": "S3",
+        "reference": "precision65",
+        "rows": 10200,
+        "experiments": 19,
+        "base_f1": 0.7476378625966116,
+        "macro_f1": 0.7745268549503338,
+        "delta": 0.02688899235372222,
+        "bootstrap_f1_95": [
+          0.6436028105004338,
+          0.9318201656516184
+        ],
+        "bootstrap_delta_95": [
+          0.013284360263280665,
+          0.05142243394740239
+        ],
+        "better_experiments": 11,
+        "worse_experiments": 2,
+        "corrected": 150,
+        "harmed": 12,
+        "changed": 168,
+        "per_class_f1": [
+          1.0,
+          0.7922971114167813,
+          0.9012089810017271,
+          0.4729835552075176,
+          0.5892857142857143,
+          0.8913857677902621
+        ],
+        "confusion_matrix": [
+          [
+            4469,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            864,
+            64,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            389,
+            2609,
+            68,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            302,
+            39,
+            2
+          ],
+          [
+            0,
+            0,
+            42,
+            554,
+            495,
+            43
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            12,
+            238
+          ]
+        ],
+        "stage6": {
+          "true_positive": 238,
+          "false_positive": 45,
+          "false_negative": 13,
+          "precision": 0.8409893992932862,
+          "recall": 0.9482071713147411,
+          "f1": 0.8913857677902621
+        }
+      }
+    ],
+    "E16_components": [
+      {
+        "method": "upper56",
+        "reference": "rule1",
+        "rows": 1543,
+        "experiments": 1,
+        "base_f1": 0.3470220565843956,
+        "macro_f1": 0.3621791551776559,
+        "delta": 0.01515709859326031,
+        "bootstrap_f1_95": [
+          0.3621791551776559,
+          0.3621791551776559
+        ],
+        "bootstrap_delta_95": [
+          0.01515709859326031,
+          0.01515709859326031
+        ],
+        "better_experiments": 1,
+        "worse_experiments": 0,
+        "corrected": 1,
+        "harmed": 0,
+        "changed": 1,
+        "per_class_f1": [
+          1.0,
+          0.26,
+          0.8020989505247377,
+          0.0,
+          0.020066889632107024,
+          0.09090909090909091
+        ],
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            222,
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            542,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            2,
+            1
+          ]
+        ],
+        "stage6": {
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 20,
+          "precision": 1.0,
+          "recall": 0.047619047619047616,
+          "f1": 0.09090909090909091
+        }
+      },
+      {
+        "method": "precision65",
+        "reference": "upper56",
+        "rows": 1543,
+        "experiments": 1,
+        "base_f1": 0.3621791551776559,
+        "macro_f1": 0.3621791551776559,
+        "delta": 0.0,
+        "bootstrap_f1_95": [
+          0.3621791551776559,
+          0.3621791551776559
+        ],
+        "bootstrap_delta_95": [
+          0.0,
+          0.0
+        ],
+        "better_experiments": 0,
+        "worse_experiments": 0,
+        "corrected": 0,
+        "harmed": 0,
+        "changed": 0,
+        "per_class_f1": [
+          1.0,
+          0.26,
+          0.8020989505247377,
+          0.0,
+          0.020066889632107024,
+          0.09090909090909091
+        ],
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            222,
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            542,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            2,
+            1
+          ]
+        ],
+        "stage6": {
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 20,
+          "precision": 1.0,
+          "recall": 0.047619047619047616,
+          "f1": 0.09090909090909091
+        }
+      },
+      {
+        "method": "J096",
+        "reference": "precision65",
+        "rows": 1543,
+        "experiments": 1,
+        "base_f1": 0.3621791551776559,
+        "macro_f1": 0.3621791551776559,
+        "delta": 0.0,
+        "bootstrap_f1_95": [
+          0.3621791551776559,
+          0.3621791551776559
+        ],
+        "bootstrap_delta_95": [
+          0.0,
+          0.0
+        ],
+        "better_experiments": 0,
+        "worse_experiments": 0,
+        "corrected": 0,
+        "harmed": 0,
+        "changed": 0,
+        "per_class_f1": [
+          1.0,
+          0.26,
+          0.8020989505247377,
+          0.0,
+          0.020066889632107024,
+          0.09090909090909091
+        ],
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            222,
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            542,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            2,
+            1
+          ]
+        ],
+        "stage6": {
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 20,
+          "precision": 1.0,
+          "recall": 0.047619047619047616,
+          "f1": 0.09090909090909091
+        }
+      },
+      {
+        "method": "S3",
+        "reference": "J096",
+        "rows": 1543,
+        "experiments": 1,
+        "base_f1": 0.3621791551776559,
+        "macro_f1": 0.4898847828832837,
+        "delta": 0.12770562770562777,
+        "bootstrap_f1_95": [
+          0.4898847828832837,
+          0.4898847828832837
+        ],
+        "bootstrap_delta_95": [
+          0.12770562770562777,
+          0.12770562770562777
+        ],
+        "better_experiments": 1,
+        "worse_experiments": 0,
+        "corrected": 17,
+        "harmed": 0,
+        "changed": 20,
+        "per_class_f1": [
+          1.0,
+          0.26,
+          0.8020989505247377,
+          0.0,
+          0.020066889632107024,
+          0.8571428571428571
+        ],
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            222,
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            539,
+            6,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            2,
+            18
+          ]
+        ],
+        "stage6": {
+          "true_positive": 18,
+          "false_positive": 3,
+          "false_negative": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        }
+      },
+      {
+        "method": "S3",
+        "reference": "precision65",
+        "rows": 1543,
+        "experiments": 1,
+        "base_f1": 0.3621791551776559,
+        "macro_f1": 0.4898847828832837,
+        "delta": 0.12770562770562777,
+        "bootstrap_f1_95": [
+          0.4898847828832837,
+          0.4898847828832837
+        ],
+        "bootstrap_delta_95": [
+          0.12770562770562777,
+          0.12770562770562777
+        ],
+        "better_experiments": 1,
+        "worse_experiments": 0,
+        "corrected": 17,
+        "harmed": 0,
+        "changed": 20,
+        "per_class_f1": [
+          1.0,
+          0.26,
+          0.8020989505247377,
+          0.0,
+          0.020066889632107024,
+          0.8571428571428571
+        ],
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            222,
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            42,
+            539,
+            6,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            2,
+            18
+          ]
+        ],
+        "stage6": {
+          "true_positive": 18,
+          "false_positive": 3,
+          "false_negative": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        }
+      }
+    ]
+  },
+  "test": {
+    "rows": 3451,
+    "experiments": 11,
+    "prefix_checks": {
+      "prefixes": 132,
+      "prefix_mismatches": 0,
+      "per_experiment": true,
+      "shuffled": true,
+      "labels_and_ids_ignored": true,
+      "feature_prefix_checks": 132
+    },
+    "lower43_changes": 25,
+    "lower43_preserved": 25,
+    "reference_label_mismatches": 0,
+    "reference_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+    "submission_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b"
+  },
+  "raw_combined_artifact_inference": {
+    "rows": 3451,
+    "reference_mismatches": 0,
+    "device": "cpu",
+    "artifact_sha256": "be015315616ce801f0273255257a2a7655f12062fa7dd835f9e261c9d49b6aca"
+  }
+}

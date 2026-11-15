@@ -56,7 +56,8 @@ def s3(frame, predictions, height=H, decline=DROP):
     return p
 
 
-def predict(artifact, frame, probabilities):
+def predict_stages(artifact, frame, probabilities):
+    """Expose each fixed component for validation; no score-based selection."""
     base = rule1(frame, probabilities.mean(0).argmax(1)+1)
     x, names = upper.features(frame, probabilities)
     if names != artifact['heads']['names']:
@@ -65,10 +66,22 @@ def predict(artifact, frame, probabilities):
     both = upper.apply_pair(base, upper.probability(artifact['heads']['models']['56'], x['56']),
                             '56', artifact['heads']['thresholds']['56'])
     gate = artifact['gate']
-    j = precision.apply(both, base, precision.score(gate['model'], x['56']), gate['threshold'])
-    lo = lower.decide(artifact['low'], frame, probabilities, base, ['34', '43'])
+    corrected65 = precision.apply(both, base, precision.score(gate['model'], x['56']), gate['threshold'])
+    # Jeongyun's submitted lower correction is 4->3 only. It is decided against
+    # the original rule1 baseline and takes precedence over upper corrections.
+    lo = lower.decide(artifact['low'], frame, probabilities, base, ['43'])
+    j = corrected65.copy()
     j[lo != base] = lo[lo != base]
-    return dict(rule1=base, J096=j, S3=s3(frame, j))
+    final = s3(frame, j)
+    lower_fired = lo != base
+    if not np.array_equal(final[lower_fired], lo[lower_fired]):
+        raise AssertionError('Stage6 correction overwrote a 4->3 correction')
+    return dict(rule1=base, upper56=both, precision65=corrected65, J096=j, S3=final)
+
+
+def predict(artifact, frame, probabilities):
+    stages = predict_stages(artifact, frame, probabilities)
+    return {name: stages[name] for name in ['rule1', 'J096', 'S3']}
 
 
 def fit_frozen_recipe(frame, probabilities):

@@ -1,0 +1,47 @@
+{
+  "primary_evaluation": "Experiment-group5-fold OOF on all97 official Train+Validation experiments, including E16",
+  "official_validation": "Every row of all19 experiments, including all1543 E16 rows",
+  "model_selection": "None; evaluate the fixed requested composition",
+  "leaderboard_input": false,
+  "recipe": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "head56": 0.7,
+    "gate65": 0.7,
+    "lower43": 0.5,
+    "head45_enabled": false,
+    "lower34_enabled": false,
+    "S3_H": 300,
+    "S3_d": 5
+  },
+  "fresh_all97_backbones": 60,
+  "epochs": 15,
+  "backbones_per_scope": "3 inner leave-group teachers and1 full outer-training teacher, each with3 seeds",
+  "selection_fraction": 0.15,
+  "specialist_training_probabilities": "OOF strictly inside outer training",
+  "primary_comparisons": [
+    "pre_lower -> lower43",
+    "lower43 -> S3",
+    "pre_lower -> combined"
+  ],
+  "reported_metrics": [
+    "Macro F1 fixed6classes",
+    "stage6precision/recall/F1",
+    "stage6falsepositives/falsenegatives",
+    "paired experiment bootstrap95 interval",
+    "all97 and E16 errors",
+    "cadence and lost-observation robustness"
+  ],
+  "evaluation_exclusions": [],
+  "inference_experiment_specific_rules": false,
+  "build_contract": "Combined code must reproduce every archived submission label and preserve all4->3 corrections",
+  "decision_rule": "Report all results including regressions. Do not select, tune, or replace the requested recipe using leaderboard or validation results.",
+  "limitations": [
+    "Official Train and Validation have already been inspected; this is not a new blind benchmark.",
+    "The previous20 confirmation groups now belong to complete-data robustness CV; they no longer serve as a blind confirmation.",
+    "New CV refits the fixed algorithm; the submitted weights are separately checked on full official Validation."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "raw_test_label_mismatches": 0,
+  "raw_test_rows": 3451,
+  "raw_test_experiments": 11,
+  "raw_prefix_checks": 22,
+  "raw_prefix_label_mismatches": 0,
+  "max_probability_difference_vs_archived": 0.0012369446591186661,
+  "archived_probability_device": "GPU; cross-device probability differences are descriptive",
+  "max_probability_prefix_difference": 6.556510925292969e-07,
+  "device": "cpu",
+  "original_fit_experiments": 62,
+  "original_checkpoint_selection_experiments": 16,
+  "original_preprocessing_recomputed_exactly": true,
+  "official_splits_disjoint": true,
+  "original_checkpoint_selection_matches_history": true,
+  "original_upper_heads_and_gate_fit_only_official_train": true,
+  "low_model_lineage_limit": "Archived lower artifact has no fit_experiments field; raw/feature invariance is verified, full historical lower training lineage cannot be proven from the artifact alone.",
+  "dataset_shift": {
+    "train": {
+      "rows": 33522,
+      "experiments": 78,
+      "observation_gaps_s": {
+        "5.0": 33444
+      },
+      "capacity_experiments": {
+        "73.0": 17,
+        "4.8": 16,
+        "280.0": 13,
+        "28.0": 13,
+        "6.0": 10,
+        "39.0": 9
+      }
+    },
+    "validation": {
+      "rows": 10200,
+      "experiments": 19,
+      "observation_gaps_s": {
+        "5.0": 10181
+      },
+      "capacity_experiments": {
+        "73.0": 4,
+        "280.0": 4,
+        "39.0": 3,
+        "6.0": 3,
+        "28.0": 3,
+        "4.8": 2
+      }
+    },
+    "test": {
+      "rows": 3451,
+      "experiments": 11,
+      "observation_gaps_s": {
+        "5.0": 2442,
+        "10.0": 605,
+        "15.0": 393
+      },
+      "capacity_experiments": {
+        "4.8": 4,
+        "28.0": 2,
+        "280.0": 2,
+        "6.0": 1,
+        "39.0": 1,
+        "73.0": 1
+      }
+    }
+  },
+  "artifacts": {
+    "/home/ubuntu/gahyun/experiments/rule1_precision65/artifacts/pipeline.joblib": "a77ac9410130cca43c4f7bd486e813e96aca8fcd9b4d5245fbee7043c7b09959",
+    "/home/ubuntu/JEONGYUN/experiments/lower_heads/submission_v1/lower_heads.joblib": "cbf50a36084d25c4e4c8dbdbb94a9b7453f4c127c6f6e43b6c15a246da379620",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/preprocessing.json": "5b835f1c46cdb2cd6cbef579d97705e1b8c1ac188877fa0b49226363c6b26b49",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/seed_42/B/best.pt": "76e5b48b26ccc240ccbebbe0718ea2ba489d445b957dd46edde398d85e9a2fa1",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/seed_43/B/best.pt": "0616e832b97c30a27977d56db817a28a00b1c6a751a609779b68340330936afc",
+    "/home/ubuntu/leewon/abc_runs/current_query_v1/seed_44/B/best.pt": "3164a783022d85da7cda266f7db858c6f17c716c9e27397b54c8968e846e26a4"
+  }
+}

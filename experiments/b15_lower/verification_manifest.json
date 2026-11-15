@@ -52,5 +52,7 @@
       "audit_sha256": "b187a48690bdc911cc725abadf00a0f9d744cca092fc037101d68ba258f11de3",
       "final_sha256": "1b72733742bf109d1dd36e740a83c6385ac5acbf7dfbc205dfa5a0469357770a"
     }
-  }
+  },
+  "historical_scope_commit": "24511c351b86051f9e205fa7d7733d85c0ce69dd",
+  "superseded_by": "combined_v2/verification.json"
 }

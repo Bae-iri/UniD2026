@@ -7,14 +7,23 @@ import joblib
 import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
-from pipeline import predict
+from pipeline import predict, predict_stages
 
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def load_artifact(upper_path, lower_path):
+def load_artifact(upper_path=None, lower_path=None, combined_path=None):
+    if combined_path is not None:
+        if upper_path is not None or lower_path is not None:
+            raise ValueError('Use either one combined artifact or the upper/lower pair')
+        artifact = joblib.load(combined_path)
+        if not {'heads','gate','low'} <= artifact.keys():
+            raise ValueError('Combined artifact must include all correction models')
+        return artifact
+    if upper_path is None or lower_path is None:
+        raise ValueError('Both upper and lower artifacts are required')
     source = joblib.load(upper_path)
     return dict(heads=source['baseline_heads'], gate=source['precision_head'],
                 low=joblib.load(lower_path))
@@ -65,7 +74,7 @@ def main(args):
     frame = pd.read_csv(args.input)
     p = load_probs(args.base_predictions, args.split, frame.sample_id)
     artifact = load_artifact(args.upper_artifact, args.lower_artifact)
-    output = predict(artifact, frame, p)
+    output = predict_stages(artifact, frame, p)
     checks = invariants(frame, p, artifact, output['S3']) if args.audit else {}
     table = pd.DataFrame({'sample_id': frame.sample_id, 'label': output['S3']})
     if args.sample_submission:
@@ -81,9 +90,13 @@ def main(args):
         assert reference_mismatches == 0
     table.to_csv(args.output, index=False, mode='x')
     changed = output['J096'] != output['S3']
+    lower_changed = output['precision65'] != output['J096']
+    assert np.array_equal(output['S3'][lower_changed], output['J096'][lower_changed])
     report = dict(rows=len(table), experiments=frame.experiment_id.nunique(),
         reference_mismatches=reference_mismatches, checks=checks,
         changed_vs_J096=int(changed.sum()),
+        lower43_changed=int(lower_changed.sum()),
+        lower43_preserved_after_S3=int((output['S3'][lower_changed] == 3).sum()),
         changes={f'{a}->{b}': int(n) for (a, b), n in pd.DataFrame({'a':output['J096'][changed], 'b':output['S3'][changed]}).value_counts().items()},
         class_counts_J096=np.bincount(output['J096'], minlength=7)[1:].tolist(),
         class_counts_S3=np.bincount(output['S3'], minlength=7)[1:].tolist(),

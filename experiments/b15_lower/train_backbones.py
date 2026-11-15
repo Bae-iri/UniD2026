@@ -25,9 +25,13 @@ def write(path, value):
 
 def prepare(args):
     train = pd.read_csv(args.data/'train/train.csv')
-    if args.suite == 'train78':
-        frame = train.copy()
-        frame['_official_split'] = 'train'
+    if args.suite in ['train78', 'all97']:
+        frame = train.assign(_official_split='train')
+        if args.suite == 'all97':
+            val = pd.read_csv(args.data/'validation/validation.csv')
+            assert not set(train.experiment_id) & set(val.experiment_id)
+            frame = pd.concat([frame, val.assign(_official_split='validation')], ignore_index=True)
+            assert frame.experiment_id.nunique() == 97
         plans = [(f'outer_{k}', a, b) for k, (a, b) in enumerate(GroupKFold(5).split(frame, groups=frame.experiment_id))]
         root = args.output
         frame[['sample_id', 'experiment_id']].to_csv(root/'row_manifest.csv', index=False)
@@ -49,15 +53,15 @@ def prepare(args):
     for index, (scope, training, held) in enumerate(plans):
         folder = root/scope
         folder.mkdir(parents=True, exist_ok=True)
-        splitter = GroupKFold(3) if args.suite == 'train78' else GroupKFold(3, shuffle=True, random_state=2026111600+index)
+        splitter = GroupKFold(3) if args.suite != 'repeat77' else GroupKFold(3, shuffle=True, random_state=2026111600+index)
         parts = [training[b] for _, b in splitter.split(training, groups=frame.experiment_id.to_numpy()[training])]
         np.savez(folder/'partitions.npz', training=training, held=held, **{f'inner_{j}': p for j, p in enumerate(parts)})
         for j in range(4):
             allowed = np.setdiff1d(training, parts[j]) if j < 3 else training
-            split_seed = (20261115+100*(index*7+(2*j+1 if j < 3 else 6)) if args.suite == 'train78'
+            split_seed = (20261115+100*(index*7+(2*j+1 if j < 3 else 6)) if args.suite != 'repeat77'
                           else 2026111700+index*4+j)
             jobs.append(dict(folder=folder/(f'leave_{j}' if j < 3 else 'full'), allowed=allowed,
-                             held=held, split_seed=split_seed, selection_fraction=.15 if args.suite == 'train78' else .2))
+                             held=held, split_seed=split_seed, selection_fraction=.2 if args.suite == 'repeat77' else .15))
     return frame, jobs
 
 
@@ -139,28 +143,63 @@ def train_one(frame, images, plan, seed, epochs, device):
 
 
 def main(args):
-    torch.set_num_threads(4)
-    args.output.mkdir(parents=True, exist_ok=False)
-    frame, jobs = prepare(args)
-    write(args.output/'regeneration_protocol.json', dict(suite=args.suite, epochs=args.epochs,
-        seeds=[42,43,44], scopes=len(jobs)//4, source_sha256=sha(Path(__file__)),
-        frozen_structure=True, checkpoint_selection='experiment-disjoint internal split',
-        numeric_limit='GPU and library versions can change floating point values; labels and metrics must be rechecked.'))
-    paths = [args.data/s/str(p).replace('\\', '/') for s,p in zip(frame['_official_split'], frame.image_path)]
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        packed = np.stack(list(executor.map(lambda p: abc.common.read_image(p,128,4)[0], paths)))
+    torch.set_num_threads(3)
+    config_path = args.output/'regeneration_protocol.json'
+    if not config_path.exists():
+        args.output.mkdir(parents=True, exist_ok=False)
+        frame, jobs = prepare(args)
+        frame.to_csv(args.output/'frame.csv', index=False)
+        write(args.output/'jobs.json', [dict(j, folder=str(j['folder'].relative_to(args.output)),
+            allowed=j['allowed'].tolist(), held=j['held'].tolist()) for j in jobs])
+        write(config_path, dict(suite=args.suite, epochs=args.epochs,
+            seeds=[42,43,44], scopes=len(jobs)//4, source_sha256=sha(Path(__file__)),
+            frame_sha256=sha(args.output/'frame.csv'), frozen_structure=True,
+            checkpoint_selection='experiment-disjoint internal split',
+            leaderboard_score_used=False,
+            numeric_limit='GPU and library versions can change floating point values; labels and metrics must be rechecked.'))
+        paths = [args.data/s/str(p).replace('\\', '/') for s,p in zip(frame['_official_split'], frame.image_path)]
+        packed = np.lib.format.open_memmap(args.output/'images.npy', mode='w+', dtype=np.uint8, shape=(len(frame),4,128,128))
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            for i, image in enumerate(executor.map(lambda p: abc.common.read_image(p,128,4)[0], paths)):
+                packed[i] = image
+        packed.flush()
+        del packed
+    else:
+        config = json.loads(config_path.read_text())
+        assert config['suite'] == args.suite and config['epochs'] == args.epochs
+        assert config['source_sha256'] == sha(Path(__file__))
+        assert config['frame_sha256'] == sha(args.output/'frame.csv')
+        frame = pd.read_csv(args.output/'frame.csv')
+        jobs = json.loads((args.output/'jobs.json').read_text())
+        for j in jobs:
+            j['folder'] = args.output/j['folder']
+            j['allowed'], j['held'] = np.array(j['allowed'],int), np.array(j['held'],int)
+    if args.prepare_only:
+        print('Prepared', args.suite, frame.experiment_id.nunique(), 'experiments;', len(jobs)*3, 'models', flush=True)
+        return
+    if args.device == 'cuda' and not torch.cuda.is_available():
+        raise RuntimeError('CUDA is not available in this execution environment')
     device = torch.device(args.device)
-    images = torch.from_numpy(packed).to(device)
+    images = torch.from_numpy(np.load(args.output/'images.npy', mmap_mode='c')).to(device)
+    index = 0
     for plan in jobs:
         for seed in [42,43,44]:
-            train_one(frame, images, plan, seed, args.epochs, device)
+            if index % args.workers == args.worker:
+                train_one(frame, images, plan, seed, args.epochs, device)
+            index += 1
 
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--data', type=Path, required=True)
     ap.add_argument('--output', type=Path, required=True)
-    ap.add_argument('--suite', choices=['train78','repeat77'], required=True)
+    ap.add_argument('--suite', choices=['train78','repeat77','all97'], required=True)
     ap.add_argument('--epochs', type=int, default=15)
     ap.add_argument('--device', choices=['cpu','cuda'], default='cuda')
-    main(ap.parse_args())
+    ap.add_argument('--prepare-only', action='store_true')
+    ap.add_argument('--workers', type=int, default=1)
+    ap.add_argument('--worker', type=int, default=0)
+    args=ap.parse_args()
+    if not 0 <= args.worker < args.workers:
+        ap.error('worker must satisfy 0 <= worker < workers')
+    main(args)

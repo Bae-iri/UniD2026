@@ -1,0 +1,32 @@
+{
+  "models": 60,
+  "epochs": 900,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "model_training_seconds_total": 2680.224867100216,
+  "source_sha256": "95874cea3ccd0e046d437c6dbc7e1a0cf962e0895a76dc5e04505379dfca3810",
+  "dataset_experiments": 97,
+  "E16_included": true,
+  "outer_folds": 5,
+  "normalizer_and_checkpoint_selection": "only within allowed outer/inner training experiments",
+  "leaderboard_input": false,
+  "regeneration_protocol": {
+    "suite": "all97",
+    "epochs": 15,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "scopes": 5,
+    "source_sha256": "95874cea3ccd0e046d437c6dbc7e1a0cf962e0895a76dc5e04505379dfca3810",
+    "frame_sha256": "98acc08b09f3fe1a499b2d22886caf2165e48257dff5878c8321ac1f0f658eec",
+    "frozen_structure": true,
+    "checkpoint_selection": "experiment-disjoint internal split",
+    "leaderboard_score_used": false,
+    "numeric_limit": "GPU and library versions can change floating point values; labels and metrics must be rechecked."
+  }
+}

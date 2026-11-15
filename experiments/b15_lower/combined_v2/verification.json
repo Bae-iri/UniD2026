@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-15",
+  "python": "3.10.12",
+  "checks": {
+    "unit_tests": 5,
+    "fresh_backbone_models": 60,
+    "fresh_training_epochs": 900,
+    "total_backbone_models_audited": 240,
+    "grouped_evaluation_splits": 20,
+    "primary_experiments": 97,
+    "primary_rows": 43722,
+    "primary_E16_rows": 1543,
+    "downstream_feature_and_label_prefixes": 360,
+    "raw_input_prefixes": 22,
+    "submission_mismatches": 0,
+    "lower43_test_corrections_preserved": 25,
+    "lower43_validation_corrections_preserved": 92,
+    "archived_submission_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+    "primary_rollup_crosscheck_matches": true,
+    "all_current_sources_match_audit_hashes": true
+  },
+  "leaderboard_score_input": false,
+  "parameter_search": false,
+  "evaluation_exclusions": [],
+  "source_sha256": {
+    "reproduce.py": "c22071fb7665c36c5ac41fd1a5a600f6d5508aa744a4ba3a774c15e24483a44c",
+    "train_backbones.py": "95874cea3ccd0e046d437c6dbc7e1a0cf962e0895a76dc5e04505379dfca3810",
+    "validate.py": "001cb7fac2190e09fd06918e42091b5f51a64f0f975a1fa14a2ab943bd96b65e",
+    "infer.py": "c390780403e3be8eea388a8f41bd61abcc61ab48c9a4e8620b20225e3e46396d",
+    "raw_audit.py": "800e9661d0e60a28bda0edf82295f62e85b1ffb566f8d94cc0455c6b229f7d7c",
+    "build_combined.py": "ca4d66a19f80cc3f64a92bcc03cffb73132ab0468c86c5ad2deb2d842e146844",
+    "pipeline.py": "1ba718308edbe3b1c40d19afe48fd15d29a5468a636c880c1e70bcf0d883c225",
+    "test_pipeline.py": "8dd9f31dbbf4c4bcd3b372aeb0ee5b7be4ec9e8bb40e5987e7a441da0952fbcd",
+    "core/upper.py": "eec53ae5bb26ad9a95757725a49d5daf7b58fe31f782bbf19368805362a29d5e",
+    "core/causal.py": "1b72733742bf109d1dd36e740a83c6385ac5acbf7dfbc205dfa5a0469357770a",
+    "core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core/lower.py": "38005a59e35413e21ac145656a3c6fd543859436aba3c6ee25735703470722ab",
+    "core/precision.py": "4b520b5bee52f8f029ddf944828e4a8e0b73de2362cb4d095863ba7a60fc5e5d"
+  },
+  "result_sha256": {
+    "audit_v2/audit.json": "bd93752ab744d2a6cebdebf108a02be61f94af740d8aad6dca30c70e89236c96",
+    "audit_v2/primary_all97.json": "1499363f1747446f6cc1a7e13cf0d18381fc612088e9fb2fff9b4bcaa10138aa",
+    "combined_v2/manifest.json": "9d84a98c1c26f0cbb729b813e4073f3fe56b5058bace666091cfbdbc6b9b5339",
+    "combined_v2/raw_audit.json": "73cf597968ead2a98ffcaccf26b05397da901af37866b2dbd422ab427e48d0bb",
+    "protocol_v2.json": "f0b0a8528854ad1251ac77c53b8278fa73244376667c056acce2319dbf993984",
+    "REPORT.md": "0d847c1b5f4c0b3707f0aea1881409261ecd6207a6bbfa0f21d8e73acc1801be"
+  },
+  "limitation": "Previously inspected official Train/Validation; robustness evidence, not a fresh blind benchmark."
+}

@@ -14,8 +14,8 @@ from reproduce import load_artifact
 
 
 class Runtime:
-    def __init__(self, base, upper, lower, device='cpu'):
-        self.artifact = load_artifact(upper, lower)
+    def __init__(self, base, upper=None, lower=None, device='cpu', combined=None):
+        self.artifact = load_artifact(upper, lower, combined)
         self.device = torch.device(device)
         self.models = []
         meta = json.loads((Path(base)/'preprocessing.json').read_text())
@@ -66,7 +66,7 @@ def main(args):
     frame = pd.read_csv(args.input)
     if not frame.sample_id.is_unique:
         raise ValueError('Duplicate sample ID')
-    runtime = Runtime(args.base, args.upper_artifact, args.lower_artifact, args.device)
+    runtime = Runtime(args.base, args.upper_artifact, args.lower_artifact, args.device, args.combined_artifact)
     labels, _ = runtime.labels(frame, args.image_root)
     table = pd.DataFrame({'sample_id': frame.sample_id, 'label': labels.astype(int)})
     if args.sample_submission:
@@ -79,8 +79,10 @@ def main(args):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
-    for name in ['input', 'image-root', 'base', 'upper-artifact', 'lower-artifact', 'output']:
+    for name in ['input', 'image-root', 'base', 'output']:
         ap.add_argument('--'+name, type=Path, required=True)
+    for name in ['upper-artifact','lower-artifact','combined-artifact']:
+        ap.add_argument('--'+name,type=Path)
     ap.add_argument('--sample-submission', type=Path)
     ap.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
     with threadpool_limits(limits=2):

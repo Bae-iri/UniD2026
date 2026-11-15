@@ -7,12 +7,13 @@ Previously explored datasets make this a robustness audit, not a new blind test.
 import argparse
 import hashlib
 import json
+import time
 from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
-from pipeline import fit_frozen_recipe, predict, s3
+from pipeline import fit_frozen_recipe, predict_stages, s3
 from reproduce import load_artifact, load_probs, sha
 from core.precision import matrix, macro
 
@@ -100,8 +101,16 @@ VIEWS = ['original', 'stride2_0', 'stride2_1', 'stride3_0', 'stride3_1', 'stride
          'alternating_2_3', 'missing30']
 
 
-def scope_predictions(frame, root, scope, audit, dest, suite):
+def scope_predictions(frame, root, scope, audit, dest, suite, wait=False):
     folder = root/scope
+    if wait:
+        announced = False
+        needed = [folder/name/f'seed_{seed}/complete.json' for name in ['leave_0','leave_1','leave_2','full'] for seed in SEEDS]
+        while not all(path.exists() and path.stat().st_size > 0 for path in needed):
+            if not announced:
+                print('Waiting for independent backbones:', suite, scope, flush=True)
+                announced = True
+            time.sleep(5)
     with np.load(folder/'partitions.npz') as z:
         training, held = z['training'], z['held']
         parts = [z[f'inner_{k}'] for k in range(3)]
@@ -125,7 +134,7 @@ def scope_predictions(frame, root, scope, audit, dest, suite):
         sub = subsample(hf, view)
         f = hf.iloc[sub].reset_index(drop=True)
         p = pp[:, held][:, sub]
-        output = predict(model, f, p)
+        output = predict_stages(model, f, p)
         tab = f[['sample_id', 'experiment_id', 'label', 'bat_cc', 'soc_status', 'tr_method']].copy()
         tab['suite'], tab['scope'], tab['view'] = suite, scope, view
         for name, values in output.items():
@@ -141,8 +150,8 @@ def scope_predictions(frame, root, scope, audit, dest, suite):
     return rows
 
 
-def summary(table, method='S3', draws=6000):
-    y, base, p = table.label.to_numpy(int), table.J096.to_numpy(int), table[method].to_numpy(int)
+def summary(table, method='S3', draws=6000, reference='J096'):
+    y, base, p = table.label.to_numpy(int), table[reference].to_numpy(int), table[method].to_numpy(int)
     groups = list(table.groupby('experiment_id').indices.values())
     before = np.stack([matrix(y[i], base[i]) for i in groups])
     after = np.stack([matrix(y[i], p[i]) for i in groups])
@@ -153,14 +162,28 @@ def summary(table, method='S3', draws=6000):
     delta = macro(after)-macro(before)
     cm = after.sum(0)
     f1 = np.divide(2*np.diag(cm), cm.sum(0)+cm.sum(1), out=np.zeros(6), where=cm.sum(0)+cm.sum(1) > 0)
-    return dict(method=method, rows=len(table), experiments=len(groups),
+    tp6 = int(((y == 6) & (p == 6)).sum())
+    fp6 = int(((y != 6) & (p == 6)).sum())
+    fn6 = int(((y == 6) & (p != 6)).sum())
+    return dict(method=method, reference=reference, rows=len(table), experiments=len(groups),
         base_f1=float(macro(before.sum(0))), macro_f1=float(macro(cm)),
         delta=float(macro(cm)-macro(before.sum(0))),
         bootstrap_f1_95=np.quantile(boot_after, [.025, .975]).tolist(),
         bootstrap_delta_95=np.quantile(boot_after-boot_before, [.025, .975]).tolist(),
         better_experiments=int((delta > 1e-12).sum()), worse_experiments=int((delta < -1e-12).sum()),
         corrected=int(((base != y) & (p == y)).sum()), harmed=int(((base == y) & (p != y)).sum()),
-        changed=int((base != p).sum()), per_class_f1=f1.tolist(), confusion_matrix=cm.tolist())
+        changed=int((base != p).sum()), per_class_f1=f1.tolist(), confusion_matrix=cm.tolist(),
+        stage6=dict(true_positive=tp6, false_positive=fp6, false_negative=fn6,
+                    precision=tp6/max(tp6+fp6, 1), recall=tp6/max(tp6+fn6, 1),
+                    f1=2*tp6/max(2*tp6+fp6+fn6, 1)))
+
+
+def component_results(table):
+    rows = []
+    for reference, method in [('rule1', 'upper56'), ('upper56', 'precision65'),
+                              ('precision65', 'J096'), ('J096', 'S3'), ('precision65', 'S3')]:
+        rows.append(summary(table, method, reference=reference))
+    return rows
 
 
 def main(args):
@@ -169,12 +192,21 @@ def main(args):
     train = pd.read_csv(args.data/'train/train.csv')
     frame = pd.read_csv(args.repeated/'development.csv')
     np.testing.assert_array_equal(pd.read_csv(args.nested/'row_manifest.csv').sample_id, train.sample_id)
-    for suite, data, root, scopes in [
+    suites = [
         ('train78', train, args.nested, [f'outer_{k}' for k in range(5)]),
-        ('repeat77', frame, args.repeated/'backbones', [f'repeat_{r}_fold_{k}' for r in range(2) for k in range(5)])]:
+        ('repeat77', frame, args.repeated/'backbones', [f'repeat_{r}_fold_{k}' for r in range(2) for k in range(5)])]
+    e16 = 'E_e5bcddc7d77f459ea541cf658ab4346e'
+    if args.all97:
+        all97 = pd.read_csv(args.all97/'frame.csv')
+        official_val = pd.read_csv(args.data/'validation/validation.csv')
+        assert set(all97.sample_id) == set(train.sample_id) | set(official_val.sample_id)
+        assert all97.sample_id.is_unique and all97.experiment_id.nunique() == 97
+        assert e16 in set(all97.experiment_id)
+        suites.insert(0, ('all97', all97, args.all97, [f'outer_{k}' for k in range(5)]))
+    for suite, data, root, scopes in suites:
         audit = BackboneAudit(data)
         for scope in scopes:
-            tables += scope_predictions(data, root, scope, audit, args.output, suite)
+            tables += scope_predictions(data, root, scope, audit, args.output, suite, wait=(suite == 'all97'))
         records += audit.records
     table = pd.concat(tables, ignore_index=True)
     table.to_csv(args.output/'outer_predictions.csv', index=False)
@@ -190,6 +222,18 @@ def main(args):
     pd.DataFrame(split).to_csv(args.output/'split_scores.csv', index=False)
     conditions = []
     original = table[table.view == 'original']
+    components = {suite: component_results(sub) for suite, sub in original.groupby('suite')}
+    write(args.output/'outer_components.json', components)
+    if args.all97:
+        primary = original[original.suite == 'all97']
+        expected_ids = set(all97.sample_id)
+        assert primary.sample_id.is_unique and set(primary.sample_id) == expected_ids
+        primary_e16 = primary[primary.experiment_id == e16]
+        assert len(primary_e16) == int((all97.experiment_id == e16).sum())
+        write(args.output/'primary_all97.json', dict(scope='All 97 official train and validation experiments; E16 included',
+              overall=summary(primary), components=components['all97'], E16=component_results(primary_e16),
+              E16_rows=len(primary_e16), excluded_experiments=[],
+              no_leaderboard_score_input=True, no_parameter_selection=True))
     for suite, sub in original.groupby('suite'):
         for field in ['bat_cc', 'soc_status', 'tr_method']:
             for value, group in sub.groupby(field):
@@ -210,7 +254,7 @@ def main(args):
     for view in VIEWS:
         ix = subsample(val, view)
         f = val.iloc[ix].reset_index(drop=True)
-        output = predict(artifact, f, pp[:, ix])
+        output = predict_stages(artifact, f, pp[:, ix])
         t = f[['sample_id', 'experiment_id', 'label']].copy()
         t['view'] = view
         for name, values in output.items():
@@ -219,37 +263,21 @@ def main(args):
     validation = pd.concat(val_rows, ignore_index=True)
     validation.to_csv(args.output/'validation_predictions.csv', index=False)
     val_result = {v: summary(s) for v, s in validation.groupby('view')}
-    e16 = 'E_e5bcddc7d77f459ea541cf658ab4346e'
-    val_result['original_without_E16'] = summary(validation[(validation.view == 'original') & (validation.experiment_id != e16)])
+    full_val = validation[validation.view == 'original']
+    assert set(full_val.sample_id) == set(val.sample_id)
+    assert full_val.sample_id.is_unique and e16 in set(full_val.experiment_id)
     write(args.output/'validation_summary.json', val_result)
-    # Descriptive 30/70 split experiment; never extrapolate a calibrated private score.
-    simulation = {}
-    for suite, sub in original.groupby('suite'):
-        groups = list(sub.groupby('experiment_id').indices.values())
-        y, p = sub.label.to_numpy(int), sub.S3.to_numpy(int)
-        cms = np.stack([matrix(y[i], p[i]) for i in groups])
-        rng = np.random.default_rng(20261115)
-        public, private = [], []
-        for _ in range(5000):
-            perm = rng.permutation(len(groups))
-            count = max(1, round(len(groups)*.3))
-            public.append(float(macro(cms[perm[:count]].sum(0))))
-            private.append(float(macro(cms[perm[count:]].sum(0))))
-        public, private = np.array(public), np.array(private)
-        simulation[suite] = dict(unit='experiment_id; 30/70 experiments, not necessarily 30/70 rows',
-            simulations=5000, public_95=np.quantile(public, [.025,.975]).tolist(),
-            private_95=np.quantile(private, [.025,.975]).tolist(),
-            private_minus_public_95=np.quantile(private-public, [.025,.975]).tolist(),
-            private_below_public_fraction=float((private < public).mean()),
-            limitation='Descriptive partition sensitivity; not the hidden score confidence interval and not conditioned on public 0.9719.')
-    write(args.output/'public_private_simulation.json', simulation)
+    write(args.output/'validation_components.json', component_results(full_val))
+    write(args.output/'validation_E16_components.json', component_results(full_val[full_val.experiment_id == e16]))
     write(args.output/'audit.json', dict(passed=True, backbone_models_checked=len(records),
-        unique_backbone_models=len(set(r['path'] for r in records)), outer_splits=15,
+        unique_backbone_models=len(set(r['path'] for r in records)), outer_splits=sum(len(s[3]) for s in suites),
         frozen_thresholds=dict(head56=.7, gate65=.7, lower43=.5, lower34=1.01, S3_H=300, S3_d=5),
         outer_experiments_excluded_from_all_fit_preprocessing_checkpoint_and_head_fitting=True,
         training_head_probabilities_cross_fitted_inside_each_outer_scope=True,
         preprocessing_independently_recomputed=True, checkpoint_selection_and_file_hashes_checked=True,
         public_score_used_for_selection=False, test_labels_used=False,
+        primary_all97_E16_included=bool(args.all97), official_validation_E16_included=True,
+        evaluation_exclusions=[], no_leaderboard_input_parameter=True,
         train_sha256=sha(args.data/'train/train.csv'), validation_sha256=sha(args.data/'validation/validation.csv'),
         sources={str(p.relative_to(Path(__file__).parent)):sha(p) for p in Path(__file__).parent.rglob('*.py')},
         limits=['Archived submitted weights only reproduce on Test and evaluate on already explored Validation.',
@@ -258,7 +286,7 @@ def main(args):
                 'Repeated splits and train78/repeat77 suites overlap; do not treat them as independent datasets.',
                 'Frozen hypotheses and thresholds originated from previously inspected data; no fresh blind benchmark.',
                 'Capacity summaries are stratified evaluation, not leave-capacity-out training.',
-                'Previously used final confirmation is deliberately not reused.']))
+                'The all97 audit includes every official experiment, including previously inspected validation and confirmation groups; it is not a new blind benchmark.']))
     write(args.output/'backbone_lineage.json', records)
     print('RESULT', json.dumps({k:v for k,v in results.items() if k.endswith('_original')}, ensure_ascii=False), flush=True)
     print('VALIDATION', json.dumps(val_result['original'], ensure_ascii=False), flush=True)
@@ -268,5 +296,6 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     for name in ['data', 'nested', 'repeated', 'base-predictions', 'upper-artifact', 'lower-artifact', 'output']:
         ap.add_argument('--'+name, type=Path, required=True)
+    ap.add_argument('--all97', type=Path, required=True, help='Primary complete-data grouped audit, including E16')
     with threadpool_limits(limits=2):
         main(ap.parse_args())
