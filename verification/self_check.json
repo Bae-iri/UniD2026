@@ -1,0 +1,20 @@
+{
+  "checker": "self-authored implementation of the five checks in the participant guide",
+  "final_file": "submission_stage6.csv",
+  "final_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "rows": 3451,
+  "experiments": 11,
+  "checks": {
+    "1 최종 선택 파일 재현": true,
+    "1a 최종 파일 바이트 일치": true,
+    "2 같은 입력 다시 실행": true,
+    "3 행 순서 섞기": true,
+    "4 실험 나눠 넣기": true,
+    "5 미래 행 빼고 넣기(앞 60%)": true,
+    "추가 처음 1개 관측 prefix": true,
+    "추가 처음 2개 관측 prefix": true,
+    "추가 처음 5개 관측 prefix": true,
+    "추가 정답 열 무관성": true
+  },
+  "passed": true
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+data/
+runs/
+.hierarchy_cache/
+.abc_cache/
+lib/abc_reference/.hierarchy_cache/

@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-11-15T13:03:20.935051+09:00",
+  "final_submission": "submission_stage6.csv",
+  "final_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "final_rows": 3451,
+  "exact_bytes_match_previously_selected_stage6": true,
+  "all_six_weight_files_match_archived_final_weights": true,
+  "raw_image_and_sensor_inference": true,
+  "inference_training_or_preprocessor_fitting": false,
+  "device": "cpu",
+  "environment": {
+    "os": "Ubuntu 22.04.5 LTS",
+    "python": "3.10.12",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "Pillow": "12.3.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "guide_self_check_passed": true,
+  "self_checker_provenance": "Locally authored implementation of the supplied guide, not the separately distributed organizer script",
+  "downstream_feature_and_prediction_prefix_checks": 176,
+  "prefix_mismatches": 0,
+  "training_note": "Included checkpoints were preserved. Full neural-network retraining was not rerun for this final packaging; training sources compile and train.py --help succeeds.",
+  "files": {
+    ".gitignore": {
+      "bytes": 122,
+      "sha256": "3461812e3e89604c99af856b39124f3021f4a6328ef9b3ff6c93a535701ac500"
+    },
+    "AGENTS.md": {
+      "bytes": 2545,
+      "sha256": "c23f0655d0d68f148019acde30836c328e9babfc85dc7bddc2858de99acf8ee5"
+    },
+    "LICENSE": {
+      "bytes": 1064,
+      "sha256": "8f5f48ecb6c64dca58a76e27fec902d9a823ec6dce0a2701c037ccac28ee0ab0"
+    },
+    "README.md": {
+      "bytes": 9114,
+      "sha256": "d46b68c241f0a907cba7a2e8bc1ae14fa64dd3b5dc08fd54b6c1deddf0f17968"
+    },
+    "audit_causality.py": {
+      "bytes": 4135,
+      "sha256": "6d51e6ebc620eeca0ca2731fddaec49214009dae291e0804d3b329ff92349c4b"
+    },
+    "check_submission.py": {
+      "bytes": 4658,
+      "sha256": "c6b8cf3eca4c69d43660bb7e0b3e33a12e4bdf57926c04503f3b0f837ed651de"
+    },
+    "lib/abc_reference/__init__.py": {
+      "bytes": 69,
+      "sha256": "34240207a84799fa3f63f6bb3d06413a18fe6a4970187c053c841001eb64047d"
+    },
+    "lib/abc_reference/abc_fusion_experiment.py": {
+      "bytes": 22744,
+      "sha256": "7ab68faf536849b2e980852460be5dbefb53102e72715a57500d40c71c4fb4ed"
+    },
+    "lib/abc_reference/hierarchy_experiment.py": {
+      "bytes": 38255,
+      "sha256": "a95c53193b351519b731df6e02d3629d667a86a720b6af9b486d8672b6dd28d4"
+    },
+    "lib/causal.py": {
+      "bytes": 1828,
+      "sha256": "1b72733742bf109d1dd36e740a83c6385ac5acbf7dfbc205dfa5a0469357770a"
+    },
+    "lib/precision.py": {
+      "bytes": 4102,
+      "sha256": "4b520b5bee52f8f029ddf944828e4a8e0b73de2362cb4d095863ba7a60fc5e5d"
+    },
+    "lib/targeted_rule1/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "lib/targeted_rule1/b_oof.py": {
+      "bytes": 5143,
+      "sha256": "c90e1b274ecf53e4ba4981d899f10ad74701213488dedb8dc378fe3f4ce12a43"
+    },
+    "lib/targeted_rule1/model.py": {
+      "bytes": 9060,
+      "sha256": "b2c6740285d09d84d0d1519826e22a2dece4d7dcbad0acb4529298a337760463"
+    },
+    "model.py": {
+      "bytes": 11090,
+      "sha256": "ef8475ee92d6bfa3d5f9b2a22417997586cc17d4598adbf2c7720c44dbf4a669"
+    },
+    "requirements.txt": {
+      "bytes": 103,
+      "sha256": "b8c60f4554110c14d122e791ba3649e5ce2b565f90529e970eeabcc324be6443"
+    },
+    "submission_stage6.csv": {
+      "bytes": 127703,
+      "sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b"
+    },
+    "test.py": {
+      "bytes": 1992,
+      "sha256": "ec93c8a22080073828b2ad7b537729156f3782af469534587c2cb5bfea6d37b5"
+    },
+    "train.py": {
+      "bytes": 10395,
+      "sha256": "aa7513e4ee6b49e639c3fe3e155e5d042d0126484f85809ae2aeb8a8fe32787a"
+    },
+    "verification/causality.json": {
+      "bytes": 462,
+      "sha256": "a9ec5ee5ba726a415a3bdb7791f03e3c677700358e84eb211301fe587e7dc388"
+    },
+    "verification/self_check.json": {
+      "bytes": 722,
+      "sha256": "513668ea79686adf070786d73d22a7ab839196f2f0eaa62e30fbc7b3efa19ca8"
+    },
+    "weights/B_seed42.pt": {
+      "bytes": 665403,
+      "sha256": "76e5b48b26ccc240ccbebbe0718ea2ba489d445b957dd46edde398d85e9a2fa1"
+    },
+    "weights/B_seed43.pt": {
+      "bytes": 665403,
+      "sha256": "0616e832b97c30a27977d56db817a28a00b1c6a751a609779b68340330936afc"
+    },
+    "weights/B_seed44.pt": {
+      "bytes": 665403,
+      "sha256": "3164a783022d85da7cda266f7db858c6f17c716c9e27397b54c8968e846e26a4"
+    },
+    "weights/lower_heads.joblib": {
+      "bytes": 745663,
+      "sha256": "cbf50a36084d25c4e4c8dbdbb94a9b7453f4c127c6f6e43b6c15a246da379620"
+    },
+    "weights/pipeline.joblib": {
+      "bytes": 563510,
+      "sha256": "a77ac9410130cca43c4f7bd486e813e96aca8fcd9b4d5245fbee7043c7b09959"
+    },
+    "weights/preprocessing.json": {
+      "bytes": 1626,
+      "sha256": "5b835f1c46cdb2cd6cbef579d97705e1b8c1ac188877fa0b49226363c6b26b49"
+    }
+  }
+}

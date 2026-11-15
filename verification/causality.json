@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "experiments": 11,
+  "rows": 3451,
+  "downstream_feature_and_prediction_prefix_checks": 176,
+  "prefix_mismatches": 0,
+  "feature_groups": [
+    "upper45",
+    "upper56",
+    "lower",
+    "S3"
+  ],
+  "shuffled_features_exact": true,
+  "labels_and_sample_ids_ignored": true,
+  "model_and_preprocessor_fit_blocked_during_audit": true,
+  "scope": "Fixed row-aligned B probabilities; check_submission.py separately checks raw-image prefixes"
+}
