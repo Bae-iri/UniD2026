@@ -1,0 +1,40 @@
+{
+  "candidate": "One fixed L2 logistic veto on original/S3 disagreements only",
+  "C": 0.2,
+  "threshold": 0.95,
+  "features": [
+    "original_is6",
+    "original_p",
+    "current_p",
+    "probability_margin",
+    "unanimity_original",
+    "p6_seed_sd",
+    "temperature_peak_log",
+    "temperature_drop_log",
+    "sum_rate_signed_log",
+    "original6_run_log"
+  ],
+  "feature_range_guard": "Fit only on informative training disagreements; nonfinite/out-of-range rows retain S3",
+  "primary": "All97 experiments, E16 included, outer5fold; gate learns from inner experiment-held predictions",
+  "acceptance": [
+    "Positive paired-bootstrap95 lower for primary F1 gain and at least one change",
+    "No F1 regression in any of5folds times8cadence views",
+    "No aggregate per-class F1 or stage6 FP/FN regression in any of8views",
+    "No F1, per-class F1, stage6 FP/FN regression on all19official Validation experiments, in all8views",
+    "Positive full official Validation F1 gain; source and prefix checks pass"
+  ],
+  "fallback": "Export current S3 with veto disabled when any criterion fails",
+  "leaderboard_input": false,
+  "parameter_search": false,
+  "experiment_exclusions": [],
+  "no_unseen_score_guarantee": true,
+  "limitations": [
+    "Previously inspected datasets and hypotheses; not a fresh blind benchmark.",
+    "Inner stack fit probabilities come from its one teacher in-sample; that teacher excludes inner/outer evaluation groups. Outer baseline uses proper inner OOF training probabilities.",
+    "A gate score0.95 is a fixed model threshold, not a95% calibrated guarantee of correctness."
+  ],
+  "source_sha256": {
+    "validate_fusion.py": "3bf43b702157aa21a83119e14c6cd04a6346c883b31ea9e99c6387f1fa7d7f2c",
+    "fusion.py": "96eb165e8648b846101044c6bb67cdfca06cb4bc97c11a50a2db3de5f8fb06c8"
+  }
+}

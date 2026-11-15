@@ -1,0 +1,37 @@
+[
+  {
+    "fold": 0,
+    "informative": 314,
+    "original_correct": 46,
+    "current_correct": 268,
+    "fitted": true
+  },
+  {
+    "fold": 1,
+    "informative": 407,
+    "original_correct": 55,
+    "current_correct": 352,
+    "fitted": true
+  },
+  {
+    "fold": 2,
+    "informative": 373,
+    "original_correct": 44,
+    "current_correct": 329,
+    "fitted": true
+  },
+  {
+    "fold": 3,
+    "informative": 393,
+    "original_correct": 63,
+    "current_correct": 330,
+    "fitted": true
+  },
+  {
+    "fold": 4,
+    "informative": 410,
+    "original_correct": 45,
+    "current_correct": 365,
+    "fitted": true
+  }
+]

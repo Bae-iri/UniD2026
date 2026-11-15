@@ -1,0 +1,216 @@
+{
+  "veto_accepted": false,
+  "deployment": "current_S3",
+  "outer_checks_pass": false,
+  "validation_checks_pass": false,
+  "primary": {
+    "method": "hybrid",
+    "reference": "current",
+    "rows": 43722,
+    "experiments": 97,
+    "base_f1": 0.8525216107180514,
+    "macro_f1": 0.8525216107180514,
+    "delta": 0.0,
+    "bootstrap_f1_95": [
+      0.778270445264979,
+      0.9085625251810828
+    ],
+    "bootstrap_delta_95": [
+      0.0,
+      0.0
+    ],
+    "better_experiments": 0,
+    "worse_experiments": 0,
+    "corrected": 0,
+    "harmed": 0,
+    "changed": 0,
+    "per_class_f1": [
+      1.0,
+      0.8111888111888111,
+      0.8863673336586952,
+      0.7511101712835695,
+      0.7795002735728616,
+      0.8869630746043707
+    ],
+    "confusion_matrix": [
+      [
+        18560,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5220,
+        877,
+        0,
+        13,
+        0
+      ],
+      [
+        0,
+        1540,
+        10897,
+        43,
+        44,
+        11
+      ],
+      [
+        0,
+        0,
+        231,
+        1776,
+        157,
+        39
+      ],
+      [
+        0,
+        0,
+        47,
+        703,
+        2137,
+        172
+      ],
+      [
+        0,
+        0,
+        1,
+        4,
+        73,
+        1177
+      ]
+    ],
+    "stage6": {
+      "true_positive": 1177,
+      "false_positive": 222,
+      "false_negative": 78,
+      "precision": 0.8413152251608291,
+      "recall": 0.9378486055776892,
+      "f1": 0.8869630746043707
+    },
+    "current_per_class_f1": [
+      1.0,
+      0.8111888111888111,
+      0.8863673336586952,
+      0.7511101712835695,
+      0.7795002735728616,
+      0.8869630746043707
+    ],
+    "current_stage6_FP": 222,
+    "current_stage6_FN": 78,
+    "metrics_no_regression": true
+  },
+  "official_validation": {
+    "method": "hybrid",
+    "reference": "current",
+    "rows": 10200,
+    "experiments": 19,
+    "base_f1": 0.7745268549503338,
+    "macro_f1": 0.7745268549503338,
+    "delta": 0.0,
+    "bootstrap_f1_95": [
+      0.6436028105004338,
+      0.9318201656516184
+    ],
+    "bootstrap_delta_95": [
+      0.0,
+      0.0
+    ],
+    "better_experiments": 0,
+    "worse_experiments": 0,
+    "corrected": 0,
+    "harmed": 0,
+    "changed": 0,
+    "per_class_f1": [
+      1.0,
+      0.7922971114167813,
+      0.9012089810017271,
+      0.4729835552075176,
+      0.5892857142857143,
+      0.8913857677902621
+    ],
+    "confusion_matrix": [
+      [
+        4469,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        864,
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        389,
+        2609,
+        68,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        302,
+        39,
+        2
+      ],
+      [
+        0,
+        0,
+        42,
+        554,
+        495,
+        43
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        12,
+        238
+      ]
+    ],
+    "stage6": {
+      "true_positive": 238,
+      "false_positive": 45,
+      "false_negative": 13,
+      "precision": 0.8409893992932862,
+      "recall": 0.9482071713147411,
+      "f1": 0.8913857677902621
+    },
+    "current_per_class_f1": [
+      1.0,
+      0.7922971114167813,
+      0.9012089810017271,
+      0.4729835552075176,
+      0.5892857142857143,
+      0.8913857677902621
+    ],
+    "current_stage6_FP": 45,
+    "current_stage6_FN": 13,
+    "metrics_no_regression": true
+  },
+  "features_and_gate_prefix_checks": 508,
+  "backbone_records_audited": 69,
+  "consensus_rows_immutable": true,
+  "original_4to3_preserved": true,
+  "original_submission_unchanged": true,
+  "test_prediction_changes": 0,
+  "exported_csv_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "protected_csv_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "gate_threshold": 0.95,
+  "leaderboard_input": false,
+  "unseen_non_regression_guaranteed": false,
+  "caveat": "Validation rejection disables the veto and preserves current S3. Identity of Test predictions preserves its score; unknown new predictions have no absolute guarantee."
+}

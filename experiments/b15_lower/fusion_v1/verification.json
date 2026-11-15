@@ -1,0 +1,20 @@
+{
+  "unit_tests": 4,
+  "feature_and_gate_prefix_checks": 508,
+  "raw_input_rows": 3451,
+  "raw_input_label_mismatches": 0,
+  "original_csv_unchanged": true,
+  "exported_csv_identical": true,
+  "validation_selected_mode": "current_S3",
+  "learned_veto_enabled": false,
+  "performance_improvement_demonstrated": false,
+  "existing_test_score_preserved_by_identical_predictions": true,
+  "original_submission_sha256": "119e8d6e301312b97ba61d399622e1d6a91e130c185f325ce489b56967f1dd2b",
+  "source_sha256": {
+    "fusion.py": "96eb165e8648b846101044c6bb67cdfca06cb4bc97c11a50a2db3de5f8fb06c8",
+    "validate_fusion.py": "3bf43b702157aa21a83119e14c6cd04a6346c883b31ea9e99c6387f1fa7d7f2c",
+    "test_fusion.py": "c9c9ed6fdcd2fd12bfc458aa94951c43e4838975fdf57d3c404a8c9cf17b50c2"
+  },
+  "artifact_sha256": "2aec8c8207fc4e01cb5843343926720f17ad9c08ff3e89b929dfc7f9c3d95897",
+  "decision_sha256": "b2fe06b8d3eafbef8091c7ea984b0457fca0aa3b5924fd8adfe9ac630b121725"
+}
