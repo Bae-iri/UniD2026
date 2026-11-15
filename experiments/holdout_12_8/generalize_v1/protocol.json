@@ -1,0 +1,11 @@
+{
+  "holds": [
+    15,
+    30,
+    60,
+    120
+  ],
+  "tolerance": 0.003,
+  "selection": "(holdout 보기 전 고정): 후보 중 개발 OOF 4개 간격 평균 이득 ≥ S40 평균 이득 − 0.3점, 5s bootstrap 하한 > 0\n  을 만족하는 것 가운데 개발 5s에서 기준 대비 바뀐 행이 가장 적은 것.\n\n  python -u experiments/holdout_12_8/generalize.py --output experiments/holdout_12_8/generalize_v1",
+  "test_read": false
+}

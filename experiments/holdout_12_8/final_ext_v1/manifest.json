@@ -1,0 +1,149 @@
+{
+ "threshold65": 0.5,
+ "choices": [
+  {
+   "threshold": 0.5,
+   "delta": 0.013281221345731398,
+   "corrected": 138,
+   "harmed": 26,
+   "improved": 38,
+   "worsened": 11,
+   "loo_min": 0.01155329153084017,
+   "passed": true
+  },
+  {
+   "threshold": 0.6,
+   "delta": 0.011375204965413221,
+   "corrected": 115,
+   "harmed": 18,
+   "improved": 36,
+   "worsened": 8,
+   "loo_min": 0.009868788719017418,
+   "passed": true
+  },
+  {
+   "threshold": 0.7,
+   "delta": 0.009102667192550928,
+   "corrected": 88,
+   "harmed": 11,
+   "improved": 31,
+   "worsened": 6,
+   "loo_min": 0.007809457547143239,
+   "passed": true
+  },
+  {
+   "threshold": 0.9,
+   "delta": 0.0026433309313590447,
+   "corrected": 23,
+   "harmed": 0,
+   "improved": 14,
+   "worsened": 0,
+   "loo_min": 0.0020949520270505673,
+   "passed": true
+  },
+  {
+   "threshold": 0.95,
+   "delta": 0.0,
+   "corrected": 0,
+   "harmed": 0,
+   "improved": 0,
+   "worsened": 0,
+   "loo_min": 0.0,
+   "passed": false
+  },
+  {
+   "threshold": 0.99,
+   "delta": 0.0,
+   "corrected": 0,
+   "harmed": 0,
+   "improved": 0,
+   "worsened": 0,
+   "loo_min": 0.0,
+   "passed": false
+  }
+ ],
+ "same_gate_model": true,
+ "checks": {
+  "per_experiment": true,
+  "shuffled": true,
+  "prefixes": 132,
+  "prefix_mismatch": 0
+ },
+ "sha256": "a69fb082932f896d0e662fe16d051a602b4531089888c66fa3ee86b8f7cd0691",
+ "changed_vs_base": 48,
+ "changes": {
+  "6->5": 26,
+  "5->6": 22
+ },
+ "diff_vs_S40": 10,
+ "diff_by_experiment": {
+  "E_753e27": 4,
+  "E_12e376": 2,
+  "E_8c92cd": 1,
+  "E_bc7e00": 1,
+  "E_c06a83": 1,
+  "E_c8e730": 1
+ },
+ "diff_rows": [
+  {
+   "exp": "E_12e376",
+   "t": 1510,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_12e376",
+   "t": 1525,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_753e27",
+   "t": 1335,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_753e27",
+   "t": 1340,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_753e27",
+   "t": 1350,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_753e27",
+   "t": 1355,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_8c92cd",
+   "t": 1265,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_bc7e00",
+   "t": 1310,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_c06a83",
+   "t": 1430,
+   "S40": 6,
+   "new": 5
+  },
+  {
+   "exp": "E_c8e730",
+   "t": 5670,
+   "S40": 6,
+   "new": 5
+  }
+ ]
+}

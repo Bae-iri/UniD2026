@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "per_experiment": true,
+    "shuffled": true,
+    "prefixes": 132,
+    "prefix_mismatch": 0
+  },
+  "sha256": "2de294cb959e663a62c18c03ab8049669dfee37a0172298b5392060f292045bc",
+  "changed_vs_base": 38,
+  "changes": {
+    "5->6": 22,
+    "6->5": 16
+  },
+  "diff_vs_S40": 0,
+  "thresholds": {
+    "t56": 0.7,
+    "t65": 0.7
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "selected": "S40",
+  "reference_S40_mean_gain": 0.03787067269340483,
+  "table": [
+    {
+      "method": "S40",
+      "mean_gain": 0.03787,
+      "ci_lo_5s": 0.02537,
+      "changed_5s": 451
+    },
+    {
+      "method": "S40+floor120",
+      "mean_gain": 0.03057,
+      "ci_lo_5s": 0.01632,
+      "changed_5s": 652
+    },
+    {
+      "method": "S40+floor15",
+      "mean_gain": 0.01571,
+      "ci_lo_5s": -0.01199,
+      "changed_5s": 962
+    },
+    {
+      "method": "S40+floor30",
+      "mean_gain": 0.02038,
+      "ci_lo_5s": 0.00144,
+      "changed_5s": 918
+    },
+    {
+      "method": "S40+floor60",
+      "mean_gain": 0.02137,
+      "ci_lo_5s": 0.00323,
+      "changed_5s": 888
+    },
+    {
+      "method": "S41",
+      "mean_gain": 0.03108,
+      "ci_lo_5s": 0.01833,
+      "changed_5s": 375
+    },
+    {
+      "method": "V0",
+      "mean_gain": 0.02558,
+      "ci_lo_5s": 0.01285,
+      "changed_5s": 837
+    },
+    {
+      "method": "agree",
+      "mean_gain": 0.03372,
+      "ci_lo_5s": 0.02447,
+      "changed_5s": 360
+    },
+    {
+      "method": "agree+floor120",
+      "mean_gain": 0.0278,
+      "ci_lo_5s": 0.01584,
+      "changed_5s": 574
+    },
+    {
+      "method": "agree+floor15",
+      "mean_gain": 0.0138,
+      "ci_lo_5s": -0.0137,
+      "changed_5s": 896
+    },
+    {
+      "method": "agree+floor30",
+      "mean_gain": 0.01899,
+      "ci_lo_5s": 0.00314,
+      "changed_5s": 832
+    },
+    {
+      "method": "agree+floor60",
+      "mean_gain": 0.0194,
+      "ci_lo_5s": 0.00247,
+      "changed_5s": 809
+    },
+    {
+      "method": "base",
+      "mean_gain": 0.0,
+      "ci_lo_5s": 0.0,
+      "changed_5s": 0
+    },
+    {
+      "method": "floor120",
+      "mean_gain": -0.007,
+      "ci_lo_5s": -0.01977,
+      "changed_5s": 203
+    },
+    {
+      "method": "floor15",
+      "mean_gain": -0.01227,
+      "ci_lo_5s": -0.03954,
+      "changed_5s": 603
+    },
+    {
+      "method": "floor30",
+      "mean_gain": -0.01114,
+      "ci_lo_5s": -0.02928,
+      "changed_5s": 519
+    },
+    {
+      "method": "floor60",
+      "mean_gain": -0.01126,
+      "ci_lo_5s": -0.03018,
+      "changed_5s": 489
+    }
+  ]
+}

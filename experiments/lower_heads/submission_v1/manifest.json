@@ -1,0 +1,123 @@
+{
+ "kept": [
+  "34",
+  "43"
+ ],
+ "thresholds": {
+  "23": 0.9,
+  "32": 0.9,
+  "34": 1.01,
+  "43": 0.5
+ },
+ "choices": {
+  "23": [
+   {
+    "threshold": 0.5,
+    "delta": -0.0017258360289627017,
+    "fixed": 113,
+    "harmed": 164,
+    "passed": false
+   },
+   {
+    "threshold": 0.7,
+    "delta": -0.0002709496768994457,
+    "fixed": 30,
+    "harmed": 37,
+    "passed": false
+   },
+   {
+    "threshold": 0.9,
+    "delta": 9.26385623846171e-05,
+    "fixed": 7,
+    "harmed": 3,
+    "passed": true
+   }
+  ],
+  "32": [
+   {
+    "threshold": 0.5,
+    "delta": 0.0012299645621557387,
+    "fixed": 302,
+    "harmed": 286,
+    "passed": false
+   },
+   {
+    "threshold": 0.7,
+    "delta": 0.0005447212073343977,
+    "fixed": 141,
+    "harmed": 136,
+    "passed": false
+   },
+   {
+    "threshold": 0.9,
+    "delta": 0.0007470282173744902,
+    "fixed": 33,
+    "harmed": 5,
+    "passed": true
+   }
+  ],
+  "34": [
+   {
+    "threshold": 0.5,
+    "delta": -0.0012290227340853166,
+    "fixed": 159,
+    "harmed": 237,
+    "passed": false
+   },
+   {
+    "threshold": 0.7,
+    "delta": -0.0001643776701385491,
+    "fixed": 152,
+    "harmed": 204,
+    "passed": false
+   },
+   {
+    "threshold": 0.9,
+    "delta": 0.002177336845499145,
+    "fixed": 103,
+    "harmed": 87,
+    "passed": false
+   }
+  ],
+  "43": [
+   {
+    "threshold": 0.5,
+    "delta": 0.0024050819660236256,
+    "fixed": 57,
+    "harmed": 5,
+    "passed": true
+   },
+   {
+    "threshold": 0.7,
+    "delta": 0.0017456368424707547,
+    "fixed": 42,
+    "harmed": 4,
+    "passed": true
+   },
+   {
+    "threshold": 0.9,
+    "delta": 0.0011863527051664269,
+    "fixed": 29,
+    "harmed": 3,
+    "passed": true
+   }
+  ]
+ },
+ "checks": {
+  "per_experiment": true,
+  "shuffled": true,
+  "prefixes": 132,
+  "prefix_mismatch": 0
+ },
+ "sha256": "76c804aff8e7f65c715a8159ed9e513fbe99159efea5a4d89dc9df616405825c",
+ "diff_vs_56_65": 25,
+ "changes_vs_56_65": {
+  "4->3": 25
+ },
+ "diff_by_experiment": {
+  "E_8c92cd": 15,
+  "E_bc7e00": 9,
+  "E_a221e4": 1
+ },
+ "changed_vs_base": 63
+}

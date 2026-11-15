@@ -1,0 +1,62 @@
+[
+ {
+  "where": "fold0",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "fold1",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "fold2",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "fold3",
+  "orig": 0.7,
+  "ext": 0.6
+ },
+ {
+  "where": "fold4",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "lco_1/4.8",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "lco_1/6.0",
+  "orig": 0.7,
+  "ext": 0.6
+ },
+ {
+  "where": "lco_2/39.0",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "lco_2/73.0",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "lco_3/28.0",
+  "orig": 0.7,
+  "ext": 0.5
+ },
+ {
+  "where": "lco_3/280.0",
+  "orig": 0.7,
+  "ext": 0.6
+ },
+ {
+  "where": "final_dev",
+  "orig": 0.7,
+  "ext": 0.5
+ }
+]
