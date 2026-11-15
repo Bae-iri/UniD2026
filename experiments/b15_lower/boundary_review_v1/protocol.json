@@ -1,0 +1,27 @@
+{
+  "policies": [
+    "none",
+    "23",
+    "45",
+    "23+45"
+  ],
+  "threshold": 0.9,
+  "params": {
+    "max_iter": 80,
+    "max_leaf_nodes": 3,
+    "max_depth": 2,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 128,
+    "l2_regularization": 10.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "model_selection": "Nested experiment groups; inner paired bootstrap positive and corrected>=2*harmed; prefer fewer heads within0.002F1",
+  "adoption": "outer paired95 lower>0, all5fold deltas>=0, full19validation delta>0; stage6 predictions and existing4->3 protected",
+  "inference_ids_used": false,
+  "leaderboard_input": false,
+  "E16_primary_included": true,
+  "parameter_search": false,
+  "limitation": "Previously inspected datasets/hypothesis development; not a fresh blind benchmark. Inner stack fit probabilities use the one inner-training teacher in-sample; its entire fit/selection exclude inner held groups.",
+  "source_sha256": "8f76e72e8d2db3a88c00562024b033a1e561de22699eaf23112363c27088c62f"
+}
