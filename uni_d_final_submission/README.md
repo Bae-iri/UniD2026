@@ -1,6 +1,6 @@
 # 배터리 열폭주 6단계 분류 — 최종 제출 코드
 
-최종 파일: `submission_rule1_56_65_lower_past.csv` (공개 리더보드 Macro F1 [0.96__])
+최종 파일: `submission_rule1_56_65_lower_past.csv` (공개 리더보드 Macro F1 0.9629014141)
 `test.py` 출력이 이 파일과 바이트 단위로 같다(`self_check.py` 1번 항목).
 
 ## 실행
