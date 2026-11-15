@@ -60,7 +60,7 @@ def main(args):
             assert set(reference.index) == set(submission.sample_id) and reference.index.is_unique
             mismatch = int((submission.label.to_numpy() != reference.loc[submission.sample_id].label.to_numpy()).sum())
             assert mismatch == 0, 'Combined code changed the requested archived predictions'
-            target = args.output/'submission_jeongyun43_stage6.csv'
+            target = args.output/'submission_stage6.csv'
             submission.to_csv(target,index=False)
             manifest['test'].update(reference_label_mismatches=mismatch,
                 reference_sha256=sha(args.reference),submission_sha256=sha(target))

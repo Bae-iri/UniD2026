@@ -2,7 +2,7 @@
 
 **두 기능을 통합했고 기존 제출 3,451개 예측과 모두 일치한다. E16을 포함한 전체 자료를 주 평가로 사용한다. 리더보드 점수를 입력하거나 모델·임계값 선택에 사용하지 않았다.**
 
-실행 코드는 [build_combined.py](build_combined.py), 통합 제출은 [submission_jeongyun43_stage6.csv](combined_v2/submission_jeongyun43_stage6.csv), 실행 근거는 [manifest.json](combined_v2/manifest.json)이다. 같은 폴더에 생성한 `combined.joblib`은 Git에서 제외한다.
+실행 코드는 [build_combined.py](build_combined.py), 통합 제출은 [submission_stage6.csv](combined_v2/submission_stage6.csv), 실행 근거는 [manifest.json](combined_v2/manifest.json)이다. 같은 폴더에 생성한 `combined.joblib`은 Git에서 제외한다.
 
 검증 기준과 방법
 
